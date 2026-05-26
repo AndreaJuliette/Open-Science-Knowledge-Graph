@@ -1,5 +1,5 @@
 site_name: Documentation Open Science Knowledge Graph
-site_description: This project builds a reproducible and FAIR pipeline to analyze 30 open-access research papers and turn the results into an RDF Knowledge Graph that can be queried with SPARQL. 
+site_description: This project builds a reproducible and FAIR pipeline to analyze 30 open-access research papers and turn the results into an RDF Knowledge Graph that can be queried with SPARQL. We thought this project on a bigger scale could be a useful resource for the scientific community, and we hope it can inspire others to do similar work.
 
 theme:
   name: material
