@@ -1,0 +1,35 @@
+site_name: AI Use Case Documentation
+site_description: Documentation for the AI use case project
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Inicio: index.md
+  - AI Use Declaration: ai_use_declaration.md
+  - Experiment Design: experiment_design.md
+  - External Sources: external_sources.md
+  - Limitations: limitations.md
+  - Model Decisions: model_decisions.md
+  - Ontology Diagram: ontology_diagram.md
+  - Ontology: ontology.md
+  - Provenance: provenance.md
+  - Use Case: use_case.md
+  - Workflow: workflow.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.highlight
+  - pymdownx.superfences
