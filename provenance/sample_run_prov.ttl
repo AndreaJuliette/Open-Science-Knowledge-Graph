@@ -1,0 +1,248 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/oskg/resource/entity/rocrate> a prov:Entity ;
+    rdfs:label "RO-Crate metadata" ;
+    prov:atLocation "ro-crate/ro-crate-metadata.json" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/kg>,
+        <http://example.org/oskg/resource/entity/metadata> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/ro-crate-generation> .
+
+<http://example.org/oskg/resource/activity/abstract-extraction> a prov:Activity ;
+    rdfs:label "Abstract extraction" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/abstract-extraction/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/config>,
+        <http://example.org/oskg/resource/entity/tei> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/abstract-extraction/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/abstract-extraction> .
+
+<http://example.org/oskg/resource/activity/acknowledgement-extraction> a prov:Activity ;
+    rdfs:label "Acknowledgement extraction" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/acknowledgement-extraction/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/config>,
+        <http://example.org/oskg/resource/entity/tei> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/acknowledgement-extraction/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/acknowledgement-extraction> .
+
+<http://example.org/oskg/resource/activity/grant-extraction> a prov:Activity ;
+    rdfs:label "Grant extraction" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/grant-extraction/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/acknowledgements>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/grant-extraction/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/grant-extraction> .
+
+<http://example.org/oskg/resource/activity/kg-construction> a prov:Activity ;
+    rdfs:label "KG construction" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/kg-construction/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/abstracts>,
+        <http://example.org/oskg/resource/entity/grants>,
+        <http://example.org/oskg/resource/entity/metadata>,
+        <http://example.org/oskg/resource/entity/ner>,
+        <http://example.org/oskg/resource/entity/similarity>,
+        <http://example.org/oskg/resource/entity/topics> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/kg-construction/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/kg-construction> .
+
+<http://example.org/oskg/resource/activity/ner-extraction> a prov:Activity ;
+    rdfs:label "NER extraction" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/ner-extraction/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/acknowledgements>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/ner-model>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/ner-extraction/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/ner-extraction> .
+
+<http://example.org/oskg/resource/activity/pdf-parsing> a prov:Activity ;
+    rdfs:label "PDF parsing" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/pdf-parsing/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/config>,
+        <http://example.org/oskg/resource/entity/corpus> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/grobid>,
+        <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/pdf-parsing/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/pdf-parsing> .
+
+<http://example.org/oskg/resource/activity/ro-crate-generation> a prov:Activity ;
+    rdfs:label "RO-Crate generation" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/ro-crate-generation/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/kg>,
+        <http://example.org/oskg/resource/entity/metadata> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/ro-crate-generation/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/ro-crate-generation> .
+
+<http://example.org/oskg/resource/activity/similarity-computation> a prov:Activity ;
+    rdfs:label "Similarity computation" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/similarity-computation/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/abstracts>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/embedding-model>,
+        <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/similarity-computation/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/similarity-computation> .
+
+<http://example.org/oskg/resource/activity/topic-modeling> a prov:Activity ;
+    rdfs:label "Topic modeling" ;
+    prov:qualifiedAssociation <http://example.org/oskg/resource/activity/topic-modeling/association> ;
+    prov:startedAtTime "2026-05-26T14:16:16+00:00"^^xsd:dateTime ;
+    prov:used <http://example.org/oskg/resource/entity/abstracts>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasAssociatedWith <http://example.org/oskg/resource/agent/embedding-model>,
+        <http://example.org/oskg/resource/agent/group7>,
+        <http://example.org/oskg/resource/agent/pipeline> .
+
+<http://example.org/oskg/resource/activity/topic-modeling/association> a prov:Association ;
+    prov:agent <http://example.org/oskg/resource/agent/pipeline> ;
+    prov:hadPlan <http://example.org/oskg/resource/plan/topic-modeling> .
+
+<http://example.org/oskg/resource/agent/grobid> a prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "Grobid 0.8.1 TEI extraction service" .
+
+<http://example.org/oskg/resource/agent/ner-model> a prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "Jean-Baptiste/roberta-large-ner-english" .
+
+<http://example.org/oskg/resource/plan/abstract-extraction> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/acknowledgement-extraction> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/grant-extraction> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/kg-construction> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/ner-extraction> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/pdf-parsing> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/ro-crate-generation> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/similarity-computation> a prov:Plan .
+
+<http://example.org/oskg/resource/plan/topic-modeling> a prov:Plan .
+
+<http://example.org/oskg/resource/agent/embedding-model> a prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/entity/corpus> a prov:Entity ;
+    rdfs:label "Corpus of open-access PDF papers" ;
+    prov:atLocation "data/papers/" .
+
+<http://example.org/oskg/resource/entity/grants> a prov:Entity ;
+    rdfs:label "Extracted grant IDs" ;
+    prov:atLocation "results/grant_ids.csv" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/acknowledgements>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/grant-extraction> .
+
+<http://example.org/oskg/resource/entity/kg> a prov:Entity ;
+    rdfs:label "RDF Knowledge Graph" ;
+    prov:atLocation "results/knowledge_graph.ttl" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/abstracts>,
+        <http://example.org/oskg/resource/entity/grants>,
+        <http://example.org/oskg/resource/entity/metadata>,
+        <http://example.org/oskg/resource/entity/ner>,
+        <http://example.org/oskg/resource/entity/similarity>,
+        <http://example.org/oskg/resource/entity/topics> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/kg-construction> .
+
+<http://example.org/oskg/resource/entity/ner> a prov:Entity ;
+    rdfs:label "NER entities" ;
+    prov:atLocation "results/ner_entities.json" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/acknowledgements>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/ner-extraction> .
+
+<http://example.org/oskg/resource/entity/similarity> a prov:Entity ;
+    rdfs:label "Pairwise similarity scores" ;
+    prov:atLocation "results/similarity_scores.csv" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/abstracts>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/similarity-computation> .
+
+<http://example.org/oskg/resource/entity/topics> a prov:Entity ;
+    rdfs:label "Topic assignments" ;
+    prov:atLocation "results/topics.csv" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/abstracts>,
+        <http://example.org/oskg/resource/entity/config> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/topic-modeling> .
+
+<http://example.org/oskg/resource/entity/acknowledgements> a prov:Entity ;
+    rdfs:label "Extracted acknowledgements" ;
+    prov:atLocation "results/acknowledgements.json" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/config>,
+        <http://example.org/oskg/resource/entity/tei> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/acknowledgement-extraction> .
+
+<http://example.org/oskg/resource/entity/metadata> a prov:Entity ;
+    rdfs:label "Corpus metadata" ;
+    prov:atLocation "data/papers_metadata.csv" .
+
+<http://example.org/oskg/resource/entity/tei> a prov:Entity ;
+    rdfs:label "Grobid TEI-XML files" ;
+    prov:atLocation "results/tei/" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/config>,
+        <http://example.org/oskg/resource/entity/corpus> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/pdf-parsing> .
+
+<http://example.org/oskg/resource/entity/abstracts> a prov:Entity ;
+    rdfs:label "Extracted abstracts" ;
+    prov:atLocation "results/abstracts.json" ;
+    prov:wasDerivedFrom <http://example.org/oskg/resource/entity/config>,
+        <http://example.org/oskg/resource/entity/tei> ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/abstract-extraction> .
+
+<http://example.org/oskg/resource/agent/group7> a prov:Agent,
+        prov:Person ;
+    rdfs:label "Group 7" ;
+    foaf:name "Group 7" .
+
+<http://example.org/oskg/resource/entity/config> a prov:Entity ;
+    rdfs:label "Pipeline configuration" ;
+    prov:atLocation "config/config.yaml" .
+
+<http://example.org/oskg/resource/agent/pipeline> a prov:Agent,
+        prov:SoftwareAgent ;
+    rdfs:label "Assignment 2 Python pipeline (src/pipeline.py)" .
+

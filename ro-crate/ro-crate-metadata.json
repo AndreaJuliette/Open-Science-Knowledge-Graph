@@ -1,0 +1,188 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@type": "CreativeWork",
+      "@id": "ro-crate-metadata.json",
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/crate/1.1"
+      },
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Open Science Knowledge Graph of 30 Research Papers",
+      "description": "Research Object for Assignment 2: advanced analysis of 30 open-access research papers (topic modeling, abstract similarity, NER on acknowledgements) linked into an RDF Knowledge Graph.",
+      "version": "1.0.0",
+      "datePublished": "2026-05-24",
+      "license": {
+        "@id": "https://spdx.org/licenses/MIT.html"
+      },
+      "creator": {
+        "@id": "#group-7"
+      },
+      "mainEntity": {
+        "@id": "src/pipeline.py"
+      },
+      "hasPart": [
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "config/config.yaml"
+        },
+        {
+          "@id": "data/papers_metadata.csv"
+        },
+        {
+          "@id": "data/README.md"
+        },
+        {
+          "@id": "results/abstracts.json"
+        },
+        {
+          "@id": "results/acknowledgements.json"
+        },
+        {
+          "@id": "results/topics.csv"
+        },
+        {
+          "@id": "results/topic_words.csv"
+        },
+        {
+          "@id": "results/similarity_scores.csv"
+        },
+        {
+          "@id": "results/similar_papers_edges.csv"
+        },
+        {
+          "@id": "results/ner_entities.json"
+        },
+        {
+          "@id": "results/grant_ids.csv"
+        },
+        {
+          "@id": "results/knowledge_graph.ttl"
+        },
+        {
+          "@id": "ontology/ontology.ttl"
+        },
+        {
+          "@id": "provenance/sample_run_prov.ttl"
+        },
+        {
+          "@id": "src/pipeline.py"
+        }
+      ]
+    },
+    {
+      "@id": "#group-7",
+      "@type": "Organization",
+      "name": "Group 7"
+    },
+    {
+      "@id": "https://spdx.org/licenses/MIT.html",
+      "@type": "CreativeWork",
+      "name": "MIT License"
+    },
+    {
+      "@id": "src/pipeline.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode",
+        "ComputationalWorkflow"
+      ],
+      "name": "Analysis pipeline",
+      "programmingLanguage": "Python",
+      "description": "Orchestrates parsing, topic modeling, similarity, NER and KG construction."
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "name": "Project documentation"
+    },
+    {
+      "@id": "config/config.yaml",
+      "@type": "File",
+      "name": "Pipeline configuration"
+    },
+    {
+      "@id": "data/papers_metadata.csv",
+      "@type": "File",
+      "name": "Corpus metadata (30 papers)"
+    },
+    {
+      "@id": "data/README.md",
+      "@type": "File",
+      "name": "Corpus documentation"
+    },
+    {
+      "@id": "results/abstracts.json",
+      "@type": "File",
+      "name": "Extracted abstracts"
+    },
+    {
+      "@id": "results/acknowledgements.json",
+      "@type": "File",
+      "name": "Extracted acknowledgements"
+    },
+    {
+      "@id": "results/topics.csv",
+      "@type": "File",
+      "name": "Topic assignments"
+    },
+    {
+      "@id": "results/topic_words.csv",
+      "@type": "File",
+      "name": "Top words per topic"
+    },
+    {
+      "@id": "results/similarity_scores.csv",
+      "@type": "File",
+      "name": "Pairwise abstract similarity"
+    },
+    {
+      "@id": "results/similar_papers_edges.csv",
+      "@type": "File",
+      "name": "Similarity edges (>= threshold)"
+    },
+    {
+      "@id": "results/ner_entities.json",
+      "@type": "File",
+      "name": "Acknowledged persons/organizations"
+    },
+    {
+      "@id": "results/grant_ids.csv",
+      "@type": "File",
+      "name": "Extracted grant identifiers"
+    },
+    {
+      "@id": "results/knowledge_graph.ttl",
+      "@type": "File",
+      "name": "RDF Knowledge Graph (Turtle)"
+    },
+    {
+      "@id": "ontology/ontology.ttl",
+      "@type": "File",
+      "name": "Domain ontology (oskg)"
+    },
+    {
+      "@id": "provenance/sample_run_prov.ttl",
+      "@type": "File",
+      "name": "PROV-O provenance trace"
+    },
+    {
+      "@id": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2",
+      "@type": "SoftwareApplication",
+      "name": "all-MiniLM-L6-v2 sentence embedding model"
+    },
+    {
+      "@id": "https://huggingface.co/Jean-Baptiste/roberta-large-ner-english",
+      "@type": "SoftwareApplication",
+      "name": "RoBERTa-large NER model"
+    }
+  ]
+}
