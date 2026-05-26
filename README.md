@@ -87,6 +87,22 @@ docker compose down             # stop services
 | `grobid` | PDF parsing | `8070` |
 | `fuseki` | Optional SPARQL querying | `3030` |
 
+### Documentation server
+
+The project documentation is available in the `docs/` folder and can be served with MkDocs.
+
+If the `docs` service is enabled in `docker-compose.yml`, start it with:
+
+```bash
+docker compose up docs
+```
+
+Then open the documentation site at:
+
+```text
+http://localhost:8000
+```
+
 ## Main outputs
 
 | File                                    | Description                        |
