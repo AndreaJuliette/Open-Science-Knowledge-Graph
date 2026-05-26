@@ -1,0 +1,44 @@
+services:
+  grobid:
+    image: lfoppiano/grobid:0.8.1
+    ports:
+      - "8070:8070"   
+
+  pipeline:
+    build: .
+    depends_on:
+      - grobid
+    environment:
+      - GROBID_URL=http://grobid:8070
+    volumes:
+      - ./data:/app/data                 # input PDFs + metadata (read/write)
+      - ./results:/app/results           # all outputs
+      - ./figures:/app/figures           # generated figures
+      - ./provenance:/app/provenance     # PROV trace
+      - ./ro-crate:/app/ro-crate         # RO-Crate
+      - hf_cache:/app/.hf_cache          # persist HuggingFace model downloads
+
+  # Fuseki — optional SPARQL endpoint to query the Knowledge Graph.
+
+  fuseki:
+    image: stain/jena-fuseki:jena4
+    ports:
+      - "3030:3030"
+    environment:
+      - ADMIN_PASSWORD=admin
+      - FUSEKI_DATASET_1=kg
+    volumes:
+      - ./results:/staging:ro
+      - fuseki_data:/fuseki
+
+  docs:
+    image: squidfunk/mkdocs-material
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/docs
+    command: serve --dev-addr=0.0.0.0:8000
+
+volumes:
+  hf_cache:
+  fuseki_data:
