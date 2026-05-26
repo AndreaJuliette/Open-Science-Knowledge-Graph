@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Open Science Knowledge Graph"
+abstract: >-
+  Reproducible pipeline that analyzes a corpus of 30 open-access research
+  papers (topic modeling, abstract similarity, NER on acknowledgements) and
+  links them, with metadata and funding information, into a FAIR RDF Knowledge
+  Graph. Built for the Open Science and AI in Research Software Engineering
+  course.
+type: software
+version: "1.0.0"
+date-released: "2026-05-24"
+license: MIT
+repository-code: "https://github.com/AndreaMejiaCh/assignment2"
+keywords:
+  - open science
+  - knowledge graph
+  - RDF
+  - topic modeling
+  - named entity recognition
+  - FAIR
+  - provenance
+  - RO-Crate
+authors:
+  - given-names: Andrea
+    affiliation: Universidad Politécnica de Madrid
+  - given-names: Isabel
+    affiliation: Universidad Politécnica de Madrid
+  - given-names: Abdelkrim
+    affiliation: Universidad Politécnica de Madrid
