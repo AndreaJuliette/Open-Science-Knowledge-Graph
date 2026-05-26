@@ -1,5 +1,5 @@
-site_name: AI Use Case Documentation
-site_description: Documentation for the AI use case project
+site_name: Documentation Open Science Knowledge Graph
+site_description: This project builds a reproducible and FAIR pipeline to analyze 30 open-access research papers and turn the results into an RDF Knowledge Graph that can be queried with SPARQL. 
 
 theme:
   name: material
