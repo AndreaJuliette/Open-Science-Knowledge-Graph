@@ -1,0 +1,16 @@
+# Funding information, papers, the grants they mention and the funding organizations.
+PREFIX oskg: <http://example.org/oskg/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?paper ?grantId ?funderName
+WHERE {
+  ?paper a oskg:Paper ;
+         oskg:mentionsGrant ?project .
+  ?project dcterms:identifier ?grantId .
+  OPTIONAL {
+    ?paper oskg:fundedBy ?org .
+    ?org foaf:name ?funderName .
+  }
+}
+ORDER BY ?paper

@@ -1,0 +1,12 @@
+# Most similar paper pairs ordered by descending similarity.
+PREFIX oskg: <http://example.org/oskg/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?source ?target ?score
+WHERE {
+  ?rel a oskg:SimilarityRelation ;
+       oskg:sourcePaper ?source ;
+       oskg:targetPaper ?target ;
+       oskg:similarityScore ?score .
+}
+ORDER BY DESC(?score)

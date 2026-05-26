@@ -1,0 +1,12 @@
+# Organizations and the papers that acknowledge or are funded by them.
+PREFIX oskg: <http://example.org/oskg/ontology#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?orgName (COUNT(DISTINCT ?paper) AS ?numPapers) (GROUP_CONCAT(DISTINCT STR(?paper); separator=", ") AS ?papers)
+WHERE {
+  ?org a oskg:Organization ;
+       foaf:name ?orgName .
+  { ?paper oskg:acknowledges ?org } UNION { ?paper oskg:fundedBy ?org }
+}
+GROUP BY ?orgName
+ORDER BY DESC(?numPapers)

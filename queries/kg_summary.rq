@@ -1,0 +1,18 @@
+# Counts of the main entity types in the Knowledge Graph.
+PREFIX oskg: <http://example.org/oskg/ontology#>
+
+SELECT
+  (COUNT(DISTINCT ?paper) AS ?papers)
+  (COUNT(DISTINCT ?topic) AS ?topics)
+  (COUNT(DISTINCT ?person) AS ?persons)
+  (COUNT(DISTINCT ?org) AS ?organizations)
+  (COUNT(DISTINCT ?project) AS ?projects)
+  (COUNT(DISTINCT ?rel) AS ?similarityRelations)
+WHERE {
+  { ?paper a oskg:Paper } UNION
+  { ?topic a oskg:Topic } UNION
+  { ?person a oskg:Person } UNION
+  { ?org a oskg:Organization } UNION
+  { ?project a oskg:Project } UNION
+  { ?rel a oskg:SimilarityRelation }
+}

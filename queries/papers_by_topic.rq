@@ -1,0 +1,13 @@
+# Papers grouped by topic, with topic label.
+PREFIX oskg: <http://example.org/oskg/ontology#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?topic ?topicLabel ?paper ?title
+WHERE {
+  ?paper a oskg:Paper ;
+         oskg:belongs_to_topic ?topic .
+  ?topic rdfs:label ?topicLabel .
+  OPTIONAL { ?paper dcterms:title ?title }
+}
+ORDER BY ?topic ?paper
