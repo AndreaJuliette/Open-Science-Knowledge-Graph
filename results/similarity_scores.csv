@@ -1,0 +1,436 @@
+paper_a,paper_b,similarity
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Symbolic Discovery of Optimization Algorithms,0.720065
+Adam A Method for Stochastic Optimization,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.711777
+End to End Object Detection with Transformers,Learning Transferable Visual Models From Natural Language Supervision,0.685425
+Language Models are Few Shot Learners,SELF-INSTRUCT Aligning Language Models,0.684884
+Attention Is All You Need,BERT Pretraining of Deep Bidirectional Transformers for,0.669575
+Deep Reinforcement Learning from Human Preferences,Proximal Policy Optimization Algorithms,0.666052
+Robust Speech Recognition via Large-Scale Weak Supervision,wav2vec 2.0 A Framework for Self-Supervised,0.65868
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Symbolic Discovery of Optimization Algorithms,0.658272
+HuBERT Self-Supervised Speech Representation,wav2vec 2.0 A Framework for Self-Supervised,0.655833
+BERT Pretraining of Deep Bidirectional Transformers for,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.653247
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,DECOUPLED WEIGHT DECAY REGULARIZATION,0.649725
+An Image is Worth 16x16 words,Learning Transferable Visual Models From Natural Language Supervision,0.645779
+DECOUPLED WEIGHT DECAY REGULARIZATION,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.640881
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Adam A Method for Stochastic Optimization,0.635361
+Language Models are Few Shot Learners,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.635034
+Deep Reinforcement Learning from Human Preferences,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.625161
+An Image is Worth 16x16 words,End to End Object Detection with Transformers,0.624644
+An Image is Worth 16x16 words,Symbolic Discovery of Optimization Algorithms,0.612965
+Language Models are Few Shot Learners,Learning Transferable Visual Models From Natural Language Supervision,0.612759
+Adam A Method for Stochastic Optimization,DECOUPLED WEIGHT DECAY REGULARIZATION,0.612508
+BERT Pretraining of Deep Bidirectional Transformers for,Language Models are Few Shot Learners,0.612423
+Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,SELF-INSTRUCT Aligning Language Models,0.6093
+An Image is Worth 16x16 words,Attention Is All You Need,0.601964
+AST Audio Spectrogram Transformer,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.601302
+End to End Object Detection with Transformers,Masked Autoencoders Are Scalable Vision Learners,0.600301
+Implementing the Deep Q-Network,Proximal Policy Optimization Algorithms,0.599862
+HuBERT Self-Supervised Speech Representation,Robust Speech Recognition via Large-Scale Weak Supervision,0.598731
+LLaMA Open and Efficient Foundation Language Models,Language Models are Few Shot Learners,0.595048
+Learning Transferable Visual Models From Natural Language Supervision,Masked Autoencoders Are Scalable Vision Learners,0.594413
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Attention Is All You Need,0.59211
+End to End Object Detection with Transformers,Grounding DINO,0.589039
+LLaMA Open and Efficient Foundation Language Models,SELF-INSTRUCT Aligning Language Models,0.585905
+Grounding DINO,Learning Transferable Visual Models From Natural Language Supervision,0.583609
+Attention Is All You Need,Language Models are Few Shot Learners,0.583304
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.581366
+AST Audio Spectrogram Transformer,An Image is Worth 16x16 words,0.579641
+Deep Reinforcement Learning from Human Preferences,VOYAGER An Open-Ended Embodied Agent,0.578193
+BERT Pretraining of Deep Bidirectional Transformers for,SELF-INSTRUCT Aligning Language Models,0.574969
+Attention Is All You Need,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.574576
+Language Models are Few Shot Learners,Robust Speech Recognition via Large-Scale Weak Supervision,0.572965
+AST Audio Spectrogram Transformer,Robust Speech Recognition via Large-Scale Weak Supervision,0.569105
+An Image is Worth 16x16 words,BERT Pretraining of Deep Bidirectional Transformers for,0.565123
+Masked Autoencoders Are Scalable Vision Learners,Symbolic Discovery of Optimization Algorithms,0.563559
+Learning Transferable Visual Models From Natural Language Supervision,Symbolic Discovery of Optimization Algorithms,0.562035
+Deep Reinforcement Learning from Human Preferences,Implementing the Deep Q-Network,0.559092
+An Image is Worth 16x16 words,Masked Autoencoders Are Scalable Vision Learners,0.558949
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,Robust Speech Recognition via Large-Scale Weak Supervision,0.556394
+DECOUPLED WEIGHT DECAY REGULARIZATION,Symbolic Discovery of Optimization Algorithms,0.555871
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.554351
+MusicLM Generating Music From Text,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.553013
+Attention Is All You Need,SELF-INSTRUCT Aligning Language Models,0.552586
+BERT Pretraining of Deep Bidirectional Transformers for,Learning Transferable Visual Models From Natural Language Supervision,0.550839
+Attention Is All You Need,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.549013
+Implementing the Deep Q-Network,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.54884
+Adam A Method for Stochastic Optimization,Symbolic Discovery of Optimization Algorithms,0.546229
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,wav2vec 2.0 A Framework for Self-Supervised,0.545539
+Learning Transferable Visual Models From Natural Language Supervision,SELF-INSTRUCT Aligning Language Models,0.543796
+Adam A Method for Stochastic Optimization,Proximal Policy Optimization Algorithms,0.543693
+BERT Pretraining of Deep Bidirectional Transformers for,wav2vec 2.0 A Framework for Self-Supervised,0.543081
+BERT Pretraining of Deep Bidirectional Transformers for,HuBERT Self-Supervised Speech Representation,0.541938
+Mastering Atari Go Chess and Shogi by Planning with a learned model,VOYAGER An Open-Ended Embodied Agent,0.538707
+AST Audio Spectrogram Transformer,wav2vec 2.0 A Framework for Self-Supervised,0.538707
+End to End Object Detection with Transformers,Symbolic Discovery of Optimization Algorithms,0.537531
+HuBERT Self-Supervised Speech Representation,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.532862
+Mastering Atari Go Chess and Shogi by Planning with a learned model,Proximal Policy Optimization Algorithms,0.531733
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Symbolic Discovery of Optimization Algorithms,0.530786
+BERT Pretraining of Deep Bidirectional Transformers for,Robust Speech Recognition via Large-Scale Weak Supervision,0.52572
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Proximal Policy Optimization Algorithms,0.522815
+SELF-INSTRUCT Aligning Language Models,VOYAGER An Open-Ended Embodied Agent,0.520653
+Robust Speech Recognition via Large-Scale Weak Supervision,SELF-INSTRUCT Aligning Language Models,0.518718
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Language Models are Few Shot Learners,0.517179
+AST Audio Spectrogram Transformer,HuBERT Self-Supervised Speech Representation,0.515388
+Language Models are Few Shot Learners,Symbolic Discovery of Optimization Algorithms,0.51417
+Attention Is All You Need,Symbolic Discovery of Optimization Algorithms,0.512309
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,SELF-INSTRUCT Aligning Language Models,0.510959
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Proximal Policy Optimization Algorithms,0.505794
+Learning Transferable Visual Models From Natural Language Supervision,Robust Speech Recognition via Large-Scale Weak Supervision,0.503635
+Proximal Policy Optimization Algorithms,VOYAGER An Open-Ended Embodied Agent,0.501291
+LLaMA Open and Efficient Foundation Language Models,Robust Speech Recognition via Large-Scale Weak Supervision,0.500965
+Adam A Method for Stochastic Optimization,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.500815
+SELF-INSTRUCT Aligning Language Models,Symbolic Discovery of Optimization Algorithms,0.499835
+BERT Pretraining of Deep Bidirectional Transformers for,Symbolic Discovery of Optimization Algorithms,0.498022
+Attention Is All You Need,LLaMA Open and Efficient Foundation Language Models,0.494296
+Attention Is All You Need,Masked Autoencoders Are Scalable Vision Learners,0.493978
+Attention Is All You Need,Robust Speech Recognition via Large-Scale Weak Supervision,0.493265
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.489461
+Deep Reinforcement Learning from Human Preferences,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.487672
+AST Audio Spectrogram Transformer,Attention Is All You Need,0.483745
+DECOUPLED WEIGHT DECAY REGULARIZATION,Masked Autoencoders Are Scalable Vision Learners,0.48201
+Masked Autoencoders Are Scalable Vision Learners,Segment Anything,0.48056
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Proximal Policy Optimization Algorithms,0.47937
+An Image is Worth 16x16 words,Language Models are Few Shot Learners,0.478631
+MusicLM Generating Music From Text,Robust Speech Recognition via Large-Scale Weak Supervision,0.476507
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,An Image is Worth 16x16 words,0.475262
+Grounding DINO,Symbolic Discovery of Optimization Algorithms,0.47384
+Masked Autoencoders Are Scalable Vision Learners,SELF-INSTRUCT Aligning Language Models,0.471152
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Language Models are Few Shot Learners,0.468948
+HuBERT Self-Supervised Speech Representation,Masked Autoencoders Are Scalable Vision Learners,0.468735
+Attention Is All You Need,wav2vec 2.0 A Framework for Self-Supervised,0.46821
+BERT Pretraining of Deep Bidirectional Transformers for,Masked Autoencoders Are Scalable Vision Learners,0.465282
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.465197
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Implementing the Deep Q-Network,0.464651
+DECOUPLED WEIGHT DECAY REGULARIZATION,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.464388
+Proximal Policy Optimization Algorithms,Symbolic Discovery of Optimization Algorithms,0.464121
+AST Audio Spectrogram Transformer,BERT Pretraining of Deep Bidirectional Transformers for,0.463804
+Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,Robust Speech Recognition via Large-Scale Weak Supervision,0.462418
+Learning Transferable Visual Models From Natural Language Supervision,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.462333
+BERT Pretraining of Deep Bidirectional Transformers for,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.460299
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Implementing the Deep Q-Network,0.458734
+Attention Is All You Need,Learning Transferable Visual Models From Natural Language Supervision,0.458146
+Implementing the Deep Q-Network,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.457163
+LLaMA Open and Efficient Foundation Language Models,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.456575
+BERT Pretraining of Deep Bidirectional Transformers for,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.456541
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.454701
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.453053
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,BERT Pretraining of Deep Bidirectional Transformers for,0.451435
+MusicLM Generating Music From Text,wav2vec 2.0 A Framework for Self-Supervised,0.450689
+An Image is Worth 16x16 words,DECOUPLED WEIGHT DECAY REGULARIZATION,0.449956
+BERT Pretraining of Deep Bidirectional Transformers for,End to End Object Detection with Transformers,0.449839
+BERT Pretraining of Deep Bidirectional Transformers for,LLaMA Open and Efficient Foundation Language Models,0.447038
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Symbolic Discovery of Optimization Algorithms,0.445314
+Language Models are Few Shot Learners,wav2vec 2.0 A Framework for Self-Supervised,0.444323
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.443956
+Masked Autoencoders Are Scalable Vision Learners,wav2vec 2.0 A Framework for Self-Supervised,0.443894
+AST Audio Spectrogram Transformer,Learning Transferable Visual Models From Natural Language Supervision,0.44378
+DECOUPLED WEIGHT DECAY REGULARIZATION,wav2vec 2.0 A Framework for Self-Supervised,0.440983
+Robust Speech Recognition via Large-Scale Weak Supervision,Symbolic Discovery of Optimization Algorithms,0.440751
+Language Models are Few Shot Learners,Proximal Policy Optimization Algorithms,0.435699
+Grounding DINO,Language Models are Few Shot Learners,0.435078
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,VOYAGER An Open-Ended Embodied Agent,0.433636
+An Image is Worth 16x16 words,Grounding DINO,0.432404
+Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,VOYAGER An Open-Ended Embodied Agent,0.430123
+Mastering Atari Go Chess and Shogi by Planning with a learned model,Symbolic Discovery of Optimization Algorithms,0.429259
+Symbolic Discovery of Optimization Algorithms,VOYAGER An Open-Ended Embodied Agent,0.428843
+DECOUPLED WEIGHT DECAY REGULARIZATION,Learning Transferable Visual Models From Natural Language Supervision,0.428741
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.428215
+An Image is Worth 16x16 words,wav2vec 2.0 A Framework for Self-Supervised,0.427535
+Masked Autoencoders Are Scalable Vision Learners,VOYAGER An Open-Ended Embodied Agent,0.426102
+DECOUPLED WEIGHT DECAY REGULARIZATION,Proximal Policy Optimization Algorithms,0.425014
+Learning Transferable Visual Models From Natural Language Supervision,wav2vec 2.0 A Framework for Self-Supervised,0.424401
+DECOUPLED WEIGHT DECAY REGULARIZATION,Language Models are Few Shot Learners,0.424202
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Robust Speech Recognition via Large-Scale Weak Supervision,0.423175
+Attention Is All You Need,DECOUPLED WEIGHT DECAY REGULARIZATION,0.422192
+Masked Autoencoders Are Scalable Vision Learners,Robust Speech Recognition via Large-Scale Weak Supervision,0.421624
+An Image is Worth 16x16 words,Robust Speech Recognition via Large-Scale Weak Supervision,0.421545
+Implementing the Deep Q-Network,Symbolic Discovery of Optimization Algorithms,0.421449
+MusicLM Generating Music From Text,SELF-INSTRUCT Aligning Language Models,0.421219
+Attention Is All You Need,HuBERT Self-Supervised Speech Representation,0.420252
+End to End Object Detection with Transformers,Language Models are Few Shot Learners,0.419182
+HuBERT Self-Supervised Speech Representation,Language Models are Few Shot Learners,0.419016
+Attention Is All You Need,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.418339
+Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,wav2vec 2.0 A Framework for Self-Supervised,0.4183
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Language Models are Few Shot Learners,0.417597
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Proximal Policy Optimization Algorithms,0.416097
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,LLaMA Open and Efficient Foundation Language Models,0.409421
+Attention Is All You Need,End to End Object Detection with Transformers,0.409049
+Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,Symbolic Discovery of Optimization Algorithms,0.407142
+Symbolic Discovery of Optimization Algorithms,wav2vec 2.0 A Framework for Self-Supervised,0.405464
+SELF-INSTRUCT Aligning Language Models,wav2vec 2.0 A Framework for Self-Supervised,0.405405
+Grounding DINO,Masked Autoencoders Are Scalable Vision Learners,0.403701
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,SELF-INSTRUCT Aligning Language Models,0.402165
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Masked Autoencoders Are Scalable Vision Learners,0.401573
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.401471
+HuBERT Self-Supervised Speech Representation,SELF-INSTRUCT Aligning Language Models,0.401458
+Implementing the Deep Q-Network,VOYAGER An Open-Ended Embodied Agent,0.40123
+Language Models are Few Shot Learners,Masked Autoencoders Are Scalable Vision Learners,0.401229
+DECOUPLED WEIGHT DECAY REGULARIZATION,End to End Object Detection with Transformers,0.401163
+DECOUPLED WEIGHT DECAY REGULARIZATION,HuBERT Self-Supervised Speech Representation,0.400177
+Proximal Policy Optimization Algorithms,SELF-INSTRUCT Aligning Language Models,0.399056
+LLaMA Open and Efficient Foundation Language Models,Symbolic Discovery of Optimization Algorithms,0.399022
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Learning Transferable Visual Models From Natural Language Supervision,0.397132
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Masked Autoencoders Are Scalable Vision Learners,0.39472
+An Image is Worth 16x16 words,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.394542
+HuBERT Self-Supervised Speech Representation,MusicLM Generating Music From Text,0.393433
+MusicLM Generating Music From Text,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.393169
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,VOYAGER An Open-Ended Embodied Agent,0.393108
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Learning Transferable Visual Models From Natural Language Supervision,0.39023
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,SELF-INSTRUCT Aligning Language Models,0.390028
+Deep Reinforcement Learning from Human Preferences,SELF-INSTRUCT Aligning Language Models,0.38992
+Proximal Policy Optimization Algorithms,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.387849
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.386309
+Grounding DINO,SELF-INSTRUCT Aligning Language Models,0.386299
+AST Audio Spectrogram Transformer,End to End Object Detection with Transformers,0.385979
+End to End Object Detection with Transformers,SELF-INSTRUCT Aligning Language Models,0.383582
+HuBERT Self-Supervised Speech Representation,LLaMA Open and Efficient Foundation Language Models,0.38172
+Language Models are Few Shot Learners,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.381078
+LLaMA Open and Efficient Foundation Language Models,wav2vec 2.0 A Framework for Self-Supervised,0.380508
+AST Audio Spectrogram Transformer,MusicLM Generating Music From Text,0.380437
+Grounding DINO,Robust Speech Recognition via Large-Scale Weak Supervision,0.380273
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.380261
+Mastering Atari Go Chess and Shogi by Planning with a learned model,SELF-INSTRUCT Aligning Language Models,0.380076
+HuBERT Self-Supervised Speech Representation,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.378212
+HuBERT Self-Supervised Speech Representation,Learning Transferable Visual Models From Natural Language Supervision,0.377792
+Adam A Method for Stochastic Optimization,Implementing the Deep Q-Network,0.377729
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.376456
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,wav2vec 2.0 A Framework for Self-Supervised,0.374262
+AST Audio Spectrogram Transformer,Symbolic Discovery of Optimization Algorithms,0.374189
+LLaMA Open and Efficient Foundation Language Models,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.373872
+DECOUPLED WEIGHT DECAY REGULARIZATION,Robust Speech Recognition via Large-Scale Weak Supervision,0.372449
+AST Audio Spectrogram Transformer,Adafactor Adaptive Learning Rates with Sublinear Memory Cost,0.368954
+An Image is Worth 16x16 words,SELF-INSTRUCT Aligning Language Models,0.367255
+Learning Transferable Visual Models From Natural Language Supervision,VOYAGER An Open-Ended Embodied Agent,0.365395
+End to End Object Detection with Transformers,Robust Speech Recognition via Large-Scale Weak Supervision,0.364823
+Attention Is All You Need,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.364411
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,SELF-INSTRUCT Aligning Language Models,0.363506
+Language Models are Few Shot Learners,MusicLM Generating Music From Text,0.363067
+Language Models are Few Shot Learners,VOYAGER An Open-Ended Embodied Agent,0.36264
+Deep Reinforcement Learning from Human Preferences,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.361484
+Learning Transferable Visual Models From Natural Language Supervision,Proximal Policy Optimization Algorithms,0.360438
+Attention Is All You Need,MusicLM Generating Music From Text,0.359838
+Deep Reinforcement Learning from Human Preferences,Masked Autoencoders Are Scalable Vision Learners,0.359673
+HuBERT Self-Supervised Speech Representation,Symbolic Discovery of Optimization Algorithms,0.358115
+Attention Is All You Need,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.356954
+AST Audio Spectrogram Transformer,Masked Autoencoders Are Scalable Vision Learners,0.356927
+Grounding DINO,LLaMA Open and Efficient Foundation Language Models,0.356174
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Masked Autoencoders Are Scalable Vision Learners,0.354613
+End to End Object Detection with Transformers,Segment Anything,0.354437
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Robust Speech Recognition via Large-Scale Weak Supervision,0.353323
+DECOUPLED WEIGHT DECAY REGULARIZATION,Grounding DINO,0.35288
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,Symbolic Discovery of Optimization Algorithms,0.351668
+AST Audio Spectrogram Transformer,SELF-INSTRUCT Aligning Language Models,0.349096
+An Image is Worth 16x16 words,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.349031
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,wav2vec 2.0 A Framework for Self-Supervised,0.348438
+Adam A Method for Stochastic Optimization,wav2vec 2.0 A Framework for Self-Supervised,0.347705
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.347394
+Adam A Method for Stochastic Optimization,Attention Is All You Need,0.345926
+LLaMA Open and Efficient Foundation Language Models,VOYAGER An Open-Ended Embodied Agent,0.345073
+Adam A Method for Stochastic Optimization,Robust Speech Recognition via Large-Scale Weak Supervision,0.344116
+Segment Anything,Symbolic Discovery of Optimization Algorithms,0.343438
+Adam A Method for Stochastic Optimization,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.343304
+Adam A Method for Stochastic Optimization,Language Models are Few Shot Learners,0.343019
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Implementing the Deep Q-Network,0.341866
+DECOUPLED WEIGHT DECAY REGULARIZATION,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.340329
+End to End Object Detection with Transformers,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.339291
+Language Models are Few Shot Learners,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.338551
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Learning Transferable Visual Models From Natural Language Supervision,0.338426
+DECOUPLED WEIGHT DECAY REGULARIZATION,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.337558
+Attention Is All You Need,VOYAGER An Open-Ended Embodied Agent,0.337498
+LLaMA Open and Efficient Foundation Language Models,Learning Transferable Visual Models From Natural Language Supervision,0.33724
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Masked Autoencoders Are Scalable Vision Learners,0.336967
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,HuBERT Self-Supervised Speech Representation,0.336838
+An Image is Worth 16x16 words,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.336078
+BERT Pretraining of Deep Bidirectional Transformers for,DECOUPLED WEIGHT DECAY REGULARIZATION,0.334813
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,VOYAGER An Open-Ended Embodied Agent,0.334752
+DECOUPLED WEIGHT DECAY REGULARIZATION,SELF-INSTRUCT Aligning Language Models,0.333643
+An Image is Worth 16x16 words,HuBERT Self-Supervised Speech Representation,0.33296
+Masked Autoencoders Are Scalable Vision Learners,Proximal Policy Optimization Algorithms,0.332068
+Deep Reinforcement Learning from Human Preferences,Learning Transferable Visual Models From Natural Language Supervision,0.332008
+LLaMA Open and Efficient Foundation Language Models,MusicLM Generating Music From Text,0.331238
+An Image is Worth 16x16 words,LLaMA Open and Efficient Foundation Language Models,0.331126
+Grounding DINO,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.330684
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,LLaMA Open and Efficient Foundation Language Models,0.330462
+LLaMA Open and Efficient Foundation Language Models,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.329277
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Grounding DINO,0.328864
+Deep Reinforcement Learning from Human Preferences,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.328258
+Learning Transferable Visual Models From Natural Language Supervision,MusicLM Generating Music From Text,0.325376
+BERT Pretraining of Deep Bidirectional Transformers for,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.325173
+Proximal Policy Optimization Algorithms,Robust Speech Recognition via Large-Scale Weak Supervision,0.324891
+DECOUPLED WEIGHT DECAY REGULARIZATION,Implementing the Deep Q-Network,0.324701
+Deep Reinforcement Learning from Human Preferences,Symbolic Discovery of Optimization Algorithms,0.324286
+Implementing the Deep Q-Network,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.323676
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.323437
+Adam A Method for Stochastic Optimization,Masked Autoencoders Are Scalable Vision Learners,0.323288
+Deep Reinforcement Learning from Human Preferences,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.322037
+BERT Pretraining of Deep Bidirectional Transformers for,VOYAGER An Open-Ended Embodied Agent,0.320462
+An Image is Worth 16x16 words,Segment Anything,0.319304
+Proximal Policy Optimization Algorithms,wav2vec 2.0 A Framework for Self-Supervised,0.318668
+End to End Object Detection with Transformers,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.318302
+Deep Reinforcement Learning from Human Preferences,Language Models are Few Shot Learners,0.317698
+Adam A Method for Stochastic Optimization,Learning Transferable Visual Models From Natural Language Supervision,0.317443
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.31735
+End to End Object Detection with Transformers,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.316986
+End to End Object Detection with Transformers,HuBERT Self-Supervised Speech Representation,0.315689
+AST Audio Spectrogram Transformer,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.314022
+AST Audio Spectrogram Transformer,Language Models are Few Shot Learners,0.313965
+BERT Pretraining of Deep Bidirectional Transformers for,MusicLM Generating Music From Text,0.312933
+Adam A Method for Stochastic Optimization,HuBERT Self-Supervised Speech Representation,0.31284
+BERT Pretraining of Deep Bidirectional Transformers for,Implementing the Deep Q-Network,0.311858
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Robust Speech Recognition via Large-Scale Weak Supervision,0.311854
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,End to End Object Detection with Transformers,0.310963
+Attention Is All You Need,Proximal Policy Optimization Algorithms,0.310946
+VOYAGER An Open-Ended Embodied Agent,wav2vec 2.0 A Framework for Self-Supervised,0.310444
+An Image is Worth 16x16 words,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.310121
+End to End Object Detection with Transformers,wav2vec 2.0 A Framework for Self-Supervised,0.306892
+AST Audio Spectrogram Transformer,DECOUPLED WEIGHT DECAY REGULARIZATION,0.306698
+Adam A Method for Stochastic Optimization,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.305551
+LLaMA Open and Efficient Foundation Language Models,Masked Autoencoders Are Scalable Vision Learners,0.304633
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,SELF-INSTRUCT Aligning Language Models,0.301768
+Masked Autoencoders Are Scalable Vision Learners,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.301342
+Attention Is All You Need,Segment Anything,0.300076
+End to End Object Detection with Transformers,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.299641
+End to End Object Detection with Transformers,LLaMA Open and Efficient Foundation Language Models,0.299272
+BERT Pretraining of Deep Bidirectional Transformers for,Grounding DINO,0.299016
+Grounding DINO,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.298166
+Attention Is All You Need,Implementing the Deep Q-Network,0.297117
+Attention Is All You Need,Grounding DINO,0.297087
+AST Audio Spectrogram Transformer,Grounding DINO,0.297085
+BERT Pretraining of Deep Bidirectional Transformers for,Deep Reinforcement Learning from Human Preferences,0.297033
+HuBERT Self-Supervised Speech Representation,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.296967
+Implementing the Deep Q-Network,Language Models are Few Shot Learners,0.295616
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Robust Speech Recognition via Large-Scale Weak Supervision,0.294546
+Learning Transferable Visual Models From Natural Language Supervision,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.294431
+LLaMA Open and Efficient Foundation Language Models,Proximal Policy Optimization Algorithms,0.292948
+BERT Pretraining of Deep Bidirectional Transformers for,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.292042
+Implementing the Deep Q-Network,Masked Autoencoders Are Scalable Vision Learners,0.289466
+AST Audio Spectrogram Transformer,LLaMA Open and Efficient Foundation Language Models,0.289424
+BERT Pretraining of Deep Bidirectional Transformers for,Proximal Policy Optimization Algorithms,0.289089
+An Image is Worth 16x16 words,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.287739
+Mastering Atari Go Chess and Shogi by Planning with a learned model,Segment Anything,0.2871
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Segment Anything,0.284159
+Robust Speech Recognition via Large-Scale Weak Supervision,VOYAGER An Open-Ended Embodied Agent,0.28319
+HuBERT Self-Supervised Speech Representation,Segment Anything,0.281912
+Grounding DINO,Proximal Policy Optimization Algorithms,0.279628
+Adam A Method for Stochastic Optimization,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.279574
+Language Models are Few Shot Learners,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.279529
+Adam A Method for Stochastic Optimization,SELF-INSTRUCT Aligning Language Models,0.278643
+Learning Transferable Visual Models From Natural Language Supervision,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.277476
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,HuBERT Self-Supervised Speech Representation,0.277308
+Grounding DINO,VOYAGER An Open-Ended Embodied Agent,0.276741
+Adam A Method for Stochastic Optimization,BERT Pretraining of Deep Bidirectional Transformers for,0.275783
+Learning Transferable Visual Models From Natural Language Supervision,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.275373
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.275247
+Attention Is All You Need,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.273932
+Masked Autoencoders Are Scalable Vision Learners,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.272007
+Masked Autoencoders Are Scalable Vision Learners,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.271627
+BERT Pretraining of Deep Bidirectional Transformers for,Segment Anything,0.271475
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Grounding DINO,0.267288
+HuBERT Self-Supervised Speech Representation,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.265036
+DECOUPLED WEIGHT DECAY REGULARIZATION,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.264677
+End to End Object Detection with Transformers,VOYAGER An Open-Ended Embodied Agent,0.264144
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,wav2vec 2.0 A Framework for Self-Supervised,0.263286
+Mastering Atari Go Chess and Shogi by Planning with a learned model,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.262296
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Segment Anything,0.261496
+DECOUPLED WEIGHT DECAY REGULARIZATION,VOYAGER An Open-Ended Embodied Agent,0.261214
+Grounding DINO,Segment Anything,0.261095
+DECOUPLED WEIGHT DECAY REGULARIZATION,LLaMA Open and Efficient Foundation Language Models,0.259975
+Implementing the Deep Q-Network,Learning Transferable Visual Models From Natural Language Supervision,0.259816
+Segment Anything,wav2vec 2.0 A Framework for Self-Supervised,0.25949
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,wav2vec 2.0 A Framework for Self-Supervised,0.2579
+Adam A Method for Stochastic Optimization,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.256469
+DECOUPLED WEIGHT DECAY REGULARIZATION,Segment Anything,0.255522
+Adam A Method for Stochastic Optimization,An Image is Worth 16x16 words,0.255332
+HuBERT Self-Supervised Speech Representation,Proximal Policy Optimization Algorithms,0.250545
+Robust Speech Recognition via Large-Scale Weak Supervision,Segment Anything,0.250447
+AST Audio Spectrogram Transformer,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.249931
+Implementing the Deep Q-Network,SELF-INSTRUCT Aligning Language Models,0.249115
+An Image is Worth 16x16 words,VOYAGER An Open-Ended Embodied Agent,0.248954
+Implementing the Deep Q-Network,Robust Speech Recognition via Large-Scale Weak Supervision,0.24759
+Deep Reinforcement Learning from Human Preferences,Robust Speech Recognition via Large-Scale Weak Supervision,0.245389
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.245045
+DECOUPLED WEIGHT DECAY REGULARIZATION,MusicLM Generating Music From Text,0.244547
+Deep Reinforcement Learning from Human Preferences,wav2vec 2.0 A Framework for Self-Supervised,0.243684
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,MusicLM Generating Music From Text,0.243129
+MusicLM Generating Music From Text,VOYAGER An Open-Ended Embodied Agent,0.242143
+MusicLM Generating Music From Text,Symbolic Discovery of Optimization Algorithms,0.239238
+Deep Reinforcement Learning from Human Preferences,End to End Object Detection with Transformers,0.239096
+Implementing the Deep Q-Network,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.238604
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,LLaMA Open and Efficient Foundation Language Models,0.237667
+Attention Is All You Need,Deep Reinforcement Learning from Human Preferences,0.235724
+Implementing the Deep Q-Network,wav2vec 2.0 A Framework for Self-Supervised,0.234677
+HuBERT Self-Supervised Speech Representation,VOYAGER An Open-Ended Embodied Agent,0.234371
+Adam A Method for Stochastic Optimization,VOYAGER An Open-Ended Embodied Agent,0.234353
+Adam A Method for Stochastic Optimization,MusicLM Generating Music From Text,0.233928
+Learning Transferable Visual Models From Natural Language Supervision,Segment Anything,0.232356
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,Segment Anything,0.229012
+Grounding DINO,wav2vec 2.0 A Framework for Self-Supervised,0.227919
+SELF-INSTRUCT Aligning Language Models,Segment Anything,0.227219
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,Proximal Policy Optimization Algorithms,0.226545
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.224945
+Grounding DINO,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.222749
+Masked Autoencoders Are Scalable Vision Learners,MusicLM Generating Music From Text,0.221526
+End to End Object Detection with Transformers,Proximal Policy Optimization Algorithms,0.221452
+End to End Object Detection with Transformers,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.221395
+BERT Pretraining of Deep Bidirectional Transformers for,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.220422
+An Image is Worth 16x16 words,MusicLM Generating Music From Text,0.219857
+Grounding DINO,HuBERT Self-Supervised Speech Representation,0.218297
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.217224
+An Image is Worth 16x16 words,Implementing the Deep Q-Network,0.216908
+Deep Reinforcement Learning from Human Preferences,Segment Anything,0.216074
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,VOYAGER An Open-Ended Embodied Agent,0.214951
+AST Audio Spectrogram Transformer,Adam A Method for Stochastic Optimization,0.214051
+Adam A Method for Stochastic Optimization,LLaMA Open and Efficient Foundation Language Models,0.21346
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,MusicLM Generating Music From Text,0.212592
+End to End Object Detection with Transformers,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.210717
+DECOUPLED WEIGHT DECAY REGULARIZATION,Deep Reinforcement Learning from Human Preferences,0.208899
+GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,Segment Anything,0.208392
+AST Audio Spectrogram Transformer,Segment Anything,0.208238
+Adam A Method for Stochastic Optimization,End to End Object Detection with Transformers,0.208186
+Grounding DINO,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.208134
+Adam A Method for Stochastic Optimization,Deep Reinforcement Learning from Human Preferences,0.207732
+An Image is Worth 16x16 words,Proximal Policy Optimization Algorithms,0.207158
+Adam A Method for Stochastic Optimization,Grounding DINO,0.207083
+Deep Reinforcement Learning from Human Preferences,HuBERT Self-Supervised Speech Representation,0.20695
+AST Audio Spectrogram Transformer,VOYAGER An Open-Ended Embodied Agent,0.206536
+LLaMA Open and Efficient Foundation Language Models,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.206433
+NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,VOYAGER An Open-Ended Embodied Agent,0.205489
+An Image is Worth 16x16 words,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.204709
+AST Audio Spectrogram Transformer,GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for,0.203187
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Segment Anything,0.200598
+Proximal Policy Optimization Algorithms,Segment Anything,0.200386
+MusicLM Generating Music From Text,Proximal Policy Optimization Algorithms,0.200384
+Implementing the Deep Q-Network,MusicLM Generating Music From Text,0.197036
+Implementing the Deep Q-Network,LLaMA Open and Efficient Foundation Language Models,0.196152
+Adafactor Adaptive Learning Rates with Sublinear Memory Cost,Deep Reinforcement Learning from Human Preferences,0.193991
+HuBERT Self-Supervised Speech Representation,Implementing the Deep Q-Network,0.19392
+An Image is Worth 16x16 words,Deep Reinforcement Learning from Human Preferences,0.193067
+Deep Reinforcement Learning from Human Preferences,Grounding DINO,0.19284
+AST Audio Spectrogram Transformer,Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,0.191447
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,MusicLM Generating Music From Text,0.191433
+End to End Object Detection with Transformers,Implementing the Deep Q-Network,0.190223
+Deep Reinforcement Learning from Human Preferences,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.187064
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,MusicLM Generating Music From Text,0.178408
+Deep Reinforcement Learning from Human Preferences,LLaMA Open and Efficient Foundation Language Models,0.177922
+AST Audio Spectrogram Transformer,Implementing the Deep Q-Network,0.175731
+Mastering Atari Go Chess and Shogi by Planning with a learned model,Robust Speech Recognition via Large-Scale Weak Supervision,0.175519
+Grounding DINO,Implementing the Deep Q-Network,0.175342
+LLaMA Open and Efficient Foundation Language Models,Segment Anything,0.174007
+MusicLM Generating Music From Text,Segment Anything,0.172741
+Grounding DINO,MusicLM Generating Music From Text,0.167707
+Deep Reinforcement Learning from Human Preferences,MusicLM Generating Music From Text,0.167447
+Implementing the Deep Q-Network,Segment Anything,0.166569
+End to End Object Detection with Transformers,MusicLM Generating Music From Text,0.161723
+Mastering Atari Go Chess and Shogi by Planning with a learned model,MusicLM Generating Music From Text,0.161405
+DECOUPLED WEIGHT DECAY REGULARIZATION,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.156369
+AST Audio Spectrogram Transformer,Proximal Policy Optimization Algorithms,0.148981
+Grounding DINO,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.148461
+Segment Anything,VOYAGER An Open-Ended Embodied Agent,0.146425
+Mastering Atari Go Chess and Shogi by Planning with a learned model,NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM,0.143505
+Adam A Method for Stochastic Optimization,Segment Anything,0.143161
+Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,Segment Anything,0.141244
+Mastering Atari Go Chess and Shogi by Planning with a learned model,wav2vec 2.0 A Framework for Self-Supervised,0.131754
+Language Models are Few Shot Learners,Segment Anything,0.130826
+AST Audio Spectrogram Transformer,Deep Reinforcement Learning from Human Preferences,0.130791
+HuBERT Self-Supervised Speech Representation,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.089377
+AST Audio Spectrogram Transformer,Mastering Atari Go Chess and Shogi by Planning with a learned model,0.059059

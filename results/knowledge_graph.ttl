@@ -1,0 +1,2395 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix oskg: <http://example.org/oskg/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix res: <http://example.org/oskg/resource/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+res:knowledge-graph a prov:Entity,
+        schema:Dataset ;
+    prov:wasGeneratedBy <http://example.org/oskg/resource/activity/kg-construction> .
+
+<http://example.org/oskg/resource/paper/adafactor-adaptive-learning-rates-with-sublinear-memory-cost> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/tensor2tensor>,
+        <http://example.org/oskg/resource/person/geoffrey-hinton>,
+        <http://example.org/oskg/resource/person/ukasz-kaiser> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/1> ;
+    dcterms:abstract "In several recently proposed stochastic optimization methods (e.g. RMSProp, Adam, Adadelta), parameter updates are scaled by the inverse square roots of exponential moving averages of squared past gradients. Maintaining these perparameter second-moment estimators requires memory equal to the number of parameters. For the case of neural network weight matrices, we propose maintaining only the per-row and percolumn sums of these moving averages, and estimating the per-parameter second moments based on these sums. We demonstrate empirically that this method produces similar results to the baseline. Secondly, we show that adaptive methods can produce larger-than-desired updates when the decay rate of the second moment accumulator is too slow. We propose update clipping and a gradually increasing decay rate scheme as remedies. Combining these methods and dropping momentum, we achieve comparable results to the published Adam regime in training the Transformer model on the WMT 2014 English-German machine translation task, while using very little auxiliary storage in the optimizer. Finally, we propose scaling the parameter updates based on the scale of the parameters themselves." ;
+    dcterms:identifier "Adafactor Adaptive Learning Rates with Sublinear Memory Cost" .
+
+<http://example.org/oskg/resource/paper/an-image-is-worth-16x16-words> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/google>,
+        <http://example.org/oskg/resource/person/andreas-steiner>,
+        <http://example.org/oskg/resource/person/aravindh-mahendran>,
+        <http://example.org/oskg/resource/person/ashish-vaswani>,
+        <http://example.org/oskg/resource/person/colin-raffel>,
+        <http://example.org/oskg/resource/person/daniel-keysers>,
+        <http://example.org/oskg/resource/person/dmitry-lepikhin>,
+        <http://example.org/oskg/resource/person/joan-puigcerver>,
+        <http://example.org/oskg/resource/person/mario-lu-i>,
+        <http://example.org/oskg/resource/person/maxim-neumann>,
+        <http://example.org/oskg/resource/person/noam-shazeer> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/2> ;
+    dcterms:abstract "While the Transformer architecture has become the de-facto standard for natural language processing tasks, its applications to computer vision remain limited. In vision, attention is either applied in conjunction with convolutional networks, or used to replace certain components of convolutional networks while keeping their overall structure in place. We show that this reliance on CNNs is not necessary and a pure transformer applied directly to sequences of image patches can perform very well on image classification tasks. When pre-trained on large amounts of data and transferred to multiple mid-sized or small image recognition benchmarks (ImageNet, CIFAR-100, VTAB, etc.), Vision Transformer (ViT) attains excellent results compared to state-of-the-art convolutional networks while requiring substantially fewer computational resources to train. 1" ;
+    dcterms:identifier "An Image is Worth 16x16 words" .
+
+<http://example.org/oskg/resource/paper/ast-audio-spectrogram-transformer> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/signify> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/0> ;
+    dcterms:abstract "In the past decade, convolutional neural networks (CNNs) have been widely adopted as the main building block for endto-end audio classification models, which aim to learn a direct mapping from audio spectrograms to corresponding labels. To better capture long-range global context, a recent trend is to add a self-attention mechanism on top of the CNN, forming a CNN-attention hybrid model. However, it is unclear whether the reliance on a CNN is necessary, and if neural networks purely based on attention are sufficient to obtain good performance in audio classification. In this paper, we answer the question by introducing the Audio Spectrogram Transformer (AST), the first convolution-free, purely attention-based model for audio classification. We evaluate AST on various audio classification benchmarks, where it achieves new state-of-the-art results of 0.485 mAP on AudioSet, 95.6% accuracy on ESC-50, and 98.1% accuracy on Speech Commands V2." ;
+    dcterms:identifier "AST Audio Spectrogram Transformer" .
+
+<http://example.org/oskg/resource/paper/decoupled-weight-decay-regularization> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/bwhpc>,
+        <http://example.org/oskg/resource/org/dfg>,
+        <http://example.org/oskg/resource/org/erc>,
+        <http://example.org/oskg/resource/org/european-research-council>,
+        <http://example.org/oskg/resource/org/european-union>,
+        <http://example.org/oskg/resource/org/german-research-foundation>,
+        <http://example.org/oskg/resource/person/anand-saha>,
+        <http://example.org/oskg/resource/person/glambard>,
+        <http://example.org/oskg/resource/person/guillaume-lambard>,
+        <http://example.org/oskg/resource/person/jeremy-howard>,
+        <http://example.org/oskg/resource/person/kashif-rasul>,
+        <http://example.org/oskg/resource/person/martin-v-lker>,
+        <http://example.org/oskg/resource/person/matthias-feurer>,
+        <http://example.org/oskg/resource/person/patryk-chrabaszcz>,
+        <http://example.org/oskg/resource/person/phil-jund>,
+        <http://example.org/oskg/resource/person/robin-schirrmeister>,
+        <http://example.org/oskg/resource/person/sgugger>,
+        <http://example.org/oskg/resource/person/sylvain-gugger>,
+        <http://example.org/oskg/resource/person/tonio-ball>,
+        <http://example.org/oskg/resource/person/yagami-lin>,
+        <http://example.org/oskg/resource/person/yagami123> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/1> ;
+    oskg:fundedBy <http://example.org/oskg/resource/org/german-research-foundation> ;
+    oskg:mentionsGrant <http://example.org/oskg/resource/project/716721>,
+        <http://example.org/oskg/resource/project/exc-1086>,
+        <http://example.org/oskg/resource/project/inst> ;
+    dcterms:abstract "L 2 regularization and weight decay regularization are equivalent for standard stochastic gradient descent (when rescaled by the learning rate), but as we demonstrate this is not the case for adaptive gradient algorithms, such as Adam. While common implementations of these algorithms employ L 2 regularization (often calling it \"weight decay\" in what may be misleading due to the inequivalence we expose), we propose a simple modification to recover the original formulation of weight decay regularization by decoupling the weight decay from the optimization steps taken w.r.t. the loss function. We provide empirical evidence that our proposed modification (i) decouples the optimal choice of weight decay factor from the setting of the learning rate for both standard SGD and Adam and (ii) substantially improves Adam's generalization performance, allowing it to compete with SGD with momentum on image classification datasets (on which it was previously typically outperformed by the latter). Our proposed decoupled weight decay has already been adopted by many researchers, and the community has implemented it in TensorFlow and PyTorch; the complete source code for our experiments is" ;
+    dcterms:identifier "DECOUPLED WEIGHT DECAY REGULARIZATION" .
+
+<http://example.org/oskg/resource/paper/grounding-dino> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/the-hong-kong-university-of-science-and-technology>,
+        <http://example.org/oskg/resource/person/haotian-zhang>,
+        <http://example.org/oskg/resource/person/he-cao>,
+        <http://example.org/oskg/resource/person/jianhua-han>,
+        <http://example.org/oskg/resource/person/liunian-harold-li>,
+        <http://example.org/oskg/resource/person/pengchuan-zhang>,
+        <http://example.org/oskg/resource/person/tiancheng-zhao> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/2> ;
+    dcterms:abstract "including object detection data, grounding data, and caption data, and evaluate the model on both open-set object detection and referring object detection benchmarks. Grounding DINO performs remarkably well on all three settings, including benchmarks on COCO, LVIS, ODinW, and RefCOCO/+/g. Grounding DINO achieves a 52.5 AP on the COCO zeroshot 1 detection benchmark. It sets a new record on the ODinW zero-shot benchmark with a mean 26.1 AP. We release some checkpoints and inference codes at https://github.com/IDEA-Research/GroundingDINO ." ;
+    dcterms:identifier "Grounding DINO" .
+
+<http://example.org/oskg/resource/paper/grpo-lead-a-difficulty-aware-reinforcement-learning-approach-for> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/4> ;
+    dcterms:abstract "Group Relative Policy Optimization (GRPO), which is widely adopted by R1-like reasoning models, has advanced mathematical reasoning. Nevertheless, GRPO faces challenges in reward sparsity, verbosity, and inadequate focus on problem difficulty. We propose GRPO-LEAD, enhancing GRPO with: (1) lengthregularized rewards to encourage conciseness while maintaining accuracy; (2) explicit penalties for incorrect solutions to improve model precision; and (3) difficulty-aware advantage reweighting for robust generalization on challenging problems. Comprehensive evaluations demonstrate that GRPO-LEAD significantly improves reasoning accuracy, conciseness, and efficiency. Our approach achieves state-of-theart performance for 14B-scale models, underscoring the synergy of our methods with appropriate model scale and high-quality data. Our source code, generated dataset, and models are available at https://github.com/ aeroplanepaper/GRPO-LEAD ." ;
+    dcterms:identifier "GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for" .
+
+<http://example.org/oskg/resource/paper/implementing-the-deep-q-network> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/darpa>,
+        <http://example.org/oskg/resource/org/national-science-foundation> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/4> ;
+    oskg:fundedBy <http://example.org/oskg/resource/org/national-science-foundation>,
+        <http://example.org/oskg/resource/org/science-foundation> ;
+    oskg:mentionsGrant <http://example.org/oskg/resource/project/1426452>,
+        <http://example.org/oskg/resource/project/1637614>,
+        <http://example.org/oskg/resource/project/iis-1426452>,
+        <http://example.org/oskg/resource/project/iis-1637614> ;
+    dcterms:abstract "The Deep Q-Network proposed by Mnih et al. [2015] has become a benchmark and building point for much deep reinforcement learning research. However, replicating results for complex systems is often challenging since original scientific publications are not always able to describe in detail every important parameter setting and software engineering solution. In this paper, we present results from our work reproducing the results of the DQN paper. We highlight key areas in the implementation that were not covered in great detail in the original paper to make it easier for researchers to replicate these results, including termination conditions and gradient descent algorithms. Finally, we discuss methods for improving the computational performance and provide our own implementation that is designed to work with a range of domains, and not just the original Arcade Learning Environment [Bellemare et al., 2013] ." ;
+    dcterms:identifier "Implementing the Deep Q-Network" .
+
+<http://example.org/oskg/resource/paper/llama-open-and-efficient-foundation-language-models> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/xformers>,
+        <http://example.org/oskg/resource/person/artem-korenev>,
+        <http://example.org/oskg/resource/person/daniel-haziza>,
+        <http://example.org/oskg/resource/person/francisco-massa>,
+        <http://example.org/oskg/resource/person/jane-yu>,
+        <http://example.org/oskg/resource/person/jeremy-reizenstein>,
+        <http://example.org/oskg/resource/person/kalyan-saladi>,
+        <http://example.org/oskg/resource/person/luca-wehrstedt>,
+        <http://example.org/oskg/resource/person/patrick-labatut>,
+        <http://example.org/oskg/resource/person/pierre-emmanuel-mazar>,
+        <http://example.org/oskg/resource/person/shubho-sengupta>,
+        <http://example.org/oskg/resource/person/stephen-roller>,
+        <http://example.org/oskg/resource/person/susan-zhang>,
+        <http://example.org/oskg/resource/person/vegard-mella>,
+        <http://example.org/oskg/resource/person/yongyi-hu> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/3> ;
+    dcterms:abstract "We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA-65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community 1 ." ;
+    dcterms:identifier "LLaMA Open and Efficient Foundation Language Models" .
+
+<http://example.org/oskg/resource/paper/masked-autoencoders-are-scalable-vision-learners> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/2> ;
+    dcterms:abstract "This paper shows that masked autoencoders (MAE) are scalable self-supervised learners for computer vision. Our MAE approach is simple: we mask random patches of the input image and reconstruct the missing pixels. It is based on two core designs. First, we develop an asymmetric encoder-decoder architecture, with an encoder that operates only on the visible subset of patches (without mask tokens), along with a lightweight decoder that reconstructs the original image from the latent representation and mask tokens. Second, we find that masking a high proportion of the input image, e.g., 75%, yields a nontrivial and meaningful self-supervisory task. Coupling these two designs enables us to train large models efficiently and effectively: we accelerate training (by 3× or more) and improve accuracy. Our scalable approach allows for learning high-capacity models that generalize well: e.g., a vanilla ViT-Huge model achieves the best accuracy (87.8%) among methods that use only ImageNet-1K data. Transfer performance in downstream tasks outperforms supervised pretraining and shows promising scaling behavior." ;
+    dcterms:identifier "Masked Autoencoders Are Scalable Vision Learners" .
+
+<http://example.org/oskg/resource/paper/mastering-atari-go-chess-and-shogi-by-planning-with-a-learned-model> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/deepmind>,
+        <http://example.org/oskg/resource/person/chris-apps>,
+        <http://example.org/oskg/resource/person/koray-kavukcuoglu>,
+        <http://example.org/oskg/resource/person/lorrayne-bennett>,
+        <http://example.org/oskg/resource/person/matthew-lai>,
+        <http://example.org/oskg/resource/person/nenad-tomasev>,
+        <http://example.org/oskg/resource/person/oliver-smith>,
+        <http://example.org/oskg/resource/person/sumedh-ghaisas>,
+        <http://example.org/oskg/resource/person/thomas-anthony>,
+        <http://example.org/oskg/resource/person/ulrich-paquet> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/4> ;
+    dcterms:abstract "Constructing agents with planning capabilities has long been one of the main challenges in the pursuit of artificial intelligence. Tree-based planning methods have enjoyed huge success in challenging domains, such as chess and Go, where a perfect simulator is available. However, in real-world problems the dynamics governing the environment are often complex and unknown. In this work we present the MuZero algorithm which, by combining a tree-based search with a learned model, achieves superhuman performance in a range of challenging and visually complex domains, without any knowledge of their underlying dynamics. MuZero learns a model that, when applied iteratively, predicts the quantities most directly relevant to planning: the reward, the action-selection policy, and the value function. When evaluated on 57 different Atari games -the canonical video game environment for testing AI techniques, in which model-based planning approaches have historically struggled -our new algorithm achieved a new state of the art. When evaluated on Go, chess and shogi, without any knowledge of the game rules, MuZero matched the superhuman performance of the AlphaZero algorithm that was supplied with the game rules." ;
+    dcterms:identifier "Mastering Atari Go Chess and Shogi by Planning with a learned model" .
+
+<http://example.org/oskg/resource/paper/musiclm-generating-music-from-text> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/0> ;
+    dcterms:abstract "We introduce MusicLM, a model for generating high-fidelity music from text descriptions such as \"a calming violin melody backed by a distorted guitar riff\". MusicLM casts the process of conditional music generation as a hierarchical sequenceto-sequence modeling task, and it generates music at 24 kHz that remains consistent over several minutes. Our experiments show that MusicLM outperforms previous systems both in audio quality and adherence to the text descriptions. Moreover, we demonstrate that MusicLM can be conditioned on both text and a melody in that it can transform whistled and hummed melodies according to the style described in a text caption. To support future research, we publicly release MusicCaps, a dataset composed of 5.5k music-text pairs, with rich text descriptions provided by human experts. google-research.github.io/seanet/musiclm/examples" ;
+    dcterms:identifier "MusicLM Generating Music From Text" .
+
+<http://example.org/oskg/resource/paper/natural-tts-synthesis-by-conditioning-wavenet-on-mel-spectrogram> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/google-tts>,
+        <http://example.org/oskg/resource/org/machine-hearing>,
+        <http://example.org/oskg/resource/person/a-ron-van-den-oord>,
+        <http://example.org/oskg/resource/person/heiga-zen>,
+        <http://example.org/oskg/resource/person/jan-chorowski>,
+        <http://example.org/oskg/resource/person/samy-bengio> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/0> ;
+    dcterms:abstract "This paper describes Tacotron 2, a neural network architecture for speech synthesis directly from text. The system is composed of a recurrent sequence-to-sequence feature prediction network that maps character embeddings to mel-scale spectrograms, followed by a modified WaveNet model acting as a vocoder to synthesize time-domain waveforms from those spectrograms. Our model achieves a mean opinion score (MOS) of 4.53 comparable to a MOS of 4.58 for professionally recorded speech. To validate our design choices, we present ablation studies of key components of our system and evaluate the impact of using mel spectrograms as the conditioning input to WaveNet instead of linguistic, duration, and F0 features. We further show that using this compact acoustic intermediate representation allows for a significant reduction in the size of the WaveNet architecture." ;
+    dcterms:identifier "NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM" .
+
+<http://example.org/oskg/resource/paper/paper-0001> a oskg:Paper ;
+    oskg:citedByCount 8840 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/alexander-kirillov>,
+        <http://example.org/oskg/resource/person/chloe-rolland>,
+        <http://example.org/oskg/resource/person/eric-mintun>,
+        <http://example.org/oskg/resource/person/hanzi-mao>,
+        <http://example.org/oskg/resource/person/nikhila-ravi>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors> ;
+    oskg:hasDOI "10.1109/iccv51070.2023.00371" ;
+    oskg:hasURL <https://doi.org/10.1109/iccv51070.2023.00371> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Segmentation",
+        "Shot (pellet)",
+        "Task (project management)" ;
+    oskg:openAlexId "W4390874575" ;
+    oskg:publicationYear "2023"^^xsd:gYear ;
+    dcterms:identifier "PAPER_0001" ;
+    dcterms:title "Segment Anything" ;
+    owl:sameAs <https://openalex.org/W4390874575> .
+
+<http://example.org/oskg/resource/paper/paper-0002> a oskg:Paper ;
+    oskg:citedByCount 194 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/kaiming-he>,
+        <http://example.org/oskg/resource/person/piotr-doll-r>,
+        <http://example.org/oskg/resource/person/saining-xie>,
+        <http://example.org/oskg/resource/person/todo-remaining-author>,
+        <http://example.org/oskg/resource/person/xinlei-chen>,
+        <http://example.org/oskg/resource/person/yanghao-li> ;
+    oskg:hasDOI "10.48550/arXiv.2111.06377" ;
+    oskg:hasURL <https://arxiv.org/abs/2111.06377> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Encoder",
+        "Masking (illustration)",
+        "Scalability" ;
+    oskg:openAlexId "W3211983881" ;
+    oskg:publicationYear "2021"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0002" ;
+    dcterms:title "Masked Autoencoders Are Scalable Vision Learners" ;
+    owl:sameAs <https://openalex.org/W3211983881> .
+
+<http://example.org/oskg/resource/paper/paper-0003> a oskg:Paper ;
+    oskg:citedByCount 5296 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/aditya-ramesh>,
+        <http://example.org/oskg/resource/person/alec-radford>,
+        <http://example.org/oskg/resource/person/chris-hallacy>,
+        <http://example.org/oskg/resource/person/gabriel-goh>,
+        <http://example.org/oskg/resource/person/jong-wook-kim>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors> ;
+    oskg:hasDOI "10.48550/arXiv.2103.00020" ;
+    oskg:hasURL <https://arxiv.org/abs/2103.00020> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Generality",
+        "Task (project management)",
+        "Transfer of learning" ;
+    oskg:openAlexId "W3135367836" ;
+    oskg:publicationYear "2021"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0003" ;
+    dcterms:title "Learning Transferable Visual Models From Natural Language Supervision" ;
+    owl:sameAs <https://openalex.org/W3135367836> .
+
+<http://example.org/oskg/resource/paper/paper-0004> a oskg:Paper ;
+    oskg:citedByCount 1330 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/feng-li>,
+        <http://example.org/oskg/resource/person/hao-zhang>,
+        <http://example.org/oskg/resource/person/shilong-liu>,
+        <http://example.org/oskg/resource/person/tianhe-ren>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors>,
+        <http://example.org/oskg/resource/person/zhaoyang-zeng> ;
+    oskg:hasDOI "10.1007/978-3-031-72970-6_3" ;
+    oskg:hasURL <https://doi.org/10.1007/978-3-031-72970-6_3> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Object (grammar)",
+        "Set (abstract data type)",
+        "Training (meteorology)" ;
+    oskg:openAlexId "W4404612908" ;
+    oskg:publicationYear "2024"^^xsd:gYear ;
+    oskg:venue "Lecture notes in computer science" ;
+    dcterms:identifier "PAPER_0004" ;
+    dcterms:title "Grounding DINO: Marrying DINO with Grounded Pre-training for Open-Set Object Detection" ;
+    owl:sameAs <https://openalex.org/W4404612908> .
+
+<http://example.org/oskg/resource/paper/paper-0005> a oskg:Paper ;
+    oskg:citedByCount 829 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/alexander-kirillov>,
+        <http://example.org/oskg/resource/person/francisco-massa>,
+        <http://example.org/oskg/resource/person/gabriel-synnaeve>,
+        <http://example.org/oskg/resource/person/nicolas-carion>,
+        <http://example.org/oskg/resource/person/nicolas-usunier>,
+        <http://example.org/oskg/resource/person/todo-remaining-author> ;
+    oskg:hasDOI "10.48550/arXiv.2005.12872" ;
+    oskg:hasURL <https://arxiv.org/abs/2005.12872> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Encoder",
+        "Object detection",
+        "Transformer" ;
+    oskg:openAlexId "W3030520226" ;
+    oskg:publicationYear "2020"^^xsd:gYear ;
+    oskg:venue "Lecture notes in computer science" ;
+    dcterms:identifier "PAPER_0005" ;
+    dcterms:title "End-to-End Object Detection with Transformers" ;
+    owl:sameAs <https://openalex.org/W3030520226> .
+
+<http://example.org/oskg/resource/paper/paper-0006> a oskg:Paper ;
+    oskg:citedByCount 21529 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/alexander-kolesnikov>,
+        <http://example.org/oskg/resource/person/alexey-dosovitskiy>,
+        <http://example.org/oskg/resource/person/dirk-weissenborn>,
+        <http://example.org/oskg/resource/person/lucas-beyer>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors>,
+        <http://example.org/oskg/resource/person/xiaohua-zhai> ;
+    oskg:hasDOI "10.48550/arXiv.2010.11929" ;
+    oskg:hasURL <https://arxiv.org/abs/2010.11929> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Computer vision",
+        "Image (mathematics)",
+        "Transformer" ;
+    oskg:openAlexId "W3094502228" ;
+    oskg:publicationYear "2020"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0006" ;
+    dcterms:title "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" ;
+    owl:sameAs <https://openalex.org/W3094502228> .
+
+<http://example.org/oskg/resource/paper/paper-0007> a oskg:Paper ;
+    oskg:citedByCount 407 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/abdelrahman-mohamed>,
+        <http://example.org/oskg/resource/person/alexei-baevski>,
+        <http://example.org/oskg/resource/person/michael-auli>,
+        <http://example.org/oskg/resource/person/yuhao-zhou> ;
+    oskg:hasDOI "TODO" ;
+    oskg:hasURL <https://proceedings.neurips.cc/> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Natural language processing",
+        "Speech recognition" ;
+    oskg:openAlexId "W3099782249" ;
+    oskg:publicationYear "2020"^^xsd:gYear ;
+    oskg:venue "Neural Information Processing Systems" ;
+    dcterms:identifier "PAPER_0007" ;
+    dcterms:title "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations" ;
+    owl:sameAs <https://openalex.org/W3099782249> .
+
+<http://example.org/oskg/resource/paper/paper-0008> a oskg:Paper ;
+    oskg:citedByCount 1154 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/alec-radford>,
+        <http://example.org/oskg/resource/person/christine-mcleavey>,
+        <http://example.org/oskg/resource/person/greg-brockman>,
+        <http://example.org/oskg/resource/person/jong-wook-kim>,
+        <http://example.org/oskg/resource/person/tao-xu>,
+        <http://example.org/oskg/resource/person/todo-remaining-author> ;
+    oskg:hasDOI "10.48550/arXiv.2212.04356" ;
+    oskg:hasURL <https://arxiv.org/abs/2212.04356> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Computer science",
+        "Inference",
+        "Robustness (evolution)",
+        "Speech processing",
+        "Speech recognition" ;
+    oskg:openAlexId "W4311000453" ;
+    oskg:publicationYear "2022"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0008" ;
+    dcterms:title "Robust Speech Recognition via Large-Scale Weak Supervision" ;
+    owl:sameAs <https://openalex.org/W4311000453> .
+
+<http://example.org/oskg/resource/paper/paper-0009> a oskg:Paper ;
+    oskg:citedByCount 2641 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/jonathan-shen>,
+        <http://example.org/oskg/resource/person/mike-schuster>,
+        <http://example.org/oskg/resource/person/navdeep-jaitly>,
+        <http://example.org/oskg/resource/person/ron-j-weiss>,
+        <http://example.org/oskg/resource/person/ruoming-pang>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors> ;
+    oskg:hasDOI "10.1109/icassp.2018.8461368" ;
+    oskg:hasURL <https://doi.org/10.1109/icassp.2018.8461368> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Character (mathematics)",
+        "Computer science",
+        "Spectrogram",
+        "Speech recognition",
+        "Waveform" ;
+    oskg:openAlexId "W2964243274" ;
+    oskg:publicationYear "2018"^^xsd:gYear ;
+    dcterms:identifier "PAPER_0009" ;
+    dcterms:title "Natural TTS Synthesis by Conditioning Wavenet on MEL Spectrogram Predictions" ;
+    owl:sameAs <https://openalex.org/W2964243274> .
+
+<http://example.org/oskg/resource/paper/paper-0010> a oskg:Paper ;
+    oskg:citedByCount 1120 ;
+    oskg:hasDOI "TODO" ;
+    oskg:hasURL <TODO> ;
+    oskg:openAccessStatus "hybrid" ;
+    oskg:openAlexConcept "Computer science",
+        "Conceptualization",
+        "Context (archaeology)",
+        "Generative grammar",
+        "Term (time)" ;
+    oskg:openAlexId "W4386693657" ;
+    oskg:publicationYear "2023"^^xsd:gYear ;
+    oskg:venue "Business & Information Systems Engineering" ;
+    dcterms:identifier "PAPER_0010" ;
+    dcterms:title "MusicLM: Generating Music From Text" ;
+    owl:sameAs <https://openalex.org/W4386693657> .
+
+<http://example.org/oskg/resource/paper/paper-0011> a oskg:Paper ;
+    oskg:citedByCount 24 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/benjamin-bolte>,
+        <http://example.org/oskg/resource/person/kushal-lakhotia>,
+        <http://example.org/oskg/resource/person/ruslan-salakhutdinov>,
+        <http://example.org/oskg/resource/person/todo-remaining-author>,
+        <http://example.org/oskg/resource/person/wei-ning-hsu>,
+        <http://example.org/oskg/resource/person/yao-hung-hubert-tsai> ;
+    oskg:hasDOI "10.48550/arXiv.2106.07447" ;
+    oskg:hasURL <https://arxiv.org/abs/2106.07447> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Cluster analysis",
+        "Computer science",
+        "Consistency (knowledge bases)",
+        "Representation (politics)" ;
+    oskg:openAlexId "W4287119707" ;
+    oskg:publicationYear "2021"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0011" ;
+    dcterms:title "HuBERT: Self-Supervised Speech Representation Learning by Masked Prediction of Hidden Units" ;
+    owl:sameAs <https://openalex.org/W4287119707> .
+
+<http://example.org/oskg/resource/paper/paper-0012> a oskg:Paper ;
+    oskg:citedByCount 963 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/james-glass>,
+        <http://example.org/oskg/resource/person/yu-an-chung>,
+        <http://example.org/oskg/resource/person/yuan-gong> ;
+    oskg:hasDOI "10.21437/interspeech.2021-698" ;
+    oskg:hasURL <https://doi.org/10.21437/interspeech.2021-698> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Computer science",
+        "Electrical engineering",
+        "Spectrogram",
+        "Speech recognition",
+        "Transformer" ;
+    oskg:openAlexId "W3196974791" ;
+    oskg:publicationYear "2021"^^xsd:gYear ;
+    dcterms:identifier "PAPER_0012" ;
+    dcterms:title "AST: Audio Spectrogram Transformer" ;
+    owl:sameAs <https://openalex.org/W3196974791> .
+
+<http://example.org/oskg/resource/paper/paper-0013> a oskg:Paper ;
+    oskg:citedByCount 6549 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/ashish-vaswani>,
+        <http://example.org/oskg/resource/person/jakob-uszkoreit>,
+        <http://example.org/oskg/resource/person/llion-jones>,
+        <http://example.org/oskg/resource/person/niki-parmar>,
+        <http://example.org/oskg/resource/person/noam-shazeer>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors> ;
+    oskg:hasDOI "10.48550/arXiv.1706.03762" ;
+    oskg:hasURL <https://arxiv.org/abs/1706.03762> ;
+    oskg:openAccessStatus "gold" ;
+    oskg:openAlexConcept "BLEU",
+        "Computer science",
+        "Encoder",
+        "Machine translation",
+        "Transformer" ;
+    oskg:openAlexId "W2626778328" ;
+    oskg:publicationYear "2017"^^xsd:gYear,
+        "2025"^^xsd:gYear ;
+    dcterms:identifier "PAPER_0013" ;
+    dcterms:title "Attention Is All You Need" ;
+    owl:sameAs <https://openalex.org/W2626778328> .
+
+<http://example.org/oskg/resource/paper/paper-0014> a oskg:Paper ;
+    oskg:citedByCount 0 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/jacob-devlin> ;
+    oskg:hasDOI "10.57702/xvg4jrkz" ;
+    oskg:hasURL <https://doi.org/10.57702/xvg4jrkz> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Engineering",
+        "Transformer",
+        "Troubleshooting" ;
+    oskg:openAlexId "W6973758909" ;
+    oskg:publicationYear "2024"^^xsd:gYear ;
+    oskg:venue "TIB Data Manager" ;
+    dcterms:identifier "PAPER_0014" ;
+    dcterms:title "BERT: Pre-training of deep bidirectional transformers for language understanding" ;
+    owl:sameAs <https://openalex.org/W6973758909> .
+
+<http://example.org/oskg/resource/paper/paper-0015> a oskg:Paper ;
+    oskg:citedByCount 3029 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/benjamin-mann>,
+        <http://example.org/oskg/resource/person/jared-kaplan>,
+        <http://example.org/oskg/resource/person/melanie-subbiah>,
+        <http://example.org/oskg/resource/person/nick-ryder>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors>,
+        <http://example.org/oskg/resource/person/tom-b-brown> ;
+    oskg:hasDOI "10.48550/arXiv.2005.14165" ;
+    oskg:hasURL <https://arxiv.org/abs/2005.14165> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Computer science",
+        "Language model",
+        "Natural language processing",
+        "Sentence",
+        "Task (project management)" ;
+    oskg:openAlexId "W3030163527" ;
+    oskg:publicationYear "2020"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0015" ;
+    dcterms:title "Language Models are Few-Shot Learners" ;
+    owl:sameAs <https://openalex.org/W3030163527> .
+
+<http://example.org/oskg/resource/paper/paper-0016> a oskg:Paper ;
+    oskg:citedByCount 3887 ;
+    oskg:hasDOI "TODO" ;
+    oskg:hasURL <TODO> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Computer science",
+        "Foundation (evidence)",
+        "Language model",
+        "Ranging",
+        "State (computer science)" ;
+    oskg:openAlexId "W4322718191" ;
+    oskg:publicationYear "2023"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0016" ;
+    dcterms:title "LLaMA: Open and Efficient Foundation Language Models" ;
+    owl:sameAs <https://openalex.org/W4322718191> .
+
+<http://example.org/oskg/resource/paper/paper-0017> a oskg:Paper ;
+    oskg:citedByCount 18 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/aleksandra-piktus>,
+        <http://example.org/oskg/resource/person/ethan-perez>,
+        <http://example.org/oskg/resource/person/fabio-petroni>,
+        <http://example.org/oskg/resource/person/patrick-lewis>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors>,
+        <http://example.org/oskg/resource/person/vladimir-karpukhin> ;
+    oskg:hasDOI "TODO" ;
+    oskg:hasURL <https://discovery.ucl.ac.uk/id/eprint/10100504/> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Language model",
+        "Parametric statistics",
+        "Task (project management)" ;
+    oskg:openAlexId "W3098425262" ;
+    oskg:publicationYear "2020"^^xsd:gYear ;
+    oskg:venue "UCL Discovery (University College London)" ;
+    dcterms:identifier "PAPER_0017" ;
+    dcterms:title "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" ;
+    owl:sameAs <https://openalex.org/W3098425262> .
+
+<http://example.org/oskg/resource/paper/paper-0018> a oskg:Paper ;
+    oskg:citedByCount 118 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/alisa-liu>,
+        <http://example.org/oskg/resource/person/noah-a-smith>,
+        <http://example.org/oskg/resource/person/swaroop-mishra>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors>,
+        <http://example.org/oskg/resource/person/yeganeh-kordi>,
+        <http://example.org/oskg/resource/person/yizhong-wang> ;
+    oskg:hasDOI "10.48550/arXiv.2212.10560" ;
+    oskg:hasURL <https://arxiv.org/abs/2212.10560> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Bootstrapping (finance)",
+        "Computer science",
+        "Generality",
+        "Language model",
+        "Pipeline (software)" ;
+    oskg:openAlexId "W4312091890" ;
+    oskg:publicationYear "2022"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0018" ;
+    dcterms:title "Self-Instruct: Aligning Language Models with Self-Generated Instructions" ;
+    owl:sameAs <https://openalex.org/W4312091890> .
+
+<http://example.org/oskg/resource/paper/paper-0019> a oskg:Paper ;
+    oskg:citedByCount 163 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/mitchell-stern>,
+        <http://example.org/oskg/resource/person/noam-shazeer> ;
+    oskg:hasDOI "10.48550/arXiv.1804.04235" ;
+    oskg:hasURL <https://arxiv.org/abs/1804.04235> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Computer science",
+        "Estimator",
+        "Scaling",
+        "Stochastic gradient descent",
+        "Sublinear function" ;
+    oskg:openAlexId "W2797328513" ;
+    oskg:publicationYear "2018"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0019" ;
+    dcterms:title "Adafactor: Adaptive Learning Rates with Sublinear Memory Cost" ;
+    owl:sameAs <https://openalex.org/W2797328513> .
+
+<http://example.org/oskg/resource/paper/paper-0020> a oskg:Paper ;
+    oskg:citedByCount 84665 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/diederik-p-kingma>,
+        <http://example.org/oskg/resource/person/jimmy-ba> ;
+    oskg:hasDOI "10.48550/arXiv.1412.6980" ;
+    oskg:hasURL <https://arxiv.org/abs/1412.6980> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Computer science",
+        "Convergence (economics)",
+        "Diagonal",
+        "Mathematical optimization",
+        "Regret" ;
+    oskg:openAlexId "W1522301498" ;
+    oskg:publicationYear "2014"^^xsd:gYear ;
+    oskg:venue "UvA-DARE (University of Amsterdam)" ;
+    dcterms:identifier "PAPER_0020" ;
+    dcterms:title "Adam: A Method for Stochastic Optimization" ;
+    owl:sameAs <https://openalex.org/W1522301498> .
+
+<http://example.org/oskg/resource/paper/paper-0021> a oskg:Paper ;
+    oskg:citedByCount 9081 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/frank-hutter>,
+        <http://example.org/oskg/resource/person/ilya-loshchilov> ;
+    oskg:hasDOI "10.48550/arXiv.1711.05101" ;
+    oskg:hasURL <https://arxiv.org/abs/1711.05101> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Mathematics",
+        "Physics",
+        "Regularization (linguistics)" ;
+    oskg:openAlexId "W2908510526" ;
+    oskg:publicationYear "2017"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0021" ;
+    dcterms:title "Decoupled Weight Decay Regularization" ;
+    owl:sameAs <https://openalex.org/W2908510526> .
+
+<http://example.org/oskg/resource/paper/paper-0022> a oskg:Paper ;
+    oskg:citedByCount 1307 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/timothy-dozat> ;
+    oskg:hasDOI "TODO" ;
+    oskg:hasURL <https://openreview.net/> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science" ;
+    oskg:openAlexId "W2903382683" ;
+    oskg:publicationYear "2016"^^xsd:gYear ;
+    dcterms:identifier "PAPER_0022" ;
+    dcterms:title "Incorporating Nesterov Momentum into Adam" ;
+    owl:sameAs <https://openalex.org/W2903382683> .
+
+<http://example.org/oskg/resource/paper/paper-0023> a oskg:Paper ;
+    oskg:citedByCount 167 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/chen-liang>,
+        <http://example.org/oskg/resource/person/da-huang>,
+        <http://example.org/oskg/resource/person/esteban-real>,
+        <http://example.org/oskg/resource/person/kaiyuan-wang>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors>,
+        <http://example.org/oskg/resource/person/xiangning-chen> ;
+    oskg:hasDOI "10.48550/arXiv.2302.06675" ;
+    oskg:hasURL <https://arxiv.org/abs/2302.06675> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Algorithm",
+        "Computer science",
+        "Generalization",
+        "Leverage (statistics)",
+        "Monotonic function" ;
+    oskg:openAlexId "W4321011699" ;
+    oskg:publicationYear "2023"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0023" ;
+    dcterms:title "Symbolic Discovery of Optimization Algorithms" ;
+    owl:sameAs <https://openalex.org/W4321011699> .
+
+<http://example.org/oskg/resource/paper/paper-0024> a oskg:Paper ;
+    oskg:citedByCount 508 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/jan-leike>,
+        <http://example.org/oskg/resource/person/miljan-martic>,
+        <http://example.org/oskg/resource/person/paul-christiano>,
+        <http://example.org/oskg/resource/person/shane-legg>,
+        <http://example.org/oskg/resource/person/todo-remaining-author>,
+        <http://example.org/oskg/resource/person/tom-b-brown> ;
+    oskg:hasDOI "10.48550/arXiv.1706.03741" ;
+    oskg:hasURL <https://arxiv.org/abs/1706.03741> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science",
+        "Flexibility (engineering)",
+        "Function (biology)",
+        "Reinforcement learning" ;
+    oskg:openAlexId "W2626804490" ;
+    oskg:publicationYear "2017"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0024" ;
+    dcterms:title "Deep reinforcement learning from human preferences" ;
+    owl:sameAs <https://openalex.org/W2626804490> .
+
+<http://example.org/oskg/resource/paper/paper-0025> a oskg:Paper ;
+    oskg:citedByCount 1 ;
+    oskg:hasDOI "TODO" ;
+    oskg:hasURL <TODO> ;
+    oskg:openAccessStatus "gold" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Automated reasoning",
+        "Computer science",
+        "Language model",
+        "Reinforcement learning" ;
+    oskg:openAlexId "W4416036797" ;
+    oskg:publicationYear "2025"^^xsd:gYear ;
+    dcterms:identifier "PAPER_0025" ;
+    dcterms:title "GRPO-LEAD: A Difficulty-Aware Reinforcement Learning Approach for Concise Mathematical Reasoning in Language Models" ;
+    owl:sameAs <https://openalex.org/W4416036797> .
+
+<http://example.org/oskg/resource/paper/paper-0026> a oskg:Paper ;
+    oskg:citedByCount 57 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/james-macglashan>,
+        <http://example.org/oskg/resource/person/melrose-roderick>,
+        <http://example.org/oskg/resource/person/stefanie-tellex> ;
+    oskg:hasDOI "10.48550/arXiv.1711.07478" ;
+    oskg:hasURL <https://arxiv.org/abs/1711.07478> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Computer science" ;
+    oskg:openAlexId "W2769169032" ;
+    oskg:publicationYear "2017"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0026" ;
+    dcterms:title "Implementing the Deep Q-Network" ;
+    owl:sameAs <https://openalex.org/W2769169032> .
+
+<http://example.org/oskg/resource/paper/paper-0027> a oskg:Paper ;
+    oskg:citedByCount 1 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/ioannis-antonoglou>,
+        <http://example.org/oskg/resource/person/julian-schrittwieser>,
+        <http://example.org/oskg/resource/person/karen-simonyan>,
+        <http://example.org/oskg/resource/person/laurent-sifre>,
+        <http://example.org/oskg/resource/person/thomas-hubert>,
+        <http://example.org/oskg/resource/person/todo-remaining-authors> ;
+    oskg:hasDOI "10.48550/arXiv.1911.08265" ;
+    oskg:hasURL <https://arxiv.org/abs/1911.08265> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Artificial intelligence",
+        "Automated planning and scheduling",
+        "Computer science",
+        "State (computer science)",
+        "Video game" ;
+    oskg:openAlexId "W6891756119" ;
+    oskg:publicationYear "2019"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0027" ;
+    dcterms:title "Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model" ;
+    owl:sameAs <https://openalex.org/W6891756119> .
+
+<http://example.org/oskg/resource/paper/paper-0028> a oskg:Paper ;
+    oskg:citedByCount 37 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/chao-wu>,
+        <http://example.org/oskg/resource/person/haiying-liu>,
+        <http://example.org/oskg/resource/person/wenjie-bi> ;
+    oskg:hasDOI "10.1016/j.eswa.2022.119191" ;
+    oskg:hasURL <https://doi.org/10.1016/j.eswa.2022.119191> ;
+    oskg:openAccessStatus "closed" ;
+    oskg:openAlexConcept "Computer science",
+        "Dynamic pricing",
+        "Promotion (chess)",
+        "Quality (philosophy)",
+        "Revenue" ;
+    oskg:openAlexId "W4308797462" ;
+    oskg:publicationYear "2022"^^xsd:gYear ;
+    oskg:venue "Expert Systems with Applications" ;
+    dcterms:identifier "PAPER_0028" ;
+    dcterms:title "Proximal policy optimization algorithm for dynamic pricing with online reviews" ;
+    owl:sameAs <https://openalex.org/W4308797462> .
+
+<http://example.org/oskg/resource/paper/paper-0029> a oskg:Paper ;
+    oskg:citedByCount 193 ;
+    oskg:hasDOI "TODO" ;
+    oskg:hasURL <TODO> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Codebase",
+        "Computer science",
+        "Context (archaeology)",
+        "Embodied cognition",
+        "Executable" ;
+    oskg:openAlexId "W4378505261" ;
+    oskg:publicationYear "2023"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0029" ;
+    dcterms:title "VOYAGER: An Open-Ended Embodied Agent with Large Language Models" ;
+    owl:sameAs <https://openalex.org/W4378505261> .
+
+<http://example.org/oskg/resource/paper/paper-0030> a oskg:Paper ;
+    oskg:citedByCount 0 ;
+    oskg:hasAuthor <http://example.org/oskg/resource/person/bo-liu>,
+        <http://example.org/oskg/resource/person/kaizhao-liang>,
+        <http://example.org/oskg/resource/person/lizhang-chen>,
+        <http://example.org/oskg/resource/person/qiang-liu> ;
+    oskg:hasDOI "10.48550/arXiv.2310.05898" ;
+    oskg:hasURL <https://arxiv.org/abs/2310.05898> ;
+    oskg:openAccessStatus "green" ;
+    oskg:openAlexConcept "Function (biology)",
+        "Operator (biology)",
+        "Range (aeronautics)",
+        "Sign (mathematics)",
+        "Subgradient method" ;
+    oskg:openAlexId "W4387560516" ;
+    oskg:publicationYear "2023"^^xsd:gYear ;
+    oskg:venue "arXiv (Cornell University)" ;
+    dcterms:identifier "PAPER_0030" ;
+    dcterms:title "Lion Secretly Solves Constrained Optimization: As Lyapunov Predicts" ;
+    owl:sameAs <https://openalex.org/W4387560516> .
+
+<http://example.org/oskg/resource/paper/segment-anything> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/person/aaron-adcock>,
+        <http://example.org/oskg/resource/person/ahuva-goldstand>,
+        <http://example.org/oskg/resource/person/allen-goodman>,
+        <http://example.org/oskg/resource/person/ashley-gabriel>,
+        <http://example.org/oskg/resource/person/bala-varadarajan>,
+        <http://example.org/oskg/resource/person/bram-wasti>,
+        <http://example.org/oskg/resource/person/cheng-yang-fu>,
+        <http://example.org/oskg/resource/person/devansh-kukreja>,
+        <http://example.org/oskg/resource/person/dirk-rowe>,
+        <http://example.org/oskg/resource/person/jiabo-hu>,
+        <http://example.org/oskg/resource/person/jitendra-malik>,
+        <http://example.org/oskg/resource/person/joshua-lane>,
+        <http://example.org/oskg/resource/person/lilian-luong>,
+        <http://example.org/oskg/resource/person/mallika-malhotra>,
+        <http://example.org/oskg/resource/person/morteza-behrooz>,
+        <http://example.org/oskg/resource/person/neil-sejoor>,
+        <http://example.org/oskg/resource/person/nikhil-raina>,
+        <http://example.org/oskg/resource/person/omkar-parkhi>,
+        <http://example.org/oskg/resource/person/robert-kuo>,
+        <http://example.org/oskg/resource/person/somya-jain>,
+        <http://example.org/oskg/resource/person/sumanth-gurram>,
+        <http://example.org/oskg/resource/person/vaibhav-aggarwal>,
+        <http://example.org/oskg/resource/person/vanessa-stark>,
+        <http://example.org/oskg/resource/person/william-ngan>,
+        <http://example.org/oskg/resource/person/yanghao-li>,
+        <http://example.org/oskg/resource/person/zachary-winstrom> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/2> ;
+    dcterms:abstract "Meta AI Research, FAIR (b) Model: Segment Anything Model (SAM) prompt image valid mask image encoder prompt encoder lightweight mask decoder (a) Task: promptable segmentation segmentation prompt image model cat with black ears" ;
+    dcterms:identifier "Segment Anything" .
+
+<http://example.org/oskg/resource/paper/voyager-an-open-ended-embodied-agent> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/caltech>,
+        <http://example.org/oskg/resource/org/nvidia>,
+        <http://example.org/oskg/resource/person/charles-zhang>,
+        <http://example.org/oskg/resource/person/colin-white>,
+        <http://example.org/oskg/resource/person/de-an-huang>,
+        <http://example.org/oskg/resource/person/guanzhi-wang>,
+        <http://example.org/oskg/resource/person/jean-kossaifi>,
+        <http://example.org/oskg/resource/person/kaiyu-yang>,
+        <http://example.org/oskg/resource/person/kortschak>,
+        <http://example.org/oskg/resource/person/minchao-huang>,
+        <http://example.org/oskg/resource/person/or-sharir>,
+        <http://example.org/oskg/resource/person/rafa-kocielnik>,
+        <http://example.org/oskg/resource/person/sahin-lale>,
+        <http://example.org/oskg/resource/person/yuncong-yang>,
+        <http://example.org/oskg/resource/person/ziming-zhu> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/4> ;
+    dcterms:abstract "We introduce VOYAGER, the first LLM-powered embodied lifelong learning agent in Minecraft that continuously explores the world, acquires diverse skills, and makes novel discoveries without human intervention. VOYAGER consists of three key components: 1) an automatic curriculum that maximizes exploration, 2) an ever-growing skill library of executable code for storing and retrieving complex behaviors, and 3) a new iterative prompting mechanism that incorporates environment feedback, execution errors, and self-verification for program improvement. VOYAGER interacts with GPT-4 via blackbox queries, which bypasses the need for model parameter fine-tuning. The skills developed by VOYAGER are temporally extended, interpretable, and compositional, which compounds the agent's abilities rapidly and alleviates catastrophic forgetting. Empirically, VOYAGER shows strong in-context lifelong learning capability and exhibits exceptional proficiency in playing Minecraft. It obtains 3.3× more unique items, travels 2.3× longer distances, and unlocks key tech tree milestones up to 15.3× faster than prior SOTA. VOYAGER is able to utilize the learned skill library in a new Minecraft world to solve novel tasks from scratch, while other techniques struggle to generalize." ;
+    dcterms:identifier "VOYAGER An Open-Ended Embodied Agent" .
+
+<http://example.org/oskg/resource/similarity/adam-a-method-for-stochastic-optimization__incorporating-nesterov-momentum-into-adam> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.711777 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/adam-a-method-for-stochastic-optimization> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/incorporating-nesterov-momentum-into-adam> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/attention-is-all-you-need__bert-pretraining-of-deep-bidirectional-transformers-for> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.669575 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/attention-is-all-you-need> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/bert-pretraining-of-deep-bidirectional-transformers-for> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/bert-pretraining-of-deep-bidirectional-transformers-for__retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.653247 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/bert-pretraining-of-deep-bidirectional-transformers-for> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/deep-reinforcement-learning-from-human-preferences__proximal-policy-optimization-algorithms> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.666052 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/deep-reinforcement-learning-from-human-preferences> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/proximal-policy-optimization-algorithms> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/end-to-end-object-detection-with-transformers__learning-transferable-visual-models-from-natural-language-supervision> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.685425 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/end-to-end-object-detection-with-transformers> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/learning-transferable-visual-models-from-natural-language-supervision> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/hubert-self-supervised-speech-representation__wav2vec-2-0-a-framework-for-self-supervised> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.655833 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/hubert-self-supervised-speech-representation> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/wav2vec-2-0-a-framework-for-self-supervised> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/incorporating-nesterov-momentum-into-adam__symbolic-discovery-of-optimization-algorithms> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.658272 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/incorporating-nesterov-momentum-into-adam> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/symbolic-discovery-of-optimization-algorithms> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/language-models-are-few-shot-learners__self-instruct-aligning-language-models> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.684884 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/language-models-are-few-shot-learners> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/self-instruct-aligning-language-models> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/lion-secretly-solves-constrained-optimization-as-lyapunov-predicts__symbolic-discovery-of-optimization-algorithms> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.720065 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/lion-secretly-solves-constrained-optimization-as-lyapunov-predicts> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/symbolic-discovery-of-optimization-algorithms> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/similarity/robust-speech-recognition-via-large-scale-weak-supervision__wav2vec-2-0-a-framework-for-self-supervised> a oskg:SimilarityRelation ;
+    oskg:similarityScore 0.65868 ;
+    oskg:sourcePaper <http://example.org/oskg/resource/paper/robust-speech-recognition-via-large-scale-weak-supervision> ;
+    oskg:targetPaper <http://example.org/oskg/resource/paper/wav2vec-2-0-a-framework-for-self-supervised> ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/activity/kg-construction> a prov:Activity ;
+    oskg:usedModel "ner: Jean-Baptiste/roberta-large-ner-english",
+        "similarity: sentence-transformers/all-MiniLM-L6-v2",
+        "topic: sentence-transformers/all-MiniLM-L6-v2" .
+
+<http://example.org/oskg/resource/org/ai2> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "AI2" .
+
+<http://example.org/oskg/resource/org/allennlp> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "AllenNLP" .
+
+<http://example.org/oskg/resource/org/bwhpc> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "bwHPC" .
+
+<http://example.org/oskg/resource/org/caltech> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Caltech" .
+
+<http://example.org/oskg/resource/org/darpa> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "DARPA" .
+
+<http://example.org/oskg/resource/org/dfg> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "DFG" .
+
+<http://example.org/oskg/resource/org/ep> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "EP" .
+
+<http://example.org/oskg/resource/org/erc> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    oskg:wikidataId "Q5324029" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5324029> ;
+    foaf:name "ERC" .
+
+<http://example.org/oskg/resource/org/european-research-council> a oskg:Organization ;
+    oskg:country "Belgium" ;
+    oskg:officialWebsite <https://erc.europa.eu/> ;
+    oskg:rorId "https://ror.org/0472cxd90" ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    oskg:wikidataId "Q1377836" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1377836>,
+        <https://ror.org/0472cxd90> ;
+    foaf:name "European Research Council" .
+
+<http://example.org/oskg/resource/org/european-union> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "European Union" .
+
+<http://example.org/oskg/resource/org/facebook-ai-research-paris> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Facebook AI Research Paris" .
+
+<http://example.org/oskg/resource/org/google> a oskg:Organization ;
+    oskg:country "United States" ;
+    oskg:officialWebsite <https://about.google/> ;
+    oskg:rorId "https://ror.org/00njsd438" ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    oskg:wikidataId "Q95" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q95>,
+        <https://ror.org/00njsd438> ;
+    foaf:name "Google" .
+
+<http://example.org/oskg/resource/org/google-brain> a oskg:Organization ;
+    oskg:country "United States" ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    oskg:wikidataId "Q16927616" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q16927616> ;
+    foaf:name "Google Brain" .
+
+<http://example.org/oskg/resource/org/google-tts> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Google TTS" .
+
+<http://example.org/oskg/resource/org/huggingface> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "HuggingFace" .
+
+<http://example.org/oskg/resource/org/machine-hearing> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Machine Hearing" .
+
+<http://example.org/oskg/resource/org/microsoft> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Microsoft" .
+
+<http://example.org/oskg/resource/org/niwc-pacific> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "NIWC Pacific" .
+
+<http://example.org/oskg/resource/org/nsf> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "NSF" .
+
+<http://example.org/oskg/resource/org/nvidia> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "NVIDIA" .
+
+<http://example.org/oskg/resource/org/onr> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "ONR" .
+
+<http://example.org/oskg/resource/org/pl> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "PL" .
+
+<http://example.org/oskg/resource/org/signify> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Signify" .
+
+<http://example.org/oskg/resource/org/tensor2tensor> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Tensor2Tensor" .
+
+<http://example.org/oskg/resource/org/the-hong-kong-university-of-science-and-technology> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "The Hong Kong University of Science and Technology" .
+
+<http://example.org/oskg/resource/org/uwnlp> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "UWNLP" .
+
+<http://example.org/oskg/resource/org/xformers> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "xformers" .
+
+<http://example.org/oskg/resource/person/a-ron-van-den-oord> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Aäron van den Oord" .
+
+<http://example.org/oskg/resource/person/aaron-adcock> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Aaron Adcock" .
+
+<http://example.org/oskg/resource/person/abadi> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Abadi" .
+
+<http://example.org/oskg/resource/person/abdelrahman-mohamed> a oskg:Person ;
+    foaf:name "Abdelrahman Mohamed" .
+
+<http://example.org/oskg/resource/person/aditya-ramesh> a oskg:Person ;
+    foaf:name "Aditya Ramesh" .
+
+<http://example.org/oskg/resource/person/ahuva-goldstand> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ahuva Goldstand" .
+
+<http://example.org/oskg/resource/person/aleksandra-piktus> a oskg:Person ;
+    foaf:name "Aleksandra Piktus" .
+
+<http://example.org/oskg/resource/person/alexander-kolesnikov> a oskg:Person ;
+    foaf:name "Alexander Kolesnikov" .
+
+<http://example.org/oskg/resource/person/alexei-baevski> a oskg:Person ;
+    foaf:name "Alexei Baevski" .
+
+<http://example.org/oskg/resource/person/alexey-dosovitskiy> a oskg:Person ;
+    foaf:name "Alexey Dosovitskiy" .
+
+<http://example.org/oskg/resource/person/alisa-liu> a oskg:Person ;
+    foaf:name "Alisa Liu" .
+
+<http://example.org/oskg/resource/person/allen-goodman> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Allen Goodman" .
+
+<http://example.org/oskg/resource/person/anand-saha> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Anand Saha" .
+
+<http://example.org/oskg/resource/person/andreas-steiner> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Andreas Steiner" .
+
+<http://example.org/oskg/resource/person/andrej-karpathy> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Andrej Karpathy" .
+
+<http://example.org/oskg/resource/person/andrew-carr> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Andrew Carr" .
+
+<http://example.org/oskg/resource/person/angel-yu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Angel Yu" .
+
+<http://example.org/oskg/resource/person/aravindh-mahendran> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Aravindh Mahendran" .
+
+<http://example.org/oskg/resource/person/artem-korenev> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Artem Korenev" .
+
+<http://example.org/oskg/resource/person/ashley-gabriel> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ashley Gabriel" .
+
+<http://example.org/oskg/resource/person/bala-varadarajan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Bala Varadarajan" .
+
+<http://example.org/oskg/resource/person/benjamin-bolte> a oskg:Person ;
+    foaf:name "Benjamin Bolte" .
+
+<http://example.org/oskg/resource/person/benjamin-mann> a oskg:Person ;
+    foaf:name "Benjamin Mann" .
+
+<http://example.org/oskg/resource/person/bilal-piot> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Bilal Piot" .
+
+<http://example.org/oskg/resource/person/bo-liu> a oskg:Person ;
+    foaf:name "Bo Liu" .
+
+<http://example.org/oskg/resource/person/boqing-gong> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Boqing Gong" .
+
+<http://example.org/oskg/resource/person/bram-wasti> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Bram Wasti" .
+
+<http://example.org/oskg/resource/person/brooke-chan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Brooke Chan" .
+
+<http://example.org/oskg/resource/person/chao-wu> a oskg:Person ;
+    foaf:name "Chao Wu" .
+
+<http://example.org/oskg/resource/person/charles-zhang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Charles Zhang" .
+
+<http://example.org/oskg/resource/person/chelsea-voss> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Chelsea Voss" .
+
+<http://example.org/oskg/resource/person/chen-cheng> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Chen Cheng" .
+
+<http://example.org/oskg/resource/person/chen-liang> a oskg:Person ;
+    foaf:name "Chen Liang" .
+
+<http://example.org/oskg/resource/person/cheng-yang-fu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Cheng-Yang Fu" .
+
+<http://example.org/oskg/resource/person/chitwan-saharia> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Chitwan Saharia" .
+
+<http://example.org/oskg/resource/person/chloe-rolland> a oskg:Person ;
+    foaf:name "Chloe Rolland" .
+
+<http://example.org/oskg/resource/person/chris-apps> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Chris Apps" .
+
+<http://example.org/oskg/resource/person/christine-mcleavey> a oskg:Person ;
+    foaf:name "Christine McLeavey" .
+
+<http://example.org/oskg/resource/person/colin-raffel> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Colin Raffel" .
+
+<http://example.org/oskg/resource/person/colin-white> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Colin White" .
+
+<http://example.org/oskg/resource/person/da-huang> a oskg:Person ;
+    foaf:name "Da Huang" .
+
+<http://example.org/oskg/resource/person/daiyi-peng> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Daiyi Peng" .
+
+<http://example.org/oskg/resource/person/daniel-haziza> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Daniel Haziza" .
+
+<http://example.org/oskg/resource/person/daniel-keysers> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Daniel Keysers" .
+
+<http://example.org/oskg/resource/person/danielle-rothermel> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Danielle Rothermel" .
+
+<http://example.org/oskg/resource/person/david-lopez-paz> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "David Lopez-Paz" .
+
+<http://example.org/oskg/resource/person/david-luan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "David Luan" .
+
+<http://example.org/oskg/resource/person/david-so> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "David So" .
+
+<http://example.org/oskg/resource/person/de-an-huang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "De-An Huang" .
+
+<http://example.org/oskg/resource/person/devansh-kukreja> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Devansh Kukreja" .
+
+<http://example.org/oskg/resource/person/diederik-p-kingma> a oskg:Person ;
+    foaf:name "Diederik P. Kingma" .
+
+<http://example.org/oskg/resource/person/dirk-rowe> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Dirk Rowe" .
+
+<http://example.org/oskg/resource/person/dirk-weissenborn> a oskg:Person ;
+    foaf:name "Dirk Weissenborn" .
+
+<http://example.org/oskg/resource/person/dmitry-lepikhin> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Dmitry Lepikhin" .
+
+<http://example.org/oskg/resource/person/eric-mintun> a oskg:Person ;
+    foaf:name "Eric Mintun" .
+
+<http://example.org/oskg/resource/person/eric-wallace> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Eric Wallace" .
+
+<http://example.org/oskg/resource/person/esteban-real> a oskg:Person ;
+    foaf:name "Esteban Real" .
+
+<http://example.org/oskg/resource/person/ethan-perez> a oskg:Person ;
+    foaf:name "Ethan Perez" .
+
+<http://example.org/oskg/resource/person/fabio-petroni> a oskg:Person ;
+    foaf:name "Fabio Petroni" .
+
+<http://example.org/oskg/resource/person/feng-li> a oskg:Person ;
+    foaf:name "Feng Li" .
+
+<http://example.org/oskg/resource/person/frank-hutter> a oskg:Person ;
+    foaf:name "Frank Hutter" .
+
+<http://example.org/oskg/resource/person/gabriel-goh> a oskg:Person ;
+    foaf:name "Gabriel Goh" .
+
+<http://example.org/oskg/resource/person/gabriel-synnaeve> a oskg:Person ;
+    foaf:name "Gabriel Synnaeve" .
+
+<http://example.org/oskg/resource/person/geoffrey-hinton> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Geoffrey Hinton" .
+
+<http://example.org/oskg/resource/person/geoffrey-irving> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Geoffrey Irving" .
+
+<http://example.org/oskg/resource/person/gillian-hadfield> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Gillian Hadfield" .
+
+<http://example.org/oskg/resource/person/glambard> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "GLambard" .
+
+<http://example.org/oskg/resource/person/guanzhi-wang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Guanzhi Wang" .
+
+<http://example.org/oskg/resource/person/guillaume-lambard> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Guillaume Lambard" .
+
+<http://example.org/oskg/resource/person/guillaume-lample> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Guillaume Lample" .
+
+<http://example.org/oskg/resource/person/haiying-liu> a oskg:Person ;
+    foaf:name "Haiying Liu" .
+
+<http://example.org/oskg/resource/person/hanxiao-liu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Hanxiao Liu" .
+
+<http://example.org/oskg/resource/person/hanzhao-lin> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Hanzhao Lin" .
+
+<http://example.org/oskg/resource/person/hanzi-mao> a oskg:Person ;
+    foaf:name "Hanzi Mao" .
+
+<http://example.org/oskg/resource/person/hao-zhang> a oskg:Person ;
+    foaf:name "Hao Zhang" .
+
+<http://example.org/oskg/resource/person/haotian-zhang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Haotian Zhang" .
+
+<http://example.org/oskg/resource/person/harrison-edwards> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Harrison Edwards" .
+
+<http://example.org/oskg/resource/person/he-cao> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "He Cao" .
+
+<http://example.org/oskg/resource/person/heather-tran> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Heather Tran" .
+
+<http://example.org/oskg/resource/person/heiga-zen> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Heiga Zen" .
+
+<http://example.org/oskg/resource/person/igor-mordatch> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Igor Mordatch" .
+
+<http://example.org/oskg/resource/person/ilya-loshchilov> a oskg:Person ;
+    foaf:name "Ilya Loshchilov" .
+
+<http://example.org/oskg/resource/person/ioannis-antonoglou> a oskg:Person ;
+    foaf:name "Ioannis Antonoglou" .
+
+<http://example.org/oskg/resource/person/ishaan-gulrajani> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ishaan Gulrajani" .
+
+<http://example.org/oskg/resource/person/jack-clark> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jack Clark" .
+
+<http://example.org/oskg/resource/person/jacob-devlin> a oskg:Person ;
+    foaf:name "Jacob Devlin" .
+
+<http://example.org/oskg/resource/person/jakob-uszkoreit> a oskg:Person ;
+    foaf:name "Jakob Uszkoreit" .
+
+<http://example.org/oskg/resource/person/jakub-pachocki> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jakub Pachocki" .
+
+<http://example.org/oskg/resource/person/james-glass> a oskg:Person ;
+    foaf:name "James Glass" .
+
+<http://example.org/oskg/resource/person/james-macglashan> a oskg:Person ;
+    foaf:name "James MacGlashan" .
+
+<http://example.org/oskg/resource/person/jan-chorowski> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jan Chorowski" .
+
+<http://example.org/oskg/resource/person/jan-leike> a oskg:Person ;
+    foaf:name "Jan Leike" .
+
+<http://example.org/oskg/resource/person/jane-yu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jane Yu" .
+
+<http://example.org/oskg/resource/person/jared-kaplan> a oskg:Person ;
+    foaf:name "Jared Kaplan" .
+
+<http://example.org/oskg/resource/person/jean-kossaifi> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jean Kossaifi" .
+
+<http://example.org/oskg/resource/person/jeff-lund> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jeff Lund" .
+
+<http://example.org/oskg/resource/person/jeremy-howard> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jeremy Howard" .
+
+<http://example.org/oskg/resource/person/jeremy-reizenstein> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jeremy Reizenstein" .
+
+<http://example.org/oskg/resource/person/jessica-richards> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jessica Richards" .
+
+<http://example.org/oskg/resource/person/jiabo-hu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jiabo Hu" .
+
+<http://example.org/oskg/resource/person/jiahui-yu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jiahui Yu" .
+
+<http://example.org/oskg/resource/person/jianhua-han> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jianhua Han" .
+
+<http://example.org/oskg/resource/person/jimmy-ba> a oskg:Person ;
+    foaf:name "Jimmy Ba" .
+
+<http://example.org/oskg/resource/person/jingru-xu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jingru Xu" .
+
+<http://example.org/oskg/resource/person/jitendra-malik> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Jitendra Malik" .
+
+<http://example.org/oskg/resource/person/joan-puigcerver> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Joan Puigcerver" .
+
+<http://example.org/oskg/resource/person/jonathan-shen> a oskg:Person ;
+    foaf:name "Jonathan Shen" .
+
+<http://example.org/oskg/resource/person/joshua-lane> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Joshua Lane" .
+
+<http://example.org/oskg/resource/person/julian-grady> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Julian Grady" .
+
+<http://example.org/oskg/resource/person/julian-schrittwieser> a oskg:Person ;
+    foaf:name "Julian Schrittwieser" .
+
+<http://example.org/oskg/resource/person/junyang-shen> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Junyang Shen" .
+
+<http://example.org/oskg/resource/person/kaiyu-yang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Kaiyu Yang" .
+
+<http://example.org/oskg/resource/person/kaiyuan-wang> a oskg:Person ;
+    foaf:name "Kaiyuan Wang" .
+
+<http://example.org/oskg/resource/person/kaizhao-liang> a oskg:Person ;
+    foaf:name "Kaizhao Liang" .
+
+<http://example.org/oskg/resource/person/kalyan-saladi> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Kalyan Saladi" .
+
+<http://example.org/oskg/resource/person/karen-simonyan> a oskg:Person ;
+    foaf:name "Karen Simonyan" .
+
+<http://example.org/oskg/resource/person/kashif-rasul> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Kashif Rasul" .
+
+<http://example.org/oskg/resource/person/kevin-regan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Kevin Regan" .
+
+<http://example.org/oskg/resource/person/koray-kavukcuoglu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Koray Kavukcuoglu" .
+
+<http://example.org/oskg/resource/person/kortschak> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Kortschak" .
+
+<http://example.org/oskg/resource/person/kushal-lakhotia> a oskg:Person ;
+    foaf:name "Kushal Lakhotia" .
+
+<http://example.org/oskg/resource/person/kyunghyun-cho> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Kyunghyun Cho" .
+
+<http://example.org/oskg/resource/person/laurent-orseau> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Laurent Orseau" .
+
+<http://example.org/oskg/resource/person/laurent-sifre> a oskg:Person ;
+    foaf:name "Laurent Sifre" .
+
+<http://example.org/oskg/resource/person/li-sheng> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Li Sheng" .
+
+<http://example.org/oskg/resource/person/lilian-luong> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Lilian Luong" .
+
+<http://example.org/oskg/resource/person/liu-yang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Liu Yang" .
+
+<http://example.org/oskg/resource/person/liunian-harold-li> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Liunian Harold Li" .
+
+<http://example.org/oskg/resource/person/lizhang-chen> a oskg:Person ;
+    foaf:name "Lizhang Chen" .
+
+<http://example.org/oskg/resource/person/llion-jones> a oskg:Person ;
+    foaf:name "Llion Jones" .
+
+<http://example.org/oskg/resource/person/long-ouyang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Long Ouyang" .
+
+<http://example.org/oskg/resource/person/lorrayne-bennett> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Lorrayne Bennett" .
+
+<http://example.org/oskg/resource/person/luca-wehrstedt> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Luca Wehrstedt" .
+
+<http://example.org/oskg/resource/person/lucas-beyer> a oskg:Person ;
+    foaf:name "Lucas Beyer" .
+
+<http://example.org/oskg/resource/person/mallika-malhotra> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Mallika Malhotra" .
+
+<http://example.org/oskg/resource/person/mandy-beri> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Mandy Beri" .
+
+<http://example.org/oskg/resource/person/mario-lu-i> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Mario Lučić" .
+
+<http://example.org/oskg/resource/person/martin-v-lker> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Martin Völker" .
+
+<http://example.org/oskg/resource/person/martin-wicke> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Martin Wicke" .
+
+<http://example.org/oskg/resource/person/matthew-lai> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Matthew Lai" .
+
+<http://example.org/oskg/resource/person/matthias-feurer> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Matthias Feurer" .
+
+<http://example.org/oskg/resource/person/maxim-neumann> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Maxim Neumann" .
+
+<http://example.org/oskg/resource/person/melanie-subbiah> a oskg:Person ;
+    foaf:name "Melanie Subbiah" .
+
+<http://example.org/oskg/resource/person/melrose-roderick> a oskg:Person ;
+    foaf:name "Melrose Roderick" .
+
+<http://example.org/oskg/resource/person/michael-auli> a oskg:Person ;
+    foaf:name "Michael Auli" .
+
+<http://example.org/oskg/resource/person/michael-petrov> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Michael Petrov" .
+
+<http://example.org/oskg/resource/person/mike-schuster> a oskg:Person ;
+    foaf:name "Mike Schuster" .
+
+<http://example.org/oskg/resource/person/miles-brundage> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Miles Brundage" .
+
+<http://example.org/oskg/resource/person/miljan-martic> a oskg:Person ;
+    foaf:name "Miljan Martic" .
+
+<http://example.org/oskg/resource/person/minchao-huang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Minchao Huang" .
+
+<http://example.org/oskg/resource/person/mingxing-tan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Mingxing Tan" .
+
+<http://example.org/oskg/resource/person/mitchell-stern> a oskg:Person ;
+    foaf:name "Mitchell Stern" .
+
+<http://example.org/oskg/resource/person/mohammad-norouzi> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Mohammad Norouzi" .
+
+<http://example.org/oskg/resource/person/morteza-behrooz> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Morteza Behrooz" .
+
+<http://example.org/oskg/resource/person/nal-kalchbrenner> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Nal Kalchbrenner" .
+
+<http://example.org/oskg/resource/person/natalia-neverova> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Natalia Neverova" .
+
+<http://example.org/oskg/resource/person/navdeep-jaitly> a oskg:Person ;
+    foaf:name "Navdeep Jaitly" .
+
+<http://example.org/oskg/resource/person/neil-sejoor> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Neil Sejoor" .
+
+<http://example.org/oskg/resource/person/nenad-tomasev> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Nenad Tomasev" .
+
+<http://example.org/oskg/resource/person/nicolas-carion> a oskg:Person ;
+    foaf:name "Nicolas Carion" .
+
+<http://example.org/oskg/resource/person/nicolas-usunier> a oskg:Person ;
+    foaf:name "Nicolas Usunier" .
+
+<http://example.org/oskg/resource/person/nikhil-raina> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Nikhil Raina" .
+
+<http://example.org/oskg/resource/person/nikhila-ravi> a oskg:Person ;
+    foaf:name "Nikhila Ravi" .
+
+<http://example.org/oskg/resource/person/niki-parmar> a oskg:Person ;
+    foaf:name "Niki Parmar" .
+
+<http://example.org/oskg/resource/person/noah-a-smith> a oskg:Person ;
+    foaf:name "Noah A. Smith" .
+
+<http://example.org/oskg/resource/person/ofir-press> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ofir Press" .
+
+<http://example.org/oskg/resource/person/oliver-smith> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Oliver Smith" .
+
+<http://example.org/oskg/resource/person/olivier-pietquin> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Olivier Pietquin" .
+
+<http://example.org/oskg/resource/person/omkar-parkhi> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Omkar Parkhi" .
+
+<http://example.org/oskg/resource/person/or-sharir> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Or Sharir" .
+
+<http://example.org/oskg/resource/person/owain-evans> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Owain Evans" .
+
+<http://example.org/oskg/resource/person/pamela-mishkin> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Pamela Mishkin" .
+
+<http://example.org/oskg/resource/person/patrick-labatut> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Patrick Labatut" .
+
+<http://example.org/oskg/resource/person/patrick-lewis> a oskg:Person ;
+    foaf:name "Patrick Lewis" .
+
+<http://example.org/oskg/resource/person/patryk-chrabaszcz> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Patryk Chrabaszcz" .
+
+<http://example.org/oskg/resource/person/pedro-ortega> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Pedro Ortega" .
+
+<http://example.org/oskg/resource/person/pengchuan-zhang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Pengchuan Zhang" .
+
+<http://example.org/oskg/resource/person/peter-chen> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Peter Chen" .
+
+<http://example.org/oskg/resource/person/phil-jund> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Phil Jund" .
+
+<http://example.org/oskg/resource/person/pierre-emmanuel-mazar> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Pierre-Emmanuel Mazaré" .
+
+<http://example.org/oskg/resource/person/piotr-bojanowski> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Piotr Bojanowski" .
+
+<http://example.org/oskg/resource/person/piotr-doll-r> a oskg:Person ;
+    foaf:name "Piotr Dollár" .
+
+<http://example.org/oskg/resource/person/qiang-liu> a oskg:Person ;
+    foaf:name "Qiang Liu" .
+
+<http://example.org/oskg/resource/person/qiantong-xu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Qiantong Xu" .
+
+<http://example.org/oskg/resource/person/qiqi-yan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Qiqi Yan" .
+
+<http://example.org/oskg/resource/person/rafa-kocielnik> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Rafał Kocielnik" .
+
+<http://example.org/oskg/resource/person/rakesh-shivanna> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Rakesh Shivanna" .
+
+<http://example.org/oskg/resource/person/robert-kuo> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Robert Kuo" .
+
+<http://example.org/oskg/resource/person/robin-schirrmeister> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Robin Schirrmeister" .
+
+<http://example.org/oskg/resource/person/rocky-duan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Rocky Duan" .
+
+<http://example.org/oskg/resource/person/rohan-anil> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Rohan Anil" .
+
+<http://example.org/oskg/resource/person/ron-j-weiss> a oskg:Person ;
+    foaf:name "Ron J. Weiss" .
+
+<http://example.org/oskg/resource/person/ross-girshick> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ross Girshick" .
+
+<http://example.org/oskg/resource/person/ruiqi-gao> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ruiqi Gao" .
+
+<http://example.org/oskg/resource/person/ruoming-pang> a oskg:Person ;
+    foaf:name "Ruoming Pang" .
+
+<http://example.org/oskg/resource/person/ruslan-salakhutdinov> a oskg:Person ;
+    foaf:name "Ruslan Salakhutdinov" .
+
+<http://example.org/oskg/resource/person/ryan-lowe> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ryan Lowe" .
+
+<http://example.org/oskg/resource/person/sahin-lale> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Sahin Lale" .
+
+<http://example.org/oskg/resource/person/sainbayar-sukhbaatar> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Sainbayar Sukhbaatar" .
+
+<http://example.org/oskg/resource/person/saining-xie> a oskg:Person ;
+    foaf:name "Saining Xie" .
+
+<http://example.org/oskg/resource/person/samy-bengio> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Samy Bengio" .
+
+<http://example.org/oskg/resource/person/sgugger> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "sgugger" .
+
+<http://example.org/oskg/resource/person/shan-carter> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Shan Carter" .
+
+<http://example.org/oskg/resource/person/shane-legg> a oskg:Person ;
+    foaf:name "Shane Legg" .
+
+<http://example.org/oskg/resource/person/shilong-liu> a oskg:Person ;
+    foaf:name "Shilong Liu" .
+
+<http://example.org/oskg/resource/person/shubho-sengupta> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Shubho Sengupta" .
+
+<http://example.org/oskg/resource/person/somya-jain> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Somya Jain" .
+
+<http://example.org/oskg/resource/person/stefanie-tellex> a oskg:Person ;
+    foaf:name "Stefanie Tellex" .
+
+<http://example.org/oskg/resource/person/stephan-gouws> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Stephan Gouws" .
+
+<http://example.org/oskg/resource/person/stephen-roller> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Stephen Roller" .
+
+<http://example.org/oskg/resource/person/steve-li> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Steve Li" .
+
+<http://example.org/oskg/resource/person/sumanth-gurram> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Sumanth Gurram" .
+
+<http://example.org/oskg/resource/person/sumedh-ghaisas> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Sumedh Ghaisas" .
+
+<http://example.org/oskg/resource/person/swaroop-mishra> a oskg:Person ;
+    foaf:name "Swaroop Mishra" .
+
+<http://example.org/oskg/resource/person/sylvain-gugger> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Sylvain Gugger" .
+
+<http://example.org/oskg/resource/person/szymon-sidor> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Szymon Sidor" .
+
+<http://example.org/oskg/resource/person/tao-xu> a oskg:Person ;
+    foaf:name "Tao Xu" .
+
+<http://example.org/oskg/resource/person/tatiana-likhomanenko> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Tatiana Likhomanenko" .
+
+<http://example.org/oskg/resource/person/thomas-anthony> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Thomas Anthony" .
+
+<http://example.org/oskg/resource/person/thomas-hubert> a oskg:Person ;
+    foaf:name "Thomas Hubert" .
+
+<http://example.org/oskg/resource/person/tiancheng-zhao> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Tiancheng Zhao" .
+
+<http://example.org/oskg/resource/person/tianhe-ren> a oskg:Person ;
+    foaf:name "Tianhe Ren" .
+
+<http://example.org/oskg/resource/person/timothy-dozat> a oskg:Person ;
+    foaf:name "Timothy Dozat" .
+
+<http://example.org/oskg/resource/person/tonio-ball> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Tonio Ball" .
+
+<http://example.org/oskg/resource/person/tyler-adkisson> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Tyler Adkisson" .
+
+<http://example.org/oskg/resource/person/ukasz-kaiser> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Łukasz Kaiser" .
+
+<http://example.org/oskg/resource/person/ulrich-paquet> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ulrich Paquet" .
+
+<http://example.org/oskg/resource/person/vaibhav-aggarwal> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Vaibhav Aggarwal" .
+
+<http://example.org/oskg/resource/person/vanessa-stark> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Vanessa Stark" .
+
+<http://example.org/oskg/resource/person/vegard-mella> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Vegard Mella" .
+
+<http://example.org/oskg/resource/person/victoria-krakovna> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Victoria Krakovna" .
+
+<http://example.org/oskg/resource/person/vlad-feinberg> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Vlad Feinberg" .
+
+<http://example.org/oskg/resource/person/vladimir-karpukhin> a oskg:Person ;
+    foaf:name "Vladimir Karpukhin" .
+
+<http://example.org/oskg/resource/person/wei-ning-hsu> a oskg:Person ;
+    foaf:name "Wei-Ning Hsu" .
+
+<http://example.org/oskg/resource/person/wenbo-zhang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Wenbo Zhang" .
+
+<http://example.org/oskg/resource/person/wenjie-bi> a oskg:Person ;
+    foaf:name "Wenjie Bi" .
+
+<http://example.org/oskg/resource/person/will-zhuk> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Will Zhuk" .
+
+<http://example.org/oskg/resource/person/william-chan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "William Chan" .
+
+<http://example.org/oskg/resource/person/william-ngan> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "William Ngan" .
+
+<http://example.org/oskg/resource/person/xiangning-chen> a oskg:Person ;
+    foaf:name "Xiangning Chen" .
+
+<http://example.org/oskg/resource/person/xiao-wang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Xiao Wang" .
+
+<http://example.org/oskg/resource/person/yagami-lin> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yagami Lin" .
+
+<http://example.org/oskg/resource/person/yagami123> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yagami123" .
+
+<http://example.org/oskg/resource/person/yaguang-li> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yaguang Li" .
+
+<http://example.org/oskg/resource/person/yang-li> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yang Li" .
+
+<http://example.org/oskg/resource/person/yao-hung-hubert-tsai> a oskg:Person ;
+    foaf:name "Yao-Hung Hubert Tsai" .
+
+<http://example.org/oskg/resource/person/yeganeh-kordi> a oskg:Person ;
+    foaf:name "Yeganeh Kordi" .
+
+<http://example.org/oskg/resource/person/yizhong-wang> a oskg:Person ;
+    foaf:name "Yizhong Wang" .
+
+<http://example.org/oskg/resource/person/yongyi-hu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yongyi Hu" .
+
+<http://example.org/oskg/resource/person/yu-an-chung> a oskg:Person ;
+    foaf:name "Yu-An Chung" .
+
+<http://example.org/oskg/resource/person/yuan-gong> a oskg:Person ;
+    foaf:name "Yuan Gong" .
+
+<http://example.org/oskg/resource/person/yuhao-zhou> a oskg:Person ;
+    foaf:name "Yuhao Zhou" .
+
+<http://example.org/oskg/resource/person/yuncong-yang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yuncong Yang" .
+
+<http://example.org/oskg/resource/person/yura-burda> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yura Burda" .
+
+<http://example.org/oskg/resource/person/zachary-winstrom> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Zachary Winstrom" .
+
+<http://example.org/oskg/resource/person/zhaoyang-zeng> a oskg:Person ;
+    foaf:name "Zhaoyang Zeng" .
+
+<http://example.org/oskg/resource/person/zhuoshu-li> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Zhuoshu Li" .
+
+<http://example.org/oskg/resource/person/zihang-dai> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Zihang Dai" .
+
+<http://example.org/oskg/resource/person/ziming-zhu> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ziming Zhu" .
+
+<http://example.org/oskg/resource/person/zirui-wang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Zirui Wang" .
+
+<http://example.org/oskg/resource/project/1426452> a oskg:Project ;
+    rdfs:label "1426452" ;
+    oskg:fundedBy <http://example.org/oskg/resource/org/science-foundation> ;
+    dcterms:identifier "1426452" .
+
+<http://example.org/oskg/resource/project/1637614> a oskg:Project ;
+    rdfs:label "1637614" ;
+    oskg:fundedBy <http://example.org/oskg/resource/org/national-science-foundation> ;
+    dcterms:identifier "1637614" .
+
+<http://example.org/oskg/resource/project/716721> a oskg:Project ;
+    rdfs:label "716721" ;
+    oskg:fundedBy <http://example.org/oskg/resource/org/german-research-foundation> ;
+    dcterms:identifier "716721" .
+
+<http://example.org/oskg/resource/project/exc-1086> a oskg:Project ;
+    rdfs:label "EXC 1086" ;
+    dcterms:identifier "EXC 1086" .
+
+<http://example.org/oskg/resource/project/iis-1426452> a oskg:Project ;
+    rdfs:label "IIS-1426452" ;
+    oskg:fundedBy <http://example.org/oskg/resource/org/science-foundation> ;
+    dcterms:identifier "IIS-1426452" .
+
+<http://example.org/oskg/resource/project/iis-1637614> a oskg:Project ;
+    rdfs:label "IIS-1637614" ;
+    oskg:fundedBy <http://example.org/oskg/resource/org/national-science-foundation> ;
+    dcterms:identifier "IIS-1637614" .
+
+<http://example.org/oskg/resource/project/inst> a oskg:Project ;
+    rdfs:label "INST" ;
+    dcterms:identifier "INST" .
+
+<http://example.org/oskg/resource/org/acceleration-and-supercomputing> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Acceleration and Supercomputing" .
+
+<http://example.org/oskg/resource/org/deepmind> a oskg:Organization ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "DeepMind" .
+
+<http://example.org/oskg/resource/paper/adam-a-method-for-stochastic-optimization> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/1> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/incorporating-nesterov-momentum-into-adam> ;
+    dcterms:abstract "We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm. * Equal contribution. Author ordering determined by coin flip over a Google Hangout." ;
+    dcterms:identifier "Adam A Method for Stochastic Optimization" .
+
+<http://example.org/oskg/resource/paper/attention-is-all-you-need> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/person/nal-kalchbrenner>,
+        <http://example.org/oskg/resource/person/stephan-gouws> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/3> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/bert-pretraining-of-deep-bidirectional-transformers-for> ;
+    dcterms:abstract "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 Englishto-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.0 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. * Equal contribution. Listing order is random. Jakob proposed replacing RNNs with self-attention and started the effort to evaluate this idea. Ashish, with Illia, designed and implemented the first Transformer models and has been crucially involved in every aspect of this work. Noam proposed scaled dot-product attention, multi-head attention and the parameter-free position representation and became the other person involved in nearly every detail. Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and tensor2tensor. Llion also experimented with novel model variants, was responsible for our initial codebase, and efficient inference and visualizations. Lukasz and Aidan spent countless long days designing various parts of and implementing tensor2tensor, replacing our earlier codebase, greatly improving results and massively accelerating our research. † Work performed while at Google Brain. ‡ Work performed while at Google Research." ;
+    dcterms:identifier "Attention Is All You Need" .
+
+<http://example.org/oskg/resource/paper/deep-reinforcement-learning-from-human-preferences> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/deepmind>,
+        <http://example.org/oskg/resource/org/openai>,
+        <http://example.org/oskg/resource/person/andrej-karpathy>,
+        <http://example.org/oskg/resource/person/bilal-piot>,
+        <http://example.org/oskg/resource/person/heather-tran>,
+        <http://example.org/oskg/resource/person/igor-mordatch>,
+        <http://example.org/oskg/resource/person/jack-clark>,
+        <http://example.org/oskg/resource/person/jessica-richards>,
+        <http://example.org/oskg/resource/person/laurent-orseau>,
+        <http://example.org/oskg/resource/person/mandy-beri>,
+        <http://example.org/oskg/resource/person/olivier-pietquin>,
+        <http://example.org/oskg/resource/person/owain-evans>,
+        <http://example.org/oskg/resource/person/pedro-ortega>,
+        <http://example.org/oskg/resource/person/tyler-adkisson>,
+        <http://example.org/oskg/resource/person/victoria-krakovna> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/4> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/proximal-policy-optimization-algorithms> ;
+    dcterms:abstract "For sophisticated reinforcement learning (RL) systems to interact usefully with real-world environments, we need to communicate complex goals to these systems. In this work, we explore goals defined in terms of (non-expert) human preferences between pairs of trajectory segments. We show that this approach can effectively solve complex RL tasks without access to the reward function, including Atari games and simulated robot locomotion, while providing feedback on less than 1% of our agent's interactions with the environment. This reduces the cost of human oversight far enough that it can be practically applied to state-of-the-art RL systems. To demonstrate the flexibility of our approach, we show that we can successfully train complex novel behaviors with about an hour of human time. These behaviors and environments are considerably more complex than any which have been previously learned from human feedback." ;
+    dcterms:identifier "Deep Reinforcement Learning from Human Preferences" .
+
+<http://example.org/oskg/resource/paper/end-to-end-object-detection-with-transformers> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/facebook-ai-research-paris>,
+        <http://example.org/oskg/resource/person/danielle-rothermel>,
+        <http://example.org/oskg/resource/person/david-lopez-paz>,
+        <http://example.org/oskg/resource/person/guillaume-lample>,
+        <http://example.org/oskg/resource/person/kaiming-he>,
+        <http://example.org/oskg/resource/person/natalia-neverova>,
+        <http://example.org/oskg/resource/person/piotr-bojanowski>,
+        <http://example.org/oskg/resource/person/ross-girshick>,
+        <http://example.org/oskg/resource/person/sainbayar-sukhbaatar>,
+        <http://example.org/oskg/resource/person/xinlei-chen> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/2> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/learning-transferable-visual-models-from-natural-language-supervision> ;
+    dcterms:abstract "We present a new method that views object detection as a direct set prediction problem. Our approach streamlines the detection pipeline, effectively removing the need for many hand-designed components like a non-maximum suppression procedure or anchor generation that explicitly encode our prior knowledge about the task. The main ingredients of the new framework, called DEtection TRansformer or DETR, are a set-based global loss that forces unique predictions via bipartite matching, and a transformer encoder-decoder architecture. Given a fixed small set of learned object queries, DETR reasons about the relations of the objects and the global image context to directly output the final set of predictions in parallel. The new model is conceptually simple and does not require a specialized library, unlike many other modern detectors. DETR demonstrates accuracy and run-time performance on par with the well-established and highly-optimized Faster R-CNN baseline on the challenging COCO object detection dataset. Moreover, DETR can be easily generalized to produce panoptic segmentation in a unified manner. We show that it significantly outperforms competitive baselines. Training code and pretrained models are available at https://github.com/facebookresearch/detr ." ;
+    dcterms:identifier "End to End Object Detection with Transformers" .
+
+<http://example.org/oskg/resource/paper/hubert-self-supervised-speech-representation> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/0> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/wav2vec-2-0-a-framework-for-self-supervised> ;
+    dcterms:abstract "Self-supervised approaches for speech representation learning are challenged by three unique problems: (1) there are multiple sound units in each input utterance, (2) there is no lexicon of input sound units during the pre-training phase, and (3) sound units have variable lengths with no explicit segmentation. To deal with these three problems, we propose the Hidden-Unit BERT (HuBERT) approach for self-supervised speech representation learning, which utilizes an offline clustering step to provide aligned target labels for a BERT-like prediction loss. A key ingredient of our approach is applying the prediction loss over the masked regions only, which forces the model to learn a combined acoustic and language model over the continuous inputs. HuBERT relies primarily on the consistency of the unsupervised clustering step rather than the intrinsic quality of the assigned cluster labels. Starting with a simple k-means teacher of 100 clusters, and using two iterations of clustering, the HuBERT model either matches or improves upon the state-ofthe-art wav2vec 2.0 performance on the Librispeech (960h) and Libri-light (60,000h) benchmarks with 10min, 1h, 10h, 100h, and 960h fine-tuning subsets. Using a 1B parameter model, HuBERT shows up to 19% and 13% relative WER reduction on the more challenging dev-other and test-other evaluation subsets. 1" ;
+    dcterms:identifier "HuBERT Self-Supervised Speech Representation" .
+
+<http://example.org/oskg/resource/paper/language-models-are-few-shot-learners> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/microsoft>,
+        <http://example.org/oskg/resource/org/openai>,
+        <http://example.org/oskg/resource/person/brooke-chan>,
+        <http://example.org/oskg/resource/person/chelsea-voss>,
+        <http://example.org/oskg/resource/person/chris-hallacy>,
+        <http://example.org/oskg/resource/person/david-luan>,
+        <http://example.org/oskg/resource/person/geoffrey-irving>,
+        <http://example.org/oskg/resource/person/greg-brockman>,
+        <http://example.org/oskg/resource/person/harrison-edwards>,
+        <http://example.org/oskg/resource/person/irene-solaiman>,
+        <http://example.org/oskg/resource/person/jakub-pachocki>,
+        <http://example.org/oskg/resource/person/long-ouyang>,
+        <http://example.org/oskg/resource/person/michael-petrov>,
+        <http://example.org/oskg/resource/person/paul-christiano>,
+        <http://example.org/oskg/resource/person/ryan-lowe>,
+        <http://example.org/oskg/resource/person/shan-carter>,
+        <http://example.org/oskg/resource/person/szymon-sidor>,
+        <http://example.org/oskg/resource/person/yura-burda> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/3> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/self-instruct-aligning-language-models> ;
+    dcterms:abstract "We demonstrate that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even becoming competitive with prior state-ofthe-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous nonsparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks. We also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora." ;
+    dcterms:identifier "Language Models are Few Shot Learners" .
+
+<http://example.org/oskg/resource/paper/learning-transferable-visual-models-from-natural-language-supervision> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/acceleration-and-supercomputing>,
+        <http://example.org/oskg/resource/org/openai>,
+        <http://example.org/oskg/resource/person/abadi>,
+        <http://example.org/oskg/resource/person/gillian-hadfield>,
+        <http://example.org/oskg/resource/person/harris>,
+        <http://example.org/oskg/resource/person/irene-solaiman>,
+        <http://example.org/oskg/resource/person/ishaan-gulrajani>,
+        <http://example.org/oskg/resource/person/miles-brundage>,
+        <http://example.org/oskg/resource/person/paszke>,
+        <http://example.org/oskg/resource/person/pedregosa>,
+        <http://example.org/oskg/resource/person/speer>,
+        <http://example.org/oskg/resource/person/susan-zhang>,
+        <http://example.org/oskg/resource/person/virtanen> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/2> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/end-to-end-object-detection-with-transformers> ;
+    dcterms:abstract "State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efficient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of fine-grained object classification. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset specific training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on. We release our code and pre-trained model weights at https://github.com/OpenAI/CLIP ." ;
+    dcterms:identifier "Learning Transferable Visual Models From Natural Language Supervision" .
+
+<http://example.org/oskg/resource/paper/lion-secretly-solves-constrained-optimization-as-lyapunov-predicts> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/1> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/symbolic-discovery-of-optimization-algorithms> ;
+    dcterms:abstract "Lion (Evolved Sign Momentum), a new optimizer discovered through program search, has shown promising results in training large AI models. It performs comparably or favorably to AdamW but with greater memory efficiency. As we can expect from the results of a random search program, Lion incorporates elements from several existing algorithms, including signed momentum, decoupled weight decay, Polyak, and Nesterov momentum, but does not fit into any existing category of theoretically grounded optimizers. Thus, even though Lion appears to perform well as a general-purpose optimizer for a wide range of tasks, its theoretical basis remains uncertain. This lack of theoretical clarity limits opportunities to further enhance and expand Lion's efficacy. This work aims to demystify Lion. Based on both continuous-time and discretetime analysis, we demonstrate that Lion is a theoretically novel and principled approach for minimizing a general loss function f (x) while enforcing a bound constraint ∥x∥ ∞ ≤ 1/λ. Lion achieves this through the incorporation of decoupled weight decay, where λ represents the weight decay coefficient. Our analysis is made possible by the development of a new Lyapunov function for the Lion updates. It applies to a broader family of Lion-K algorithms, where the sign(•) operator in Lion is replaced by the subgradient of a convex function K, leading to the solution of a general composite optimization problem of min x f (x) + K * (x). Our findings provide valuable insights into the dynamics of Lion and pave the way for further improvements and extensions of Lion-related algorithms." ;
+    dcterms:identifier "Lion Secretly Solves Constrained Optimization As Lyapunov Predicts" .
+
+<http://example.org/oskg/resource/paper/proximal-policy-optimization-algorithms> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/openai>,
+        <http://example.org/oskg/resource/person/peter-chen>,
+        <http://example.org/oskg/resource/person/rocky-duan> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/4> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/deep-reinforcement-learning-from-human-preferences> ;
+    dcterms:abstract "We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a \"surrogate\" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization (PPO), have some of the benefits of trust region policy optimization (TRPO), but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time." ;
+    dcterms:identifier "Proximal Policy Optimization Algorithms" .
+
+<http://example.org/oskg/resource/paper/retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/ep>,
+        <http://example.org/oskg/resource/org/huggingface>,
+        <http://example.org/oskg/resource/org/nsf>,
+        <http://example.org/oskg/resource/org/pl>,
+        <http://example.org/oskg/resource/person/kyunghyun-cho>,
+        <http://example.org/oskg/resource/person/sewon-min> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/3> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/bert-pretraining-of-deep-bidirectional-transformers-for> ;
+    dcterms:abstract "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pretrained models with a differentiable access mechanism to explicit non-parametric memory have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, and another which can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledgeintensive NLP tasks and set the state of the art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline." ;
+    dcterms:identifier "Retrieval Augmented Generation for Knowledge Intensive NLP Tasks" .
+
+<http://example.org/oskg/resource/paper/robust-speech-recognition-via-large-scale-weak-supervision> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/acceleration-and-supercomputing>,
+        <http://example.org/oskg/resource/org/openai>,
+        <http://example.org/oskg/resource/person/andrew-carr>,
+        <http://example.org/oskg/resource/person/harris>,
+        <http://example.org/oskg/resource/person/nick-ryder>,
+        <http://example.org/oskg/resource/person/pamela-mishkin>,
+        <http://example.org/oskg/resource/person/paszke>,
+        <http://example.org/oskg/resource/person/pedregosa>,
+        <http://example.org/oskg/resource/person/speer>,
+        <http://example.org/oskg/resource/person/virtanen>,
+        <http://example.org/oskg/resource/person/will-zhuk> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/0> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/wav2vec-2-0-a-framework-for-self-supervised> ;
+    dcterms:abstract "We study the capabilities of speech processing systems trained simply to predict large amounts of transcripts of audio on the internet. When scaled to 680,000 hours of multilingual and multitask supervision, the resulting models generalize well to standard benchmarks and are often competitive with prior fully supervised results but in a zeroshot transfer setting without the need for any finetuning. When compared to humans, the models approach their accuracy and robustness. We are releasing models and inference code to serve as a foundation for further work on robust speech processing." ;
+    dcterms:identifier "Robust Speech Recognition via Large-Scale Weak Supervision" .
+
+<http://example.org/oskg/resource/paper/self-instruct-aligning-language-models> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/ai2>,
+        <http://example.org/oskg/resource/org/allennlp>,
+        <http://example.org/oskg/resource/org/niwc-pacific>,
+        <http://example.org/oskg/resource/org/onr>,
+        <http://example.org/oskg/resource/org/uwnlp>,
+        <http://example.org/oskg/resource/person/eric-wallace>,
+        <http://example.org/oskg/resource/person/ofir-press>,
+        <http://example.org/oskg/resource/person/sewon-min> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/3> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/language-models-are-few-shot-learners> ;
+    dcterms:abstract "Large \"instruction-tuned\" language models (i.e., finetuned to respond to instructions) have demonstrated a remarkable ability to generalize zero-shot to new tasks. Nevertheless, they depend heavily on human-written instruction data that is often limited in quantity, diversity, and creativity, therefore hindering the generality of the tuned model. We introduce SELF-INSTRUCT, a framework for improving the instruction-following capabilities of pretrained language models by bootstrapping off their own generations. Our pipeline generates instructions, input, and output samples from a language model, then filters invalid or similar ones before using them to finetune the original model. Applying our method to the vanilla GPT3, we demonstrate a 33% absolute improvement over the original model on SUPER-NATURALINSTRUCTIONS, on par with the performance of InstructGPT 001 , 1 which was trained with private user data and human annotations. For further evaluation, we curate a set of expert-written instructions for novel tasks, and show through human evaluation that tuning GPT3 with SELF-INSTRUCT outperforms using existing public instruction datasets by a large margin, leaving only a 5% absolute gap behind InstructGPT 001 . SELF-INSTRUCT provides an almost annotation-free method for aligning pretrained language models with instructions, and we release our large synthetic dataset to facilitate future studies on instruction tuning. 2" ;
+    dcterms:identifier "SELF-INSTRUCT Aligning Language Models" .
+
+<http://example.org/oskg/resource/person/alec-radford> a oskg:Person ;
+    foaf:name "Alec Radford" .
+
+<http://example.org/oskg/resource/person/alexander-kirillov> a oskg:Person ;
+    foaf:name "Alexander Kirillov" .
+
+<http://example.org/oskg/resource/person/ashish-vaswani> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Ashish Vaswani" .
+
+<http://example.org/oskg/resource/person/chris-hallacy> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Chris Hallacy" .
+
+<http://example.org/oskg/resource/person/francisco-massa> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Francisco Massa" .
+
+<http://example.org/oskg/resource/person/greg-brockman> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Greg Brockman" .
+
+<http://example.org/oskg/resource/person/harris> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Harris" .
+
+<http://example.org/oskg/resource/person/irene-solaiman> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Irene Solaiman" .
+
+<http://example.org/oskg/resource/person/jong-wook-kim> a oskg:Person ;
+    foaf:name "Jong Wook Kim" .
+
+<http://example.org/oskg/resource/person/kaiming-he> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Kaiming He" .
+
+<http://example.org/oskg/resource/person/nick-ryder> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Nick Ryder" .
+
+<http://example.org/oskg/resource/person/paszke> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Paszke" .
+
+<http://example.org/oskg/resource/person/paul-christiano> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Paul Christiano" .
+
+<http://example.org/oskg/resource/person/pedregosa> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Pedregosa" .
+
+<http://example.org/oskg/resource/person/sewon-min> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Sewon Min" .
+
+<http://example.org/oskg/resource/person/speer> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Speer" .
+
+<http://example.org/oskg/resource/person/susan-zhang> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Susan Zhang" .
+
+<http://example.org/oskg/resource/person/tom-b-brown> a oskg:Person ;
+    foaf:name "Tom B. Brown" .
+
+<http://example.org/oskg/resource/person/virtanen> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Virtanen" .
+
+<http://example.org/oskg/resource/person/xiaohua-zhai> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Xiaohua Zhai" .
+
+<http://example.org/oskg/resource/person/xinlei-chen> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Xinlei Chen" .
+
+<http://example.org/oskg/resource/person/yanghao-li> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Yanghao Li" .
+
+<http://example.org/oskg/resource/org/german-research-foundation> a oskg:Organization ;
+    oskg:country "Germany" ;
+    oskg:officialWebsite <https://www.dfg.de/> ;
+    oskg:rorId "https://ror.org/018mejw64" ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    oskg:wikidataId "Q707283" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q707283>,
+        <https://ror.org/018mejw64> ;
+    foaf:name "German Research Foundation" .
+
+<http://example.org/oskg/resource/org/science-foundation> a oskg:Organization ;
+    oskg:country "Nigeria" ;
+    oskg:wikidataId "Q116434042" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q116434042> ;
+    foaf:name "Science Foundation" .
+
+<http://example.org/oskg/resource/person/noam-shazeer> a oskg:Person ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    foaf:name "Noam Shazeer" .
+
+<http://example.org/oskg/resource/org/national-science-foundation> a oskg:Organization ;
+    oskg:country "United States" ;
+    oskg:officialWebsite <https://nsf.gov> ;
+    oskg:rorId "https://ror.org/021nxhr62" ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    oskg:wikidataId "Q304878" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q304878>,
+        <https://ror.org/021nxhr62> ;
+    foaf:name "National Science Foundation" .
+
+<http://example.org/oskg/resource/paper/bert-pretraining-of-deep-bidirectional-transformers-for> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/3> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/attention-is-all-you-need>,
+        <http://example.org/oskg/resource/paper/retrieval-augmented-generation-for-knowledge-intensive-nlp-tasks> ;
+    dcterms:abstract "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018) , BERT is designed to pretrain deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be finetuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial taskspecific architecture modifications. BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement)." ;
+    dcterms:identifier "BERT Pretraining of Deep Bidirectional Transformers for" .
+
+<http://example.org/oskg/resource/paper/incorporating-nesterov-momentum-into-adam> a oskg:Paper ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/1> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/adam-a-method-for-stochastic-optimization>,
+        <http://example.org/oskg/resource/paper/symbolic-discovery-of-optimization-algorithms> ;
+    dcterms:abstract "This work aims to improve upon the recently proposed and rapidly popularized optimization algorithm Adam (Kingma & Ba, 2014) . Adam has two main components-a momentum component and an adaptive learning rate component. However, regular momentum can be shown conceptually and empirically to be inferior to a similar algorithm known as Nesterov's accelerated gradient (NAG). We show how to modify Adam's momentum component to take advantage of insights from NAG, and then we present preliminary evidence suggesting that making this substitution improves the speed of convergence and the quality of the learned models." ;
+    dcterms:identifier "INCORPORATING NESTEROV MOMENTUM INTO ADAM" .
+
+<http://example.org/oskg/resource/paper/symbolic-discovery-of-optimization-algorithms> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/org/google-brain>,
+        <http://example.org/oskg/resource/person/angel-yu>,
+        <http://example.org/oskg/resource/person/boqing-gong>,
+        <http://example.org/oskg/resource/person/chen-cheng>,
+        <http://example.org/oskg/resource/person/chitwan-saharia>,
+        <http://example.org/oskg/resource/person/daiyi-peng>,
+        <http://example.org/oskg/resource/person/david-so>,
+        <http://example.org/oskg/resource/person/hanxiao-liu>,
+        <http://example.org/oskg/resource/person/hanzhao-lin>,
+        <http://example.org/oskg/resource/person/jeff-lund>,
+        <http://example.org/oskg/resource/person/jiahui-yu>,
+        <http://example.org/oskg/resource/person/jingru-xu>,
+        <http://example.org/oskg/resource/person/julian-grady>,
+        <http://example.org/oskg/resource/person/junyang-shen>,
+        <http://example.org/oskg/resource/person/kevin-regan>,
+        <http://example.org/oskg/resource/person/li-sheng>,
+        <http://example.org/oskg/resource/person/liu-yang>,
+        <http://example.org/oskg/resource/person/martin-wicke>,
+        <http://example.org/oskg/resource/person/mingxing-tan>,
+        <http://example.org/oskg/resource/person/mohammad-norouzi>,
+        <http://example.org/oskg/resource/person/qiqi-yan>,
+        <http://example.org/oskg/resource/person/rakesh-shivanna>,
+        <http://example.org/oskg/resource/person/rohan-anil>,
+        <http://example.org/oskg/resource/person/ruiqi-gao>,
+        <http://example.org/oskg/resource/person/steve-li>,
+        <http://example.org/oskg/resource/person/vlad-feinberg>,
+        <http://example.org/oskg/resource/person/wenbo-zhang>,
+        <http://example.org/oskg/resource/person/william-chan>,
+        <http://example.org/oskg/resource/person/xiao-wang>,
+        <http://example.org/oskg/resource/person/xiaohua-zhai>,
+        <http://example.org/oskg/resource/person/yaguang-li>,
+        <http://example.org/oskg/resource/person/yang-li>,
+        <http://example.org/oskg/resource/person/zhuoshu-li>,
+        <http://example.org/oskg/resource/person/zihang-dai>,
+        <http://example.org/oskg/resource/person/zirui-wang> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/1> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/incorporating-nesterov-momentum-into-adam>,
+        <http://example.org/oskg/resource/paper/lion-secretly-solves-constrained-optimization-as-lyapunov-predicts> ;
+    dcterms:abstract "We present a method to formulate algorithm discovery as program search, and apply it to discover optimization algorithms for deep neural network training. We leverage efficient search techniques to explore an infinite and sparse program space. To bridge the large generalization gap between proxy and target tasks, we also introduce program selection and simplification strategies. Our method discovers a simple and effective optimization algorithm, Lion (EvoLved Sign Momentum). It is more memory-efficient than Adam as it only keeps track of the momentum. Different from adaptive optimizers, its update has the same magnitude for each parameter calculated through the sign operation. We compare Lion with widely used optimizers, such as Adam and Adafactor, for training a variety of models on different tasks. On image classification, Lion boosts the accuracy of ViT by up to 2% on ImageNet and saves up to 5x the pre-training compute on JFT. On vision-language contrastive learning, we achieve 88.3% zero-shot and 91.1% fine-tuning accuracy on ImageNet, surpassing the previous best results by 2% and 0.1%, respectively. On diffusion models, Lion outperforms Adam by achieving a better FID score and reducing the training compute by up to 2.3x. For autoregressive, masked language modeling, and fine-tuning, Lion exhibits a similar or better performance compared to Adam. Our analysis of Lion reveals that its performance gain grows with the training batch size. It also requires a smaller learning rate than Adam due to the larger norm of the update produced by the sign function. Additionally, we examine the limitations of Lion and identify scenarios where its improvements are small or not statistically significant. The implementation of Lion is publicly available. 1 Lion is also successfully deployed in production systems such as Google's search ads CTR model. * Work done as a student researcher at Google Brain. † Work done while at Google." ;
+    dcterms:identifier "Symbolic Discovery of Optimization Algorithms" .
+
+<http://example.org/oskg/resource/paper/wav2vec-2-0-a-framework-for-self-supervised> a oskg:Paper ;
+    oskg:acknowledges <http://example.org/oskg/resource/person/qiantong-xu>,
+        <http://example.org/oskg/resource/person/tatiana-likhomanenko> ;
+    oskg:belongs_to_topic <http://example.org/oskg/resource/topic/0> ;
+    oskg:similar_to <http://example.org/oskg/resource/paper/hubert-self-supervised-speech-representation>,
+        <http://example.org/oskg/resource/paper/robust-speech-recognition-via-large-scale-weak-supervision> ;
+    dcterms:abstract "We show for the first time that learning powerful representations from speech audio alone followed by fine-tuning on transcribed speech can outperform the best semi-supervised methods while being conceptually simpler. wav2vec 2.0 masks the speech input in the latent space and solves a contrastive task defined over a quantization of the latent representations which are jointly learned. Experiments using all labeled data of Librispeech achieve 1.8/3.3 WER on the clean/other test sets. When lowering the amount of labeled data to one hour, wav2vec 2.0 outperforms the previous state of the art on the 100 hour subset while using 100 times less labeled data. Using just ten minutes of labeled data and pre-training on 53k hours of unlabeled data still achieves 4.8/8.2 WER. This demonstrates the feasibility of speech recognition with limited amounts of labeled data. 1" ;
+    dcterms:identifier "wav2vec 2.0 A Framework for Self-Supervised" .
+
+<http://example.org/oskg/resource/org/openai> a oskg:Organization ;
+    oskg:country "United States" ;
+    oskg:officialWebsite <https://openai.com/> ;
+    oskg:rorId "https://ror.org/05wx9n238" ;
+    oskg:usedModel "Jean-Baptiste/roberta-large-ner-english" ;
+    oskg:wikidataId "Q21708200" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q21708200>,
+        <https://ror.org/05wx9n238> ;
+    foaf:name "OpenAI" .
+
+<http://example.org/oskg/resource/person/todo-remaining-author> a oskg:Person ;
+    foaf:name "TODO remaining author" .
+
+<http://example.org/oskg/resource/topic/0> a oskg:Topic ;
+    rdfs:label "speech, audio, text, using, model" ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" ;
+    skos:prefLabel "speech, audio, text, using, model" .
+
+<http://example.org/oskg/resource/topic/1> a oskg:Topic ;
+    rdfs:label "lion, adam, decay, weight, momentum" ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" ;
+    skos:prefLabel "lion, adam, decay, weight, momentum" .
+
+<http://example.org/oskg/resource/topic/2> a oskg:Topic ;
+    rdfs:label "image, object, detection, vision, model" ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" ;
+    skos:prefLabel "image, object, detection, vision, model" .
+
+<http://example.org/oskg/resource/topic/3> a oskg:Topic ;
+    rdfs:label "models, language, tasks, model, parametric" ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" ;
+    skos:prefLabel "models, language, tasks, model, parametric" .
+
+<http://example.org/oskg/resource/topic/4> a oskg:Topic ;
+    rdfs:label "complex, policy, voyager, environment, grpo" ;
+    oskg:usedModel "sentence-transformers/all-MiniLM-L6-v2" ;
+    skos:prefLabel "complex, policy, voyager, environment, grpo" .
+
+<http://example.org/oskg/resource/person/todo-remaining-authors> a oskg:Person ;
+    foaf:name "TODO remaining authors" .
+

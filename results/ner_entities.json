@@ -1,0 +1,1344 @@
+{
+  "AST Audio Spectrogram Transformer": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Signify",
+        "type": "ORG",
+        "score": 0.8834
+      }
+    ]
+  },
+  "Adafactor Adaptive Learning Rates with Sublinear Memory Cost": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Łukasz Kaiser",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Geoffrey Hinton",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Tensor2Tensor",
+        "type": "ORG",
+        "score": 0.8815
+      }
+    ]
+  },
+  "Adam A Method for Stochastic Optimization": {
+    "status": "found",
+    "entities": []
+  },
+  "An Image is Worth 16x16 words": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Andreas Steiner",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Daniel Keysers",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Dmitry Lepikhin",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Mario Lučić",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Maxim Neumann",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Noam Shazeer",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Aravindh Mahendran",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Colin Raffel",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Joan Puigcerver",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Ashish Vaswani",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Google",
+        "type": "ORG",
+        "score": 0.9922
+      }
+    ]
+  },
+  "Attention Is All You Need": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Stephan Gouws",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Nal Kalchbrenner",
+        "type": "PER",
+        "score": 0.9998
+      }
+    ]
+  },
+  "BERT Pretraining of Deep Bidirectional Transformers for": {
+    "status": "not_found",
+    "entities": []
+  },
+  "DECOUPLED WEIGHT DECAY REGULARIZATION": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Martin Völker",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Matthias Feurer",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Patryk Chrabaszcz",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Robin Schirrmeister",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Tonio Ball",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Jeremy Howard",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Kashif Rasul",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Phil Jund",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Sylvain Gugger",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Anand Saha",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "ERC",
+        "type": "ORG",
+        "score": 0.9995
+      },
+      {
+        "text": "Guillaume Lambard",
+        "type": "PER",
+        "score": 0.9994
+      },
+      {
+        "text": "DFG",
+        "type": "ORG",
+        "score": 0.9992
+      },
+      {
+        "text": "Yagami Lin",
+        "type": "PER",
+        "score": 0.9992
+      },
+      {
+        "text": "European Research Council",
+        "type": "ORG",
+        "score": 0.9991
+      },
+      {
+        "text": "European Union",
+        "type": "ORG",
+        "score": 0.9989
+      },
+      {
+        "text": "German Research Foundation",
+        "type": "ORG",
+        "score": 0.9977
+      },
+      {
+        "text": "GLambard",
+        "type": "PER",
+        "score": 0.995
+      },
+      {
+        "text": "Yagami123",
+        "type": "PER",
+        "score": 0.9908
+      },
+      {
+        "text": "sgugger",
+        "type": "PER",
+        "score": 0.9598
+      },
+      {
+        "text": "bwHPC",
+        "type": "ORG",
+        "score": 0.9019
+      }
+    ]
+  },
+  "Deep Reinforcement Learning from Human Preferences": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Andrej Karpathy",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Igor Mordatch",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Jack Clark",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Olivier Pietquin",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Victoria Krakovna",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Bilal Piot",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Jessica Richards",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Mandy Beri",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Owain Evans",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Tyler Adkisson",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Laurent Orseau",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Pedro Ortega",
+        "type": "PER",
+        "score": 0.9994
+      },
+      {
+        "text": "OpenAI",
+        "type": "ORG",
+        "score": 0.9993
+      },
+      {
+        "text": "Heather Tran",
+        "type": "PER",
+        "score": 0.9992
+      },
+      {
+        "text": "DeepMind",
+        "type": "ORG",
+        "score": 0.9977
+      }
+    ]
+  },
+  "End to End Object Detection with Transformers": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Danielle Rothermel",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Guillaume Lample",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Piotr Bojanowski",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "David Lopez-Paz",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Natalia Neverova",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Ross Girshick",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Sainbayar Sukhbaatar",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Xinlei Chen",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Kaiming He",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Facebook AI Research Paris",
+        "type": "ORG",
+        "score": 0.9995
+      }
+    ]
+  },
+  "GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for": {
+    "status": "not_found",
+    "entities": []
+  },
+  "Grounding DINO": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "He Cao",
+        "type": "PER",
+        "score": 0.9991
+      },
+      {
+        "text": "Liunian Harold Li",
+        "type": "PER",
+        "score": 0.9991
+      },
+      {
+        "text": "Tiancheng Zhao",
+        "type": "PER",
+        "score": 0.9988
+      },
+      {
+        "text": "Haotian Zhang",
+        "type": "PER",
+        "score": 0.9986
+      },
+      {
+        "text": "Pengchuan Zhang",
+        "type": "PER",
+        "score": 0.9985
+      },
+      {
+        "text": "Jianhua Han",
+        "type": "PER",
+        "score": 0.9984
+      },
+      {
+        "text": "The Hong Kong University of Science and Technology",
+        "type": "ORG",
+        "score": 0.998
+      }
+    ]
+  },
+  "HuBERT Self-Supervised Speech Representation": {
+    "status": "not_found",
+    "entities": []
+  },
+  "INCORPORATING NESTEROV MOMENTUM INTO ADAM": {
+    "status": "not_found",
+    "entities": []
+  },
+  "Implementing the Deep Q-Network": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "DARPA",
+        "type": "ORG",
+        "score": 0.9994
+      },
+      {
+        "text": "National Science Foundation",
+        "type": "ORG",
+        "score": 0.9963
+      }
+    ]
+  },
+  "LLaMA Open and Efficient Foundation Language Models": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Artem Korenev",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Daniel Haziza",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Jeremy Reizenstein",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Luca Wehrstedt",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Patrick Labatut",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Stephen Roller",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Francisco Massa",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Kalyan Saladi",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Pierre-Emmanuel Mazaré",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Susan Zhang",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Jane Yu",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Vegard Mella",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Shubho Sengupta",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Yongyi Hu",
+        "type": "PER",
+        "score": 0.9991
+      },
+      {
+        "text": "xformers",
+        "type": "ORG",
+        "score": 0.9579
+      }
+    ]
+  },
+  "Language Models are Few Shot Learners": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Greg Brockman",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Jakub Pachocki",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Michael Petrov",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Ryan Lowe",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Szymon Sidor",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Chelsea Voss",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Harrison Edwards",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Brooke Chan",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Chris Hallacy",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Geoffrey Irving",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Irene Solaiman",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Paul Christiano",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "David Luan",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Yura Burda",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Shan Carter",
+        "type": "PER",
+        "score": 0.9994
+      },
+      {
+        "text": "Long Ouyang",
+        "type": "PER",
+        "score": 0.9993
+      },
+      {
+        "text": "OpenAI",
+        "type": "ORG",
+        "score": 0.9993
+      },
+      {
+        "text": "Microsoft",
+        "type": "ORG",
+        "score": 0.9812
+      }
+    ]
+  },
+  "Learning Transferable Visual Models From Natural Language Supervision": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Irene Solaiman",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Susan Zhang",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Gillian Hadfield",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Ishaan Gulrajani",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Paszke",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "Harris",
+        "type": "PER",
+        "score": 0.9994
+      },
+      {
+        "text": "OpenAI",
+        "type": "ORG",
+        "score": 0.9994
+      },
+      {
+        "text": "Miles Brundage",
+        "type": "PER",
+        "score": 0.9992
+      },
+      {
+        "text": "Abadi",
+        "type": "PER",
+        "score": 0.9989
+      },
+      {
+        "text": "Virtanen",
+        "type": "PER",
+        "score": 0.9989
+      },
+      {
+        "text": "Pedregosa",
+        "type": "PER",
+        "score": 0.9986
+      },
+      {
+        "text": "Speer",
+        "type": "PER",
+        "score": 0.9983
+      },
+      {
+        "text": "Acceleration and Supercomputing",
+        "type": "ORG",
+        "score": 0.8997
+      }
+    ]
+  },
+  "Lion Secretly Solves Constrained Optimization As Lyapunov Predicts": {
+    "status": "not_found",
+    "entities": []
+  },
+  "Masked Autoencoders Are Scalable Vision Learners": {
+    "status": "not_found",
+    "entities": []
+  },
+  "Mastering Atari Go Chess and Shogi by Planning with a learned model": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Lorrayne Bennett",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Matthew Lai",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Sumedh Ghaisas",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Thomas Anthony",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Ulrich Paquet",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Chris Apps",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Koray Kavukcuoglu",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Nenad Tomasev",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Oliver Smith",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "DeepMind",
+        "type": "ORG",
+        "score": 0.9968
+      }
+    ]
+  },
+  "MusicLM Generating Music From Text": {
+    "status": "not_found",
+    "entities": []
+  },
+  "NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Jan Chorowski",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Samy Bengio",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Aäron van den Oord",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Heiga Zen",
+        "type": "PER",
+        "score": 0.9969
+      },
+      {
+        "text": "Machine Hearing",
+        "type": "ORG",
+        "score": 0.9707
+      },
+      {
+        "text": "Google TTS",
+        "type": "ORG",
+        "score": 0.9599
+      }
+    ]
+  },
+  "Proximal Policy Optimization Algorithms": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Peter Chen",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Rocky Duan",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "OpenAI",
+        "type": "ORG",
+        "score": 0.9995
+      }
+    ]
+  },
+  "Retrieval Augmented Generation for Knowledge Intensive NLP Tasks": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Sewon Min",
+        "type": "PER",
+        "score": 0.9958
+      },
+      {
+        "text": "Kyunghyun Cho",
+        "type": "PER",
+        "score": 0.9926
+      },
+      {
+        "text": "EP",
+        "type": "ORG",
+        "score": 0.9696
+      },
+      {
+        "text": "PL",
+        "type": "ORG",
+        "score": 0.9563
+      },
+      {
+        "text": "HuggingFace",
+        "type": "ORG",
+        "score": 0.907
+      },
+      {
+        "text": "NSF",
+        "type": "ORG",
+        "score": 0.8326
+      }
+    ]
+  },
+  "Robust Speech Recognition via Large-Scale Weak Supervision": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Andrew Carr",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Nick Ryder",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Will Zhuk",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Paszke",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "Harris",
+        "type": "PER",
+        "score": 0.9992
+      },
+      {
+        "text": "Pamela Mishkin",
+        "type": "PER",
+        "score": 0.9992
+      },
+      {
+        "text": "OpenAI",
+        "type": "ORG",
+        "score": 0.9987
+      },
+      {
+        "text": "Pedregosa",
+        "type": "PER",
+        "score": 0.9981
+      },
+      {
+        "text": "Virtanen",
+        "type": "PER",
+        "score": 0.998
+      },
+      {
+        "text": "Speer",
+        "type": "PER",
+        "score": 0.9957
+      },
+      {
+        "text": "Acceleration and Supercomputing",
+        "type": "ORG",
+        "score": 0.8957
+      }
+    ]
+  },
+  "SELF-INSTRUCT Aligning Language Models": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Eric Wallace",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Ofir Press",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "UWNLP",
+        "type": "ORG",
+        "score": 0.9984
+      },
+      {
+        "text": "Sewon Min",
+        "type": "PER",
+        "score": 0.998
+      },
+      {
+        "text": "NIWC Pacific",
+        "type": "ORG",
+        "score": 0.9972
+      },
+      {
+        "text": "AI2",
+        "type": "ORG",
+        "score": 0.9934
+      },
+      {
+        "text": "AllenNLP",
+        "type": "ORG",
+        "score": 0.991
+      },
+      {
+        "text": "ONR",
+        "type": "ORG",
+        "score": 0.9719
+      }
+    ]
+  },
+  "Segment Anything": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Aaron Adcock",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Allen Goodman",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Ashley Gabriel",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Dirk Rowe",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Joshua Lane",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Lilian Luong",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Morteza Behrooz",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Neil Sejoor",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Nikhil Raina",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Omkar Parkhi",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Sumanth Gurram",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Zachary Winstrom",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Ahuva Goldstand",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Bram Wasti",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Devansh Kukreja",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Jitendra Malik",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Mallika Malhotra",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Robert Kuo",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Vaibhav Aggarwal",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "William Ngan",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Yanghao Li",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Bala Varadarajan",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Jiabo Hu",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Somya Jain",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Vanessa Stark",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Cheng-Yang Fu",
+        "type": "PER",
+        "score": 0.9996
+      }
+    ]
+  },
+  "Symbolic Discovery of Optimization Algorithms": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "David So",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Julian Grady",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Kevin Regan",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Mohammad Norouzi",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Vlad Feinberg",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Angel Yu",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Chitwan Saharia",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Daiyi Peng",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Hanxiao Liu",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Hanzhao Lin",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Jeff Lund",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Jiahui Yu",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Jingru Xu",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Martin Wicke",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Rakesh Shivanna",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Rohan Anil",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Steve Li",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "William Chan",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Zirui Wang",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Junyang Shen",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Liu Yang",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Mingxing Tan",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Qiqi Yan",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Xiaohua Zhai",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Zhuoshu Li",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Zihang Dai",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Boqing Gong",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Chen Cheng",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Ruiqi Gao",
+        "type": "PER",
+        "score": 0.9996
+      },
+      {
+        "text": "Li Sheng",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "Wenbo Zhang",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "Xiao Wang",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "Yaguang Li",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "Yang Li",
+        "type": "PER",
+        "score": 0.9993
+      },
+      {
+        "text": "Google Brain",
+        "type": "ORG",
+        "score": 0.9871
+      }
+    ]
+  },
+  "VOYAGER An Open-Ended Embodied Agent": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Or Sharir",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Sahin Lale",
+        "type": "PER",
+        "score": 0.9999
+      },
+      {
+        "text": "Charles Zhang",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Colin White",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Jean Kossaifi",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Rafał Kocielnik",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "De-An Huang",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Kaiyu Yang",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Minchao Huang",
+        "type": "PER",
+        "score": 0.9997
+      },
+      {
+        "text": "Yuncong Yang",
+        "type": "PER",
+        "score": 0.9995
+      },
+      {
+        "text": "Ziming Zhu",
+        "type": "PER",
+        "score": 0.9994
+      },
+      {
+        "text": "Guanzhi Wang",
+        "type": "PER",
+        "score": 0.9992
+      },
+      {
+        "text": "NVIDIA",
+        "type": "ORG",
+        "score": 0.9987
+      },
+      {
+        "text": "Kortschak",
+        "type": "PER",
+        "score": 0.9955
+      },
+      {
+        "text": "Caltech",
+        "type": "ORG",
+        "score": 0.9898
+      }
+    ]
+  },
+  "wav2vec 2.0 A Framework for Self-Supervised": {
+    "status": "found",
+    "entities": [
+      {
+        "text": "Tatiana Likhomanenko",
+        "type": "PER",
+        "score": 0.9998
+      },
+      {
+        "text": "Qiantong Xu",
+        "type": "PER",
+        "score": 0.9982
+      }
+    ]
+  }
+}

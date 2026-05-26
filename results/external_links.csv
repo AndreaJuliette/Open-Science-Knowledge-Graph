@@ -1,0 +1,44 @@
+local_type,local_id,source,link_type,external_id,external_url
+Paper,PAPER_0001,OpenAlex,openAlexId,W4390874575,https://openalex.org/W4390874575
+Paper,PAPER_0002,OpenAlex,openAlexId,W3211983881,https://openalex.org/W3211983881
+Paper,PAPER_0003,OpenAlex,openAlexId,W3135367836,https://openalex.org/W3135367836
+Paper,PAPER_0004,OpenAlex,openAlexId,W4404612908,https://openalex.org/W4404612908
+Paper,PAPER_0005,OpenAlex,openAlexId,W3030520226,https://openalex.org/W3030520226
+Paper,PAPER_0006,OpenAlex,openAlexId,W3094502228,https://openalex.org/W3094502228
+Paper,PAPER_0007,OpenAlex,openAlexId,W3099782249,https://openalex.org/W3099782249
+Paper,PAPER_0008,OpenAlex,openAlexId,W4311000453,https://openalex.org/W4311000453
+Paper,PAPER_0009,OpenAlex,openAlexId,W2964243274,https://openalex.org/W2964243274
+Paper,PAPER_0010,OpenAlex,openAlexId,W4386693657,https://openalex.org/W4386693657
+Paper,PAPER_0011,OpenAlex,openAlexId,W4287119707,https://openalex.org/W4287119707
+Paper,PAPER_0012,OpenAlex,openAlexId,W3196974791,https://openalex.org/W3196974791
+Paper,PAPER_0013,OpenAlex,openAlexId,W2626778328,https://openalex.org/W2626778328
+Paper,PAPER_0014,OpenAlex,openAlexId,W6973758909,https://openalex.org/W6973758909
+Paper,PAPER_0015,OpenAlex,openAlexId,W3030163527,https://openalex.org/W3030163527
+Paper,PAPER_0016,OpenAlex,openAlexId,W4322718191,https://openalex.org/W4322718191
+Paper,PAPER_0017,OpenAlex,openAlexId,W3098425262,https://openalex.org/W3098425262
+Paper,PAPER_0018,OpenAlex,openAlexId,W4312091890,https://openalex.org/W4312091890
+Paper,PAPER_0019,OpenAlex,openAlexId,W2797328513,https://openalex.org/W2797328513
+Paper,PAPER_0020,OpenAlex,openAlexId,W1522301498,https://openalex.org/W1522301498
+Paper,PAPER_0021,OpenAlex,openAlexId,W2908510526,https://openalex.org/W2908510526
+Paper,PAPER_0022,OpenAlex,openAlexId,W2903382683,https://openalex.org/W2903382683
+Paper,PAPER_0023,OpenAlex,openAlexId,W4321011699,https://openalex.org/W4321011699
+Paper,PAPER_0024,OpenAlex,openAlexId,W2626804490,https://openalex.org/W2626804490
+Paper,PAPER_0025,OpenAlex,openAlexId,W4416036797,https://openalex.org/W4416036797
+Paper,PAPER_0026,OpenAlex,openAlexId,W2769169032,https://openalex.org/W2769169032
+Paper,PAPER_0027,OpenAlex,openAlexId,W6891756119,https://openalex.org/W6891756119
+Paper,PAPER_0028,OpenAlex,openAlexId,W4308797462,https://openalex.org/W4308797462
+Paper,PAPER_0029,OpenAlex,openAlexId,W4378505261,https://openalex.org/W4378505261
+Paper,PAPER_0030,OpenAlex,openAlexId,W4387560516,https://openalex.org/W4387560516
+Organization,ERC,Wikidata,wikidataId,Q5324029,http://www.wikidata.org/entity/Q5324029
+Organization,European Research Council,Wikidata,wikidataId,Q1377836,http://www.wikidata.org/entity/Q1377836
+Organization,European Research Council,ROR,rorId,https://ror.org/0472cxd90,https://ror.org/0472cxd90
+Organization,German Research Foundation,Wikidata,wikidataId,Q707283,http://www.wikidata.org/entity/Q707283
+Organization,German Research Foundation,ROR,rorId,https://ror.org/018mejw64,https://ror.org/018mejw64
+Organization,Google,Wikidata,wikidataId,Q95,http://www.wikidata.org/entity/Q95
+Organization,Google,ROR,rorId,https://ror.org/00njsd438,https://ror.org/00njsd438
+Organization,Google Brain,Wikidata,wikidataId,Q16927616,http://www.wikidata.org/entity/Q16927616
+Organization,National Science Foundation,Wikidata,wikidataId,Q304878,http://www.wikidata.org/entity/Q304878
+Organization,National Science Foundation,ROR,rorId,https://ror.org/021nxhr62,https://ror.org/021nxhr62
+Organization,OpenAI,Wikidata,wikidataId,Q21708200,http://www.wikidata.org/entity/Q21708200
+Organization,OpenAI,ROR,rorId,https://ror.org/05wx9n238,https://ror.org/05wx9n238
+Organization,Science Foundation,Wikidata,wikidataId,Q116434042,http://www.wikidata.org/entity/Q116434042

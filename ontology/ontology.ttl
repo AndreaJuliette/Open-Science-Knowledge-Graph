@@ -1,0 +1,190 @@
+@prefix oskg:    <http://example.org/oskg/ontology#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix prov:    <http://www.w3.org/ns/prov#> .
+@prefix schema:  <https://schema.org/> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+#################################################################
+# Ontology metadata
+#################################################################
+<http://example.org/oskg/ontology> a owl:Ontology ;
+    rdfs:label "Open Science Knowledge Graph ontology (oskg)" ;
+    rdfs:comment "Minimal domain ontology for Assignment 2: papers, topics, people, organizations, projects and their relations. Reuses DCTerms, FOAF, PROV-O and schema.org where natural; see docs/ontology.md." ;
+    owl:versionInfo "1.0.0" .
+
+#################################################################
+# Classes
+#################################################################
+oskg:Paper a owl:Class ;
+    rdfs:label "Paper" ;
+    rdfs:comment "A scientific paper in the corpus." ;
+    rdfs:subClassOf schema:ScholarlyArticle .
+
+oskg:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person (author, or acknowledged individual)." ;
+    rdfs:subClassOf foaf:Person .
+
+oskg:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "An organization (acknowledged entity or funder)." ;
+    rdfs:subClassOf foaf:Organization .
+
+oskg:Project a owl:Class ;
+    rdfs:label "Project" ;
+    rdfs:comment "A funded project identified by a grant/agreement ID." .
+
+oskg:Topic a owl:Class ;
+    rdfs:label "Topic" ;
+    rdfs:comment "A theme discovered by topic modeling over abstracts." .
+
+oskg:SimilarityRelation a owl:Class ;
+    rdfs:label "Similarity Relation" ;
+    rdfs:comment "Reified n-ary relation carrying the similarity score between two papers." .
+
+#################################################################
+# Object properties
+#################################################################
+oskg:belongs_to_topic a owl:ObjectProperty ;
+    rdfs:label "belongs to topic" ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range oskg:Topic .
+
+oskg:similar_to a owl:ObjectProperty, owl:SymmetricProperty ;
+    rdfs:label "similar to" ;
+    rdfs:comment "Two papers whose abstract similarity is at or above the configured threshold." ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range oskg:Paper .
+
+oskg:hasAuthor a owl:ObjectProperty ;
+    rdfs:label "has author" ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range oskg:Person .
+
+oskg:acknowledges a owl:ObjectProperty ;
+    rdfs:label "acknowledges" ;
+    rdfs:comment "Paper acknowledges a person or organization (from the acknowledgements section)." ;
+    rdfs:domain oskg:Paper .
+
+oskg:mentionsGrant a owl:ObjectProperty ;
+    rdfs:label "mentions grant" ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range oskg:Project .
+
+oskg:fundedBy a owl:ObjectProperty ;
+    rdfs:label "funded by" ;
+    rdfs:range oskg:Organization .
+
+oskg:sourcePaper a owl:ObjectProperty ;
+    rdfs:label "source paper" ;
+    rdfs:domain oskg:SimilarityRelation ;
+    rdfs:range oskg:Paper .
+
+oskg:targetPaper a owl:ObjectProperty ;
+    rdfs:label "target paper" ;
+    rdfs:domain oskg:SimilarityRelation ;
+    rdfs:range oskg:Paper .
+
+#################################################################
+# Datatype properties
+#################################################################
+oskg:hasDOI a owl:DatatypeProperty ;
+    rdfs:label "has DOI" ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:string .
+
+oskg:hasURL a owl:DatatypeProperty ;
+    rdfs:label "has URL" ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:anyURI .
+
+oskg:publicationYear a owl:DatatypeProperty ;
+    rdfs:label "publication year" ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:gYear .
+
+oskg:similarityScore a owl:DatatypeProperty ;
+    rdfs:label "similarity score" ;
+    rdfs:domain oskg:SimilarityRelation ;
+    rdfs:range xsd:decimal .
+
+oskg:usedModel a owl:DatatypeProperty ;
+    rdfs:label "used model" ;
+    rdfs:comment "Provenance hint: the model/method that produced a node or relation." ;
+    rdfs:range xsd:string .
+
+#################################################################
+# External enrichment properties (Session 9)
+# Populated from OpenAlex (REST) and Wikidata/SemOpenAlex (SPARQL).
+# In addition, enriched resources are linked to their source IRIs with
+# owl:sameAs (e.g. https://openalex.org/W..., https://www.wikidata.org/entity/Q...,
+# https://ror.org/...). See docs/external_sources.md.
+#################################################################
+
+# --- From OpenAlex (Paper) ---
+oskg:openAlexId a owl:DatatypeProperty ;
+    rdfs:label "OpenAlex ID" ;
+    rdfs:comment "OpenAlex Work identifier (e.g. W2741809807)." ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:string .
+
+oskg:venue a owl:DatatypeProperty ;
+    rdfs:label "venue" ;
+    rdfs:comment "Publication venue (journal/conference) name, from OpenAlex." ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:string .
+
+oskg:citedByCount a owl:DatatypeProperty ;
+    rdfs:label "cited-by count" ;
+    rdfs:comment "Number of citations reported by OpenAlex." ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:integer .
+
+oskg:openAccessStatus a owl:DatatypeProperty ;
+    rdfs:label "open access status" ;
+    rdfs:comment "OpenAlex OA status (gold, green, hybrid, bronze, closed)." ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:string .
+
+oskg:openAlexConcept a owl:DatatypeProperty ;
+    rdfs:label "OpenAlex concept" ;
+    rdfs:comment "A research concept assigned to the paper by OpenAlex." ;
+    rdfs:domain oskg:Paper ;
+    rdfs:range xsd:string .
+
+# --- From Wikidata / SemOpenAlex (Organization) ---
+oskg:wikidataId a owl:DatatypeProperty ;
+    rdfs:label "Wikidata ID" ;
+    rdfs:comment "Wikidata entity identifier (e.g. Q42)." ;
+    rdfs:domain oskg:Organization ;
+    rdfs:range xsd:string .
+
+oskg:rorId a owl:DatatypeProperty ;
+    rdfs:label "ROR ID" ;
+    rdfs:comment "Research Organization Registry identifier/URL." ;
+    rdfs:domain oskg:Organization ;
+    rdfs:range xsd:string .
+
+oskg:country a owl:DatatypeProperty ;
+    rdfs:label "country" ;
+    rdfs:domain oskg:Organization ;
+    rdfs:range xsd:string .
+
+oskg:officialWebsite a owl:DatatypeProperty ;
+    rdfs:label "official website" ;
+    rdfs:domain oskg:Organization ;
+    rdfs:range xsd:anyURI .
+
+#################################################################
+# Reused properties (documented mappings)
+# title  -> dcterms:title        (Paper -> string)
+# name   -> foaf:name            (Person/Organization -> string)
+# abstract -> dcterms:abstract   (Paper -> string)
+# topic label -> rdfs:label / skos:prefLabel
+# generated_by -> prov:wasGeneratedBy
+#################################################################

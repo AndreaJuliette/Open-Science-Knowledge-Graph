@@ -1,0 +1,51 @@
+topic,rank,word,weight
+0,1,speech,0.049721
+0,2,audio,0.042404
+0,3,text,0.03164
+0,4,using,0.03106
+0,5,model,0.029497
+0,6,musiclm,0.026371
+0,7,labeled,0.025497
+0,8,labeled data,0.025497
+0,9,data,0.02431
+0,10,hubert,0.021952
+1,1,lion,0.062339
+1,2,adam,0.053052
+1,3,decay,0.037791
+1,4,weight,0.035046
+1,5,momentum,0.035046
+1,6,weight decay,0.03223
+1,7,optimization,0.030352
+1,8,rate,0.026346
+1,9,algorithms,0.025666
+1,10,training,0.021556
+2,1,image,0.053581
+2,2,object,0.037651
+2,3,detection,0.037651
+2,4,vision,0.028986
+2,5,model,0.028777
+2,6,set,0.028238
+2,7,object detection,0.025727
+2,8,mask,0.025727
+2,9,detr,0.025727
+2,10,data,0.023716
+3,1,models,0.057949
+3,2,language,0.046677
+3,3,tasks,0.038734
+3,4,model,0.036721
+3,5,parametric,0.025891
+3,6,art,0.025245
+3,7,state,0.024879
+3,8,absolute,0.022854
+3,9,language models,0.022854
+3,10,state art,0.022801
+4,1,complex,0.03525
+4,2,policy,0.032417
+4,3,voyager,0.028614
+4,4,environment,0.028614
+4,5,grpo,0.028614
+4,6,methods,0.028548
+4,7,gradient,0.025363
+4,8,learning,0.023039
+4,9,new,0.022447
+4,10,human,0.022031

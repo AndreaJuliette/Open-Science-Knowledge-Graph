@@ -1,0 +1,11 @@
+source_paper,target_paper,similarity
+Lion Secretly Solves Constrained Optimization As Lyapunov Predicts,Symbolic Discovery of Optimization Algorithms,0.720065
+Adam A Method for Stochastic Optimization,INCORPORATING NESTEROV MOMENTUM INTO ADAM,0.711777
+End to End Object Detection with Transformers,Learning Transferable Visual Models From Natural Language Supervision,0.685425
+Language Models are Few Shot Learners,SELF-INSTRUCT Aligning Language Models,0.684884
+Attention Is All You Need,BERT Pretraining of Deep Bidirectional Transformers for,0.669575
+Deep Reinforcement Learning from Human Preferences,Proximal Policy Optimization Algorithms,0.666052
+Robust Speech Recognition via Large-Scale Weak Supervision,wav2vec 2.0 A Framework for Self-Supervised,0.65868
+INCORPORATING NESTEROV MOMENTUM INTO ADAM,Symbolic Discovery of Optimization Algorithms,0.658272
+HuBERT Self-Supervised Speech Representation,wav2vec 2.0 A Framework for Self-Supervised,0.655833
+BERT Pretraining of Deep Bidirectional Transformers for,Retrieval Augmented Generation for Knowledge Intensive NLP Tasks,0.653247

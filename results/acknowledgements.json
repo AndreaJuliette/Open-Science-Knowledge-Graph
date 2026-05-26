@@ -1,0 +1,122 @@
+{
+  "AST Audio Spectrogram Transformer": {
+    "status": "found",
+    "text": "This work is partly supported by Signify . References"
+  },
+  "Adafactor Adaptive Learning Rates with Sublinear Memory Cost": {
+    "status": "found",
+    "text": "Acknowledgements Thanks to Łukasz Kaiser , the Tensor2Tensor team and the open-source community for helping test and debug Adafactor. Also thanks to Geoffrey Hinton , who asserted that training works well if the magnitudes of parameter updates are"
+  },
+  "Adam A Method for Stochastic Optimization": {
+    "status": "found",
+    "text": "CONCLUSION We have introduced a simple and computationally efficient algorithm for gradient-based optimization of stochastic objective functions. Our method is aimed towards machine learning problems with"
+  },
+  "An Image is Worth 16x16 words": {
+    "status": "found",
+    "text": "ACKNOWLEDGEMENTS The work was performed in Berlin, Zürich, and Amsterdam. We thank many colleagues at Google for their help, in particular Andreas Steiner for crucial help with the infrastructure and the opensource release of the code; Joan Puigcerver and Maxim Neumann for help with the large-scale training infrastructure; Dmitry Lepikhin , Aravindh Mahendran , Daniel Keysers , Mario Lučić , Noam Shazeer , Ashish Vaswani , and Colin Raffel for useful discussions."
+  },
+  "Attention Is All You Need": {
+    "status": "found",
+    "text": "Acknowledgements We are grateful to Nal Kalchbrenner and Stephan Gouws for their fruitful comments, corrections and inspiration."
+  },
+  "BERT Pretraining of Deep Bidirectional Transformers for": {
+    "status": "not_found",
+    "text": ""
+  },
+  "DECOUPLED WEIGHT DECAY REGULARIZATION": {
+    "status": "found",
+    "text": "ACKNOWLEDGMENTS We thank Patryk Chrabaszcz for help with running experiments with ImageNet32x32; Matthias Feurer and Robin Schirrmeister for providing valuable feedback on this paper in several iterations; and Martin Völker , Robin Schirrmeister , and Tonio Ball for providing us with a comparison of AdamW and Adam on their EEG data. We also thank the following members of the deep learning community for implementing decoupled weight decay in various deep learning libraries: Robin Schirrmeister , and Kashif Rasul for their implementations in PyTorch (see https://github.com/pytorch/pytorch/pull/4429 ) • Phil Jund for his implementation in TensorFlow described at https://www.tensorflow.org/api_docs/python/tf/contrib/opt/ DecoupledWeightDecayExtension • Sylvain Gugger , Anand Saha , Jeremy Howard and other members of fast.ai for their implementation available at https://github.com/sgugger/Adam-experiments • Guillaume Lambard for his implementation in Keras available at https://github. com/GLambard/AdamW_Keras • Yagami Lin for his implementation in Caffe available at https://github.com/ Yagami123/Caffe-AdamW-AdamWR This work was supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation programme under grant no. 716721 , by the German Research Foundation (DFG) under the BrainLinksBrainTools Cluster of Excellence (grant number EXC 1086 ) and through grant no. INST 37/935-1 FUGG , and by the German state of Baden-Württemberg through bwHPC."
+  },
+  "Deep Reinforcement Learning from Human Preferences": {
+    "status": "found",
+    "text": "Acknowledgments We thank Olivier Pietquin , Bilal Piot , Laurent Orseau , Pedro Ortega , Victoria Krakovna , Owain Evans , Andrej Karpathy , Igor Mordatch , and Jack Clark for reading drafts of the paper. We thank Tyler Adkisson , Mandy Beri , Jessica Richards , Heather Tran , and other contractors for providing the data used to train our agents. Finally, we thank OpenAI and DeepMind for providing a supportive research environment and for supporting and encouraging this collaboration."
+  },
+  "End to End Object Detection with Transformers": {
+    "status": "found",
+    "text": "Acknowledgements We thank Sainbayar Sukhbaatar , Piotr Bojanowski , Natalia Neverova , David Lopez-Paz , Guillaume Lample , Danielle Rothermel , Kaiming He , Ross Girshick , Xinlei Chen and the whole Facebook AI Research Paris team for discussions and advices without which this work would not be possible."
+  },
+  "GRPO-LEAD A Difficulty-Aware Reinforcement Learning Approach for": {
+    "status": "not_found",
+    "text": ""
+  },
+  "Grounding DINO": {
+    "status": "found",
+    "text": "Acknowledgement We thank the authors of GLIP [25] : Liunian Harold Li , Pengchuan Zhang , and Haotian Zhang for their helpful discussions and instructions. We also thank Tiancheng Zhao , the author of OmDet [60] , and Jianhua Han , the author of DetCLIP [52] , for their response to their model details. We thank He Cao of The Hong Kong University of Science and Technology for his help on diffusion models."
+  },
+  "HuBERT Self-Supervised Speech Representation": {
+    "status": "not_found",
+    "text": ""
+  },
+  "INCORPORATING NESTEROV MOMENTUM INTO ADAM": {
+    "status": "not_found",
+    "text": ""
+  },
+  "Implementing the Deep Q-Network": {
+    "status": "found",
+    "text": "Acknowledgments This material is based upon work supported by the National Science Foundation under grant numbers IIS-1637614 and IIS-1426452 , and DARPA under grant numbers W911NF-10-2-0016 and D15AP00102 ."
+  },
+  "LLaMA Open and Efficient Foundation Language Models": {
+    "status": "found",
+    "text": "Acknowledgements We thank Daniel Haziza , Francisco Massa , Jeremy Reizenstein , Artem Korenev , and Patrick Labatut from the xformers team. We thank Susan Zhang and Stephen Roller for their support on data deduplication. We thank Luca Wehrstedt , Vegard Mella , and Pierre-Emmanuel Mazaré for their support on training stability. We thank Shubho Sengupta , Kalyan Saladi , and all the AI infra team for their support. We thank Jane Yu for her input on evaluation. We thank Yongyi Hu for his help on data collection."
+  },
+  "Language Models are Few Shot Learners": {
+    "status": "found",
+    "text": "Acknowledgements The authors would like to thank Ryan Lowe for giving detailed feedback on drafts of the paper. Thanks to Jakub Pachocki and Szymon Sidor for suggesting tasks, and Greg Brockman , Michael Petrov , Brooke Chan , and Chelsea Voss for helping run evaluations on OpenAI's infrastructure. Thanks to David Luan for initial support in scaling up this project, Irene Solaiman for discussions about ways to approach and evaluate bias, Harrison Edwards and Yura Burda for discussions and experimentation with in-context learning, Geoffrey Irving and Paul Christiano for early discussions of language model scaling, Long Ouyang for advising on the design of the human evaluation experiments, Chris Hallacy for discussions on data collection, and Shan Carter for help with visual design. Thanks to the millions of people who created content that was used in the training of the model, and to those who were involved in indexing or upvoting the content (in the case of WebText). Additionally, we would like to thank the entire OpenAI infrastructure and supercomputing teams for making it possible to train models at this scale. Funding Disclosures This work was funded by OpenAI . All models were trained on V100 GPU's on part of a highbandwidth cluster provided by Microsoft"
+  },
+  "Learning Transferable Visual Models From Natural Language Supervision": {
+    "status": "found",
+    "text": "ACKNOWLEDGMENTS We'd like to thank the millions of people involved in creating the data CLIP is trained on. We'd also like to thank Susan Zhang for her work on image conditional language models while at OpenAI , Ishaan Gulrajani for catching an error in the pseudocode, and Irene Solaiman , Miles Brundage , and Gillian Hadfield for their thoughtful feedback on the broader impacts section of the paper. We are also grateful to the Acceleration and Supercomputing teams at OpenAI for their critical work on software and hardware infrastructure this project used. Finally, we'd also like to thank the developers of the many software packages used throughout this project including, but not limited, to Numpy (Harris et al., 2020) , SciPy (Virtanen et al., 2020) , ftfy (Speer, 2019) , Tensor-Flow (Abadi et al., 2016) , PyTorch (Paszke et al., 2019) , pandas (pandas development team, 2020), and scikit-learn (Pedregosa et al., 2011) ."
+  },
+  "Lion Secretly Solves Constrained Optimization As Lyapunov Predicts": {
+    "status": "not_found",
+    "text": ""
+  },
+  "Masked Autoencoders Are Scalable Vision Learners": {
+    "status": "not_found",
+    "text": ""
+  },
+  "Mastering Atari Go Chess and Shogi by Planning with a learned model": {
+    "status": "found",
+    "text": "Acknowledgments Lorrayne Bennett , Oliver Smith and Chris Apps for organizational assistance; Koray Kavukcuoglu for reviewing the paper; Thomas Anthony , Matthew Lai , Nenad Tomasev , Ulrich Paquet , Sumedh Ghaisas for many fruitful discussions; and the rest of the DeepMind team for their support."
+  },
+  "MusicLM Generating Music From Text": {
+    "status": "not_found",
+    "text": ""
+  },
+  "NATURAL TTS SYNTHESIS BY CONDITIONING WAVENET ON MEL SPECTROGRAM": {
+    "status": "found",
+    "text": "ACKNOWLEDGMENTS The authors thank Jan Chorowski , Samy Bengio , Aäron van den Oord , and the WaveNet and Machine Hearing teams for their helpful discussions and advice, as well as Heiga Zen and the Google TTS team for their feedback and assistance with running evaluations. The authors are also grateful to the very thorough reviewers."
+  },
+  "Proximal Policy Optimization Algorithms": {
+    "status": "found",
+    "text": "Acknowledgements Thanks to Rocky Duan , Peter Chen , and others at OpenAI for insightful comments."
+  },
+  "Retrieval Augmented Generation for Knowledge Intensive NLP Tasks": {
+    "status": "found",
+    "text": "Acknowledgments The authors would like to thank the reviewers for their thoughtful and constructive feedback on this paper, as well as HuggingFace for their help in open-sourcing code to run RAG models. The authors would also like to thank Kyunghyun Cho and Sewon Min for productive discussions and advice. EP thanks supports from the NSF Graduate Research Fellowship . PL is supported by the FAIR PhD program ."
+  },
+  "Robust Speech Recognition via Large-Scale Weak Supervision": {
+    "status": "found",
+    "text": "ACKNOWLEDGMENTS We'd like to thank the millions of people who were involved in creating the data used by Whisper. We'd also like to thank Nick Ryder , Will Zhuk , and Andrew Carr for the conversation on the waterfall hike that inspired this project. We are also grateful to the Acceleration and Supercomputing teams at OpenAI for their critical work on software and hardware infrastructure this project used. We'd also like to thank Pamela Mishkin for advising the project from a policy perspective. Finally, we are grateful to the developers of the many software packages used throughout this project including, but not limited, to Numpy (Harris et al., 2020) , SciPy (Virtanen et al., 2020) , ftfy (Speer, 2019) , PyTorch (Paszke et al., 2019) , pandas (pandas development team, 2020), and scikit-learn (Pedregosa et al., 2011) ."
+  },
+  "SELF-INSTRUCT Aligning Language Models": {
+    "status": "found",
+    "text": "Acknowledgements The authors would like to thank the anonymous reviewers for their constructive feedback. We especially thank Sewon Min , Eric Wallace , Ofir Press , and other members of UWNLP and AllenNLP for their encouraging feedback and intellectual support. This work was supported in part by DARPA MCS program through NIWC Pacific ( N66001-19-2-4031 ), ONR N00014-18-1-2826 , ONR MURI N00014-18-1-2670 , and gifts from AI2 and an Allen Investigator award ."
+  },
+  "Segment Anything": {
+    "status": "found",
+    "text": "Acknowledgments. We would like to thank Aaron Adcock and Jitendra Malik for helpful discussion. We thank Vaibhav Aggarwal and Yanghao Li for help with scaling the model. We thank Cheng-Yang Fu , Jiabo Hu , and Robert Kuo for help with data annotation platform. We thank Allen Goodman and Bram Wasti for help in optimizing web-version of our model. Finally, we thank Morteza Behrooz , Ashley Gabriel , Ahuva Goldstand , Sumanth Gurram , Somya Jain , Devansh Kukreja , Joshua Lane , Lilian Luong , Mallika Malhotra , William Ngan , Omkar Parkhi , Nikhil Raina , Dirk Rowe , Neil Sejoor , Vanessa Stark , Bala Varadarajan , and Zachary Winstrom for their help in making the demo, dataset viewer, and other assets and tooling."
+  },
+  "Symbolic Discovery of Optimization Algorithms": {
+    "status": "found",
+    "text": "Acknowledgements We would like to thank (in alphabetical order) Angel Yu , Boqing Gong , Chen Cheng , Chitwan Saharia , Daiyi Peng , David So , Hanxiao Liu , Hanzhao Lin , Jeff Lund , Jiahui Yu , Jingru Xu , Julian Grady , Junyang Shen , Kevin Regan , Li Sheng , Liu Yang , Martin Wicke , Mingxing Tan , Mohammad Norouzi , Qiqi Yan , Rakesh Shivanna , Rohan Anil , Ruiqi Gao , Steve Li , Vlad Feinberg , Wenbo Zhang , William Chan , Xiao Wang , Xiaohua Zhai , Yaguang Li , Yang Li , Zhuoshu Li , Zihang Dai , Zirui Wang for helpful discussions, and the Google Brain team at large for providing a supportive research environment."
+  },
+  "VOYAGER An Open-Ended Embodied Agent": {
+    "status": "found",
+    "text": "Acknowledgements We are extremely grateful to Ziming Zhu , Kaiyu Yang , Rafał Kocielnik , Colin White , Or Sharir , Sahin Lale , De-An Huang , Jean Kossaifi , Yuncong Yang , Charles Zhang , Minchao Huang , and many other colleagues and friends for their helpful feedback and insightful discussions. This work is done during Guanzhi Wang 's internship at NVIDIA . Guanzhi Wang is supported by the Kortschak fellowship in Computing and Mathematical Sciences at Caltech ."
+  },
+  "wav2vec 2.0 A Framework for Self-Supervised": {
+    "status": "found",
+    "text": "Acknowledgments We thank Tatiana Likhomanenko and Qiantong Xu for helpful discussion and their help with wav2letter integration."
+  }
+}

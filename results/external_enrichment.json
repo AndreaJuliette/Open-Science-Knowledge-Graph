@@ -1,0 +1,505 @@
+{
+  "papers": {
+    "PAPER_0001": {
+      "openalex_id": "W4390874575",
+      "openalex_url": "https://openalex.org/W4390874575",
+      "publication_year": 2023,
+      "venue": null,
+      "cited_by_count": 8840,
+      "open_access_status": "closed",
+      "concepts": [
+        "Computer science",
+        "Segmentation",
+        "Task (project management)",
+        "Artificial intelligence",
+        "Shot (pellet)"
+      ]
+    },
+    "PAPER_0002": {
+      "openalex_id": "W3211983881",
+      "openalex_url": "https://openalex.org/W3211983881",
+      "publication_year": 2021,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 194,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Scalability",
+        "Encoder",
+        "Artificial intelligence",
+        "Masking (illustration)"
+      ]
+    },
+    "PAPER_0003": {
+      "openalex_id": "W3135367836",
+      "openalex_url": "https://openalex.org/W3135367836",
+      "publication_year": 2021,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 5296,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Generality",
+        "Transfer of learning",
+        "Task (project management)"
+      ]
+    },
+    "PAPER_0004": {
+      "openalex_id": "W4404612908",
+      "openalex_url": "https://openalex.org/W4404612908",
+      "publication_year": 2024,
+      "venue": "Lecture notes in computer science",
+      "cited_by_count": 1330,
+      "open_access_status": "closed",
+      "concepts": [
+        "Computer science",
+        "Object (grammar)",
+        "Set (abstract data type)",
+        "Training (meteorology)",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0005": {
+      "openalex_id": "W3030520226",
+      "openalex_url": "https://openalex.org/W3030520226",
+      "publication_year": 2020,
+      "venue": "Lecture notes in computer science",
+      "cited_by_count": 829,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Object detection",
+        "Transformer",
+        "Encoder",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0006": {
+      "openalex_id": "W3094502228",
+      "openalex_url": "https://openalex.org/W3094502228",
+      "publication_year": 2020,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 21529,
+      "open_access_status": "green",
+      "concepts": [
+        "Image (mathematics)",
+        "Artificial intelligence",
+        "Transformer",
+        "Computer science",
+        "Computer vision"
+      ]
+    },
+    "PAPER_0007": {
+      "openalex_id": "W3099782249",
+      "openalex_url": "https://openalex.org/W3099782249",
+      "publication_year": 2020,
+      "venue": "Neural Information Processing Systems",
+      "cited_by_count": 407,
+      "open_access_status": "closed",
+      "concepts": [
+        "Computer science",
+        "Speech recognition",
+        "Natural language processing",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0008": {
+      "openalex_id": "W4311000453",
+      "openalex_url": "https://openalex.org/W4311000453",
+      "publication_year": 2022,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 1154,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Inference",
+        "Robustness (evolution)",
+        "Speech recognition",
+        "Speech processing"
+      ]
+    },
+    "PAPER_0009": {
+      "openalex_id": "W2964243274",
+      "openalex_url": "https://openalex.org/W2964243274",
+      "publication_year": 2018,
+      "venue": null,
+      "cited_by_count": 2641,
+      "open_access_status": "closed",
+      "concepts": [
+        "Spectrogram",
+        "Computer science",
+        "Speech recognition",
+        "Waveform",
+        "Character (mathematics)"
+      ]
+    },
+    "PAPER_0010": {
+      "openalex_id": "W4386693657",
+      "openalex_url": "https://openalex.org/W4386693657",
+      "publication_year": 2023,
+      "venue": "Business & Information Systems Engineering",
+      "cited_by_count": 1120,
+      "open_access_status": "hybrid",
+      "concepts": [
+        "Conceptualization",
+        "Generative grammar",
+        "Computer science",
+        "Context (archaeology)",
+        "Term (time)"
+      ]
+    },
+    "PAPER_0011": {
+      "openalex_id": "W4287119707",
+      "openalex_url": "https://openalex.org/W4287119707",
+      "publication_year": 2021,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 24,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Cluster analysis",
+        "Representation (politics)",
+        "Consistency (knowledge bases)",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0012": {
+      "openalex_id": "W3196974791",
+      "openalex_url": "https://openalex.org/W3196974791",
+      "publication_year": 2021,
+      "venue": null,
+      "cited_by_count": 963,
+      "open_access_status": "closed",
+      "concepts": [
+        "Spectrogram",
+        "Computer science",
+        "Transformer",
+        "Speech recognition",
+        "Electrical engineering"
+      ]
+    },
+    "PAPER_0013": {
+      "openalex_id": "W2626778328",
+      "openalex_url": "https://openalex.org/W2626778328",
+      "publication_year": 2025,
+      "venue": null,
+      "cited_by_count": 6549,
+      "open_access_status": "gold",
+      "concepts": [
+        "Computer science",
+        "Machine translation",
+        "Transformer",
+        "BLEU",
+        "Encoder"
+      ]
+    },
+    "PAPER_0014": {
+      "openalex_id": "W6973758909",
+      "openalex_url": "https://openalex.org/W6973758909",
+      "publication_year": 2024,
+      "venue": "TIB Data Manager",
+      "cited_by_count": 0,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Transformer",
+        "Engineering",
+        "Troubleshooting",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0015": {
+      "openalex_id": "W3030163527",
+      "openalex_url": "https://openalex.org/W3030163527",
+      "publication_year": 2020,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 3029,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Task (project management)",
+        "Language model",
+        "Natural language processing",
+        "Sentence"
+      ]
+    },
+    "PAPER_0016": {
+      "openalex_id": "W4322718191",
+      "openalex_url": "https://openalex.org/W4322718191",
+      "publication_year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 3887,
+      "open_access_status": "green",
+      "concepts": [
+        "Foundation (evidence)",
+        "Computer science",
+        "Ranging",
+        "Language model",
+        "State (computer science)"
+      ]
+    },
+    "PAPER_0017": {
+      "openalex_id": "W3098425262",
+      "openalex_url": "https://openalex.org/W3098425262",
+      "publication_year": 2020,
+      "venue": "UCL Discovery (University College London)",
+      "cited_by_count": 18,
+      "open_access_status": "closed",
+      "concepts": [
+        "Computer science",
+        "Language model",
+        "Parametric statistics",
+        "Artificial intelligence",
+        "Task (project management)"
+      ]
+    },
+    "PAPER_0018": {
+      "openalex_id": "W4312091890",
+      "openalex_url": "https://openalex.org/W4312091890",
+      "publication_year": 2022,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 118,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Language model",
+        "Bootstrapping (finance)",
+        "Pipeline (software)",
+        "Generality"
+      ]
+    },
+    "PAPER_0019": {
+      "openalex_id": "W2797328513",
+      "openalex_url": "https://openalex.org/W2797328513",
+      "publication_year": 2018,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 163,
+      "open_access_status": "green",
+      "concepts": [
+        "Sublinear function",
+        "Scaling",
+        "Computer science",
+        "Stochastic gradient descent",
+        "Estimator"
+      ]
+    },
+    "PAPER_0020": {
+      "openalex_id": "W1522301498",
+      "openalex_url": "https://openalex.org/W1522301498",
+      "publication_year": 2014,
+      "venue": "UvA-DARE (University of Amsterdam)",
+      "cited_by_count": 84665,
+      "open_access_status": "green",
+      "concepts": [
+        "Regret",
+        "Mathematical optimization",
+        "Computer science",
+        "Diagonal",
+        "Convergence (economics)"
+      ]
+    },
+    "PAPER_0021": {
+      "openalex_id": "W2908510526",
+      "openalex_url": "https://openalex.org/W2908510526",
+      "publication_year": 2017,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 9081,
+      "open_access_status": "green",
+      "concepts": [
+        "Regularization (linguistics)",
+        "Physics",
+        "Mathematics",
+        "Computer science",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0022": {
+      "openalex_id": "W2903382683",
+      "openalex_url": "https://openalex.org/W2903382683",
+      "publication_year": 2016,
+      "venue": null,
+      "cited_by_count": 1307,
+      "open_access_status": "closed",
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0023": {
+      "openalex_id": "W4321011699",
+      "openalex_url": "https://openalex.org/W4321011699",
+      "publication_year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 167,
+      "open_access_status": "green",
+      "concepts": [
+        "Leverage (statistics)",
+        "Computer science",
+        "Algorithm",
+        "Monotonic function",
+        "Generalization"
+      ]
+    },
+    "PAPER_0024": {
+      "openalex_id": "W2626804490",
+      "openalex_url": "https://openalex.org/W2626804490",
+      "publication_year": 2017,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 508,
+      "open_access_status": "green",
+      "concepts": [
+        "Reinforcement learning",
+        "Flexibility (engineering)",
+        "Computer science",
+        "Function (biology)",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0025": {
+      "openalex_id": "W4416036797",
+      "openalex_url": "https://openalex.org/W4416036797",
+      "publication_year": 2025,
+      "venue": null,
+      "cited_by_count": 1,
+      "open_access_status": "gold",
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "Automated reasoning",
+        "Language model",
+        "Reinforcement learning"
+      ]
+    },
+    "PAPER_0026": {
+      "openalex_id": "W2769169032",
+      "openalex_url": "https://openalex.org/W2769169032",
+      "publication_year": 2017,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 57,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence"
+      ]
+    },
+    "PAPER_0027": {
+      "openalex_id": "W6891756119",
+      "openalex_url": "https://openalex.org/W6891756119",
+      "publication_year": 2019,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 1,
+      "open_access_status": "green",
+      "concepts": [
+        "Computer science",
+        "Artificial intelligence",
+        "State (computer science)",
+        "Video game",
+        "Automated planning and scheduling"
+      ]
+    },
+    "PAPER_0028": {
+      "openalex_id": "W4308797462",
+      "openalex_url": "https://openalex.org/W4308797462",
+      "publication_year": 2022,
+      "venue": "Expert Systems with Applications",
+      "cited_by_count": 37,
+      "open_access_status": "closed",
+      "concepts": [
+        "Revenue",
+        "Promotion (chess)",
+        "Computer science",
+        "Dynamic pricing",
+        "Quality (philosophy)"
+      ]
+    },
+    "PAPER_0029": {
+      "openalex_id": "W4378505261",
+      "openalex_url": "https://openalex.org/W4378505261",
+      "publication_year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 193,
+      "open_access_status": "green",
+      "concepts": [
+        "Codebase",
+        "Computer science",
+        "Executable",
+        "Embodied cognition",
+        "Context (archaeology)"
+      ]
+    },
+    "PAPER_0030": {
+      "openalex_id": "W4387560516",
+      "openalex_url": "https://openalex.org/W4387560516",
+      "publication_year": 2023,
+      "venue": "arXiv (Cornell University)",
+      "cited_by_count": 0,
+      "open_access_status": "green",
+      "concepts": [
+        "Subgradient method",
+        "Sign (mathematics)",
+        "Range (aeronautics)",
+        "Function (biology)",
+        "Operator (biology)"
+      ]
+    }
+  },
+  "organizations": {
+    "ERC": {
+      "wikidata_id": "Q5324029",
+      "wikidata_url": "http://www.wikidata.org/entity/Q5324029",
+      "ror_id": null,
+      "country": null,
+      "official_website": null
+    },
+    "European Research Council": {
+      "wikidata_id": "Q1377836",
+      "wikidata_url": "http://www.wikidata.org/entity/Q1377836",
+      "ror_id": "https://ror.org/0472cxd90",
+      "country": "Belgium",
+      "official_website": "https://erc.europa.eu/"
+    },
+    "German Research Foundation": {
+      "wikidata_id": "Q707283",
+      "wikidata_url": "http://www.wikidata.org/entity/Q707283",
+      "ror_id": "https://ror.org/018mejw64",
+      "country": "Germany",
+      "official_website": "https://www.dfg.de/"
+    },
+    "Google": {
+      "wikidata_id": "Q95",
+      "wikidata_url": "http://www.wikidata.org/entity/Q95",
+      "ror_id": "https://ror.org/00njsd438",
+      "country": "United States",
+      "official_website": "https://about.google/"
+    },
+    "Google Brain": {
+      "wikidata_id": "Q16927616",
+      "wikidata_url": "http://www.wikidata.org/entity/Q16927616",
+      "ror_id": null,
+      "country": "United States",
+      "official_website": null
+    },
+    "National Science Foundation": {
+      "wikidata_id": "Q304878",
+      "wikidata_url": "http://www.wikidata.org/entity/Q304878",
+      "ror_id": "https://ror.org/021nxhr62",
+      "country": "United States",
+      "official_website": "https://nsf.gov"
+    },
+    "OpenAI": {
+      "wikidata_id": "Q21708200",
+      "wikidata_url": "http://www.wikidata.org/entity/Q21708200",
+      "ror_id": "https://ror.org/05wx9n238",
+      "country": "United States",
+      "official_website": "https://openai.com/"
+    },
+    "Science Foundation": {
+      "wikidata_id": "Q116434042",
+      "wikidata_url": "http://www.wikidata.org/entity/Q116434042",
+      "ror_id": null,
+      "country": "Nigeria",
+      "official_website": null
+    }
+  }
+}
