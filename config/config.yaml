@@ -1,0 +1,75 @@
+
+project:
+  name: "Open Science Knowledge Graph of 30 Research Papers"
+  group: "Group 7"
+  version: "1.0.0"
+  # Base IRIs for minting RDF resources and the local ontology.
+  base_iri: "http://example.org/oskg/resource/"
+  ontology_iri: "http://example.org/oskg/ontology#"
+
+grobid:
+  server_url: "http://localhost:8070"
+  timeout: 120
+
+paths:
+  input_dir: "data/papers"
+  metadata_csv: "data/papers_metadata.csv"
+  tei_dir: "results/tei"
+  results_dir: "results"
+  figures_dir: "figures"
+
+# BERTopic with a KMeans clustering backend 
+topic_modeling:
+  method: "bertopic_kmeans"   
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  k_min: 2
+  k_max: 8
+  top_n_words: 10
+  random_state: 42
+  umap_n_neighbors: 5           
+  umap_n_components: 5
+  min_df: 1
+  ngram_range: [1, 2]
+
+similarity:
+  embedding_model: "sentence-transformers/all-MiniLM-L6-v2"
+  metric: "cosine"
+  threshold: 0.65              
+  top_pairs_to_report: 15
+
+ner:
+  model: "Jean-Baptiste/roberta-large-ner-english"
+  aggregation_strategy: "simple"
+  min_score: 0.80
+  keep_types: ["PER", "ORG"]       # mapped to oskg:Person / oskg:Organization
+  not_found_label: "not_found"
+
+grants:
+  patterns:
+    - '\b[A-Z]{2,}[-/ ]?\d{3,}\b'                 # e.g. ANR-17-CE23, NSF 1234567
+    - '\bgrant(?:\s+(?:no\.?|number|agreement))?\s*[:#]?\s*([A-Z0-9][A-Z0-9\-/]{3,})'
+    - '\b\d{6,}\b'                                  # bare long numeric IDs (context-filtered)
+    - '\b(?:H2020|FP7|ERC|DFG|NSF|NIH|EU)[-\s]?[A-Z0-9\-]{2,}\b'
+  context_window: 60
+
+
+external_enrichment:
+  enabled: true
+  openalex:                               # REST API source
+    base_url: "https://api.openalex.org"
+    mailto: "juliette.mejia.chavez@gmail.com" 
+    timeout: 30
+    max_concepts: 5
+  wikidata:                               # SPARQL source
+    endpoint: "https://query.wikidata.org/sparql"
+    timeout: 30
+    enrich_organizations: true
+    request_delay: 1.0                  
+    user_agent: "Group7-KG/1.0"
+
+kg:
+  output: "knowledge_graph.ttl"    
+
+logging:
+  level: "INFO"
+  file: "pipeline.log"           
