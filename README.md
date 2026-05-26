@@ -1,5 +1,6 @@
 # Open Science Knowledge Graph of 30 Research Papers
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/1250590334.svg)](https://doi.org/10.5281/zenodo.20402223)
 
 This project builds a reproducible and FAIR pipeline to analyze **30 open-access research papers** and turn the results into an **RDF Knowledge Graph** that can be queried with SPARQL. 
 
